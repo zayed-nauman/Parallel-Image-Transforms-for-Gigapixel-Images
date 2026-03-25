@@ -1,0 +1,2553 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineSystem.cmake:212 (message)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      The system is: Windows - 10.0.26200 - AMD64
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeMinGWFindMake.cmake:5 (find_program)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_MAKE_PROGRAM"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "mingw32-make.exe"
+    candidate_directories:
+      - "C:/WINDOWS.X64_193000_db_home/bin/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/MinGW/bin/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Program Files/cursor/resources/app/bin/"
+      - "C:/Program Files/Docker/Docker/resources/bin/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Program Files/nodejs/"
+      - "C:/Program Files/MySQL/MySQL Shell 8.0/bin/"
+      - "C:/Users/irfan/AppData/Local/Programs/Python/Python312/Scripts/"
+      - "C:/Users/irfan/AppData/Local/Programs/Python/Python312/"
+      - "C:/Users/irfan/AppData/Local/Programs/Python/Python313/Scripts/"
+      - "C:/Users/irfan/AppData/Local/Programs/Python/Python313/"
+      - "C:/Users/irfan/AppData/Local/Programs/Python/Launcher/"
+      - "C:/Users/irfan/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Users/irfan/AppData/Local/Programs/Microsoft VS Code/bin/"
+      - "C:/Users/irfan/AppData/Local/Programs/cursor/resources/app/bin/"
+      - "C:/Users/irfan/AppData/Roaming/npm/"
+      - "C:/msys64/ucrt64/bin/"
+      - "/REGISTRY-NOTFOUND/bin/"
+      - "c:/MinGW/bin/"
+      - "/MinGW/bin/"
+      - "/REGISTRY-NOTFOUND/MinGW/bin/"
+    searched_directories:
+      - "C:/WINDOWS.X64_193000_db_home/bin/mingw32-make.exe.com"
+      - "C:/WINDOWS.X64_193000_db_home/bin/mingw32-make.exe"
+      - "C:/Windows/System32/mingw32-make.exe.com"
+      - "C:/Windows/System32/mingw32-make.exe"
+      - "C:/Windows/mingw32-make.exe.com"
+      - "C:/Windows/mingw32-make.exe"
+      - "C:/Windows/System32/wbem/mingw32-make.exe.com"
+      - "C:/Windows/System32/wbem/mingw32-make.exe"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/mingw32-make.exe.com"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/mingw32-make.exe"
+      - "C:/Windows/System32/OpenSSH/mingw32-make.exe.com"
+      - "C:/Windows/System32/OpenSSH/mingw32-make.exe"
+      - "C:/MinGW/bin/mingw32-make.exe.com"
+    found: "C:/MinGW/bin/mingw32-make.exe"
+    search_context:
+      ENV{PATH}:
+        - "C:\\WINDOWS.X64_193000_db_home\\bin"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\MinGW\\bin"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\cursor\\resources\\app\\bin"
+        - "C:\\Program Files\\Docker\\Docker\\resources\\bin"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Program Files\\nodejs\\"
+        - "C:\\Program Files\\MySQL\\MySQL Shell 8.0\\bin\\"
+        - "C:\\Users\\irfan\\AppData\\Local\\Programs\\Python\\Python312\\Scripts\\"
+        - "C:\\Users\\irfan\\AppData\\Local\\Programs\\Python\\Python312\\"
+        - "C:\\Users\\irfan\\AppData\\Local\\Programs\\Python\\Python313\\Scripts\\"
+        - "C:\\Users\\irfan\\AppData\\Local\\Programs\\Python\\Python313\\"
+        - "C:\\Users\\irfan\\AppData\\Local\\Programs\\Python\\Launcher\\"
+        - "C:\\Users\\irfan\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\irfan\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\irfan\\AppData\\Local\\Programs\\Python\\Python313"
+        - "C:\\Users\\irfan\\AppData\\Local\\Programs\\Python\\Python313\\Scripts"
+        - "C:\\Users\\irfan\\AppData\\Local\\Programs\\cursor\\resources\\app\\bin"
+        - "C:\\Users\\irfan\\AppData\\Roaming\\npm"
+        - "C:\\msys64\\ucrt64\\bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCompiler.cmake:63 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCXXCompiler.cmake:69 (_cmake_find_compiler)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_CXX_COMPILER"
+    description: "CXX compiler"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: false
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "c++"
+      - "g++"
+      - "cl"
+      - "bcc"
+      - "icx"
+      - "clang++"
+    candidate_directories:
+      - "C:/WINDOWS.X64_193000_db_home/bin/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/MinGW/bin/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Program Files/cursor/resources/app/bin/"
+      - "C:/Program Files/Docker/Docker/resources/bin/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Program Files/nodejs/"
+      - "C:/Program Files/MySQL/MySQL Shell 8.0/bin/"
+      - "C:/Users/irfan/AppData/Local/Programs/Python/Python312/Scripts/"
+      - "C:/Users/irfan/AppData/Local/Programs/Python/Python312/"
+      - "C:/Users/irfan/AppData/Local/Programs/Python/Python313/Scripts/"
+      - "C:/Users/irfan/AppData/Local/Programs/Python/Python313/"
+      - "C:/Users/irfan/AppData/Local/Programs/Python/Launcher/"
+      - "C:/Users/irfan/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Users/irfan/AppData/Local/Programs/Microsoft VS Code/bin/"
+      - "C:/Users/irfan/AppData/Local/Programs/cursor/resources/app/bin/"
+      - "C:/Users/irfan/AppData/Roaming/npm/"
+      - "C:/msys64/ucrt64/bin/"
+    searched_directories:
+      - "C:/WINDOWS.X64_193000_db_home/bin/c++.com"
+      - "C:/WINDOWS.X64_193000_db_home/bin/c++.exe"
+      - "C:/WINDOWS.X64_193000_db_home/bin/c++"
+      - "C:/WINDOWS.X64_193000_db_home/bin/g++.com"
+      - "C:/WINDOWS.X64_193000_db_home/bin/g++.exe"
+      - "C:/WINDOWS.X64_193000_db_home/bin/g++"
+      - "C:/WINDOWS.X64_193000_db_home/bin/cl.com"
+      - "C:/WINDOWS.X64_193000_db_home/bin/cl.exe"
+      - "C:/WINDOWS.X64_193000_db_home/bin/cl"
+      - "C:/WINDOWS.X64_193000_db_home/bin/bcc.com"
+      - "C:/WINDOWS.X64_193000_db_home/bin/bcc.exe"
+      - "C:/WINDOWS.X64_193000_db_home/bin/bcc"
+      - "C:/WINDOWS.X64_193000_db_home/bin/icx.com"
+      - "C:/WINDOWS.X64_193000_db_home/bin/icx.exe"
+      - "C:/WINDOWS.X64_193000_db_home/bin/icx"
+      - "C:/WINDOWS.X64_193000_db_home/bin/clang++.com"
+      - "C:/WINDOWS.X64_193000_db_home/bin/clang++.exe"
+      - "C:/WINDOWS.X64_193000_db_home/bin/clang++"
+      - "C:/Windows/System32/c++.com"
+      - "C:/Windows/System32/c++.exe"
+      - "C:/Windows/System32/c++"
+      - "C:/Windows/System32/g++.com"
+      - "C:/Windows/System32/g++.exe"
+      - "C:/Windows/System32/g++"
+      - "C:/Windows/System32/cl.com"
+      - "C:/Windows/System32/cl.exe"
+      - "C:/Windows/System32/cl"
+      - "C:/Windows/System32/bcc.com"
+      - "C:/Windows/System32/bcc.exe"
+      - "C:/Windows/System32/bcc"
+      - "C:/Windows/System32/icx.com"
+      - "C:/Windows/System32/icx.exe"
+      - "C:/Windows/System32/icx"
+      - "C:/Windows/System32/clang++.com"
+      - "C:/Windows/System32/clang++.exe"
+      - "C:/Windows/System32/clang++"
+      - "C:/Windows/c++.com"
+      - "C:/Windows/c++.exe"
+      - "C:/Windows/c++"
+      - "C:/Windows/g++.com"
+      - "C:/Windows/g++.exe"
+      - "C:/Windows/g++"
+      - "C:/Windows/cl.com"
+      - "C:/Windows/cl.exe"
+      - "C:/Windows/cl"
+      - "C:/Windows/bcc.com"
+      - "C:/Windows/bcc.exe"
+      - "C:/Windows/bcc"
+      - "C:/Windows/icx.com"
+      - "C:/Windows/icx.exe"
+      - "C:/Windows/icx"
+      - "C:/Windows/clang++.com"
+      - "C:/Windows/clang++.exe"
+      - "C:/Windows/clang++"
+      - "C:/Windows/System32/wbem/c++.com"
+      - "C:/Windows/System32/wbem/c++.exe"
+      - "C:/Windows/System32/wbem/c++"
+      - "C:/Windows/System32/wbem/g++.com"
+      - "C:/Windows/System32/wbem/g++.exe"
+      - "C:/Windows/System32/wbem/g++"
+      - "C:/Windows/System32/wbem/cl.com"
+      - "C:/Windows/System32/wbem/cl.exe"
+      - "C:/Windows/System32/wbem/cl"
+      - "C:/Windows/System32/wbem/bcc.com"
+      - "C:/Windows/System32/wbem/bcc.exe"
+      - "C:/Windows/System32/wbem/bcc"
+      - "C:/Windows/System32/wbem/icx.com"
+      - "C:/Windows/System32/wbem/icx.exe"
+      - "C:/Windows/System32/wbem/icx"
+      - "C:/Windows/System32/wbem/clang++.com"
+      - "C:/Windows/System32/wbem/clang++.exe"
+      - "C:/Windows/System32/wbem/clang++"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/c++.com"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/c++.exe"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/c++"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/g++.com"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/g++.exe"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/g++"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/cl.com"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/cl.exe"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/cl"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/bcc.com"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/bcc.exe"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/bcc"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/icx.com"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/icx.exe"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/icx"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/clang++.com"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/clang++.exe"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/clang++"
+      - "C:/Windows/System32/OpenSSH/c++.com"
+      - "C:/Windows/System32/OpenSSH/c++.exe"
+      - "C:/Windows/System32/OpenSSH/c++"
+      - "C:/Windows/System32/OpenSSH/g++.com"
+      - "C:/Windows/System32/OpenSSH/g++.exe"
+      - "C:/Windows/System32/OpenSSH/g++"
+      - "C:/Windows/System32/OpenSSH/cl.com"
+      - "C:/Windows/System32/OpenSSH/cl.exe"
+      - "C:/Windows/System32/OpenSSH/cl"
+      - "C:/Windows/System32/OpenSSH/bcc.com"
+      - "C:/Windows/System32/OpenSSH/bcc.exe"
+      - "C:/Windows/System32/OpenSSH/bcc"
+      - "C:/Windows/System32/OpenSSH/icx.com"
+      - "C:/Windows/System32/OpenSSH/icx.exe"
+      - "C:/Windows/System32/OpenSSH/icx"
+      - "C:/Windows/System32/OpenSSH/clang++.com"
+      - "C:/Windows/System32/OpenSSH/clang++.exe"
+      - "C:/Windows/System32/OpenSSH/clang++"
+      - "C:/MinGW/bin/c++.com"
+    found: "C:/MinGW/bin/c++.exe"
+    search_context:
+      ENV{PATH}:
+        - "C:\\WINDOWS.X64_193000_db_home\\bin"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\MinGW\\bin"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\cursor\\resources\\app\\bin"
+        - "C:\\Program Files\\Docker\\Docker\\resources\\bin"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Program Files\\nodejs\\"
+        - "C:\\Program Files\\MySQL\\MySQL Shell 8.0\\bin\\"
+        - "C:\\Users\\irfan\\AppData\\Local\\Programs\\Python\\Python312\\Scripts\\"
+        - "C:\\Users\\irfan\\AppData\\Local\\Programs\\Python\\Python312\\"
+        - "C:\\Users\\irfan\\AppData\\Local\\Programs\\Python\\Python313\\Scripts\\"
+        - "C:\\Users\\irfan\\AppData\\Local\\Programs\\Python\\Python313\\"
+        - "C:\\Users\\irfan\\AppData\\Local\\Programs\\Python\\Launcher\\"
+        - "C:\\Users\\irfan\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\irfan\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\irfan\\AppData\\Local\\Programs\\Python\\Python313"
+        - "C:\\Users\\irfan\\AppData\\Local\\Programs\\Python\\Python313\\Scripts"
+        - "C:\\Users\\irfan\\AppData\\Local\\Programs\\cursor\\resources\\app\\bin"
+        - "C:\\Users\\irfan\\AppData\\Roaming\\npm"
+        - "C:\\msys64\\ucrt64\\bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCompilerId.cmake:462 (find_file)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCompilerId.cmake:500 (CMAKE_DETERMINE_COMPILER_ID_WRITE)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCompilerId.cmake:8 (CMAKE_DETERMINE_COMPILER_ID_BUILD)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCXXCompiler.cmake:125 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "file"
+    variable: "src_in"
+    description: "Path to a file."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "CMakeCXXCompilerId.cpp.in"
+    candidate_directories:
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/"
+    found: "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeCXXCompilerId.cpp.in"
+    search_context:
+      ENV{PATH}:
+        - "C:\\WINDOWS.X64_193000_db_home\\bin"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\MinGW\\bin"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\cursor\\resources\\app\\bin"
+        - "C:\\Program Files\\Docker\\Docker\\resources\\bin"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Program Files\\nodejs\\"
+        - "C:\\Program Files\\MySQL\\MySQL Shell 8.0\\bin\\"
+        - "C:\\Users\\irfan\\AppData\\Local\\Programs\\Python\\Python312\\Scripts\\"
+        - "C:\\Users\\irfan\\AppData\\Local\\Programs\\Python\\Python312\\"
+        - "C:\\Users\\irfan\\AppData\\Local\\Programs\\Python\\Python313\\Scripts\\"
+        - "C:\\Users\\irfan\\AppData\\Local\\Programs\\Python\\Python313\\"
+        - "C:\\Users\\irfan\\AppData\\Local\\Programs\\Python\\Launcher\\"
+        - "C:\\Users\\irfan\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\irfan\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\irfan\\AppData\\Local\\Programs\\Python\\Python313"
+        - "C:\\Users\\irfan\\AppData\\Local\\Programs\\Python\\Python313\\Scripts"
+        - "C:\\Users\\irfan\\AppData\\Local\\Programs\\cursor\\resources\\app\\bin"
+        - "C:\\Users\\irfan\\AppData\\Roaming\\npm"
+        - "C:\\msys64\\ucrt64\\bin"
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCXXCompiler.cmake:125 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: C:/MinGW/bin/c++.exe 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.exe"
+      
+      The CXX compiler identification is GNU, found in:
+        C:/Users/irfan/OneDrive/Documents/IBA/PDC Project/Project/build_win_ps/CMakeFiles/4.2.3/CompilerIdCXX/a.exe
+      
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_AR"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "ar"
+    candidate_directories:
+      - "C:/MinGW/bin/"
+      - "C:/WINDOWS.X64_193000_db_home/bin/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Program Files/cursor/resources/app/bin/"
+      - "C:/Program Files/Docker/Docker/resources/bin/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Program Files/nodejs/"
+      - "C:/Program Files/MySQL/MySQL Shell 8.0/bin/"
+      - "C:/Users/irfan/AppData/Local/Programs/Python/Python312/Scripts/"
+      - "C:/Users/irfan/AppData/Local/Programs/Python/Python312/"
+      - "C:/Users/irfan/AppData/Local/Programs/Python/Python313/Scripts/"
+      - "C:/Users/irfan/AppData/Local/Programs/Python/Python313/"
+      - "C:/Users/irfan/AppData/Local/Programs/Python/Launcher/"
+      - "C:/Users/irfan/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Users/irfan/AppData/Local/Programs/Microsoft VS Code/bin/"
+      - "C:/Users/irfan/AppData/Local/Programs/cursor/resources/app/bin/"
+      - "C:/Users/irfan/AppData/Roaming/npm/"
+      - "C:/msys64/ucrt64/bin/"
+    searched_directories:
+      - "C:/MinGW/bin/ar.com"
+    found: "C:/MinGW/bin/ar.exe"
+    search_context:
+      ENV{PATH}:
+        - "C:\\WINDOWS.X64_193000_db_home\\bin"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\MinGW\\bin"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\cursor\\resources\\app\\bin"
+        - "C:\\Program Files\\Docker\\Docker\\resources\\bin"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Program Files\\nodejs\\"
+        - "C:\\Program Files\\MySQL\\MySQL Shell 8.0\\bin\\"
+        - "C:\\Users\\irfan\\AppData\\Local\\Programs\\Python\\Python312\\Scripts\\"
+        - "C:\\Users\\irfan\\AppData\\Local\\Programs\\Python\\Python312\\"
+        - "C:\\Users\\irfan\\AppData\\Local\\Programs\\Python\\Python313\\Scripts\\"
+        - "C:\\Users\\irfan\\AppData\\Local\\Programs\\Python\\Python313\\"
+        - "C:\\Users\\irfan\\AppData\\Local\\Programs\\Python\\Launcher\\"
+        - "C:\\Users\\irfan\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\irfan\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\irfan\\AppData\\Local\\Programs\\Python\\Python313"
+        - "C:\\Users\\irfan\\AppData\\Local\\Programs\\Python\\Python313\\Scripts"
+        - "C:\\Users\\irfan\\AppData\\Local\\Programs\\cursor\\resources\\app\\bin"
+        - "C:\\Users\\irfan\\AppData\\Roaming\\npm"
+        - "C:\\msys64\\ucrt64\\bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_RANLIB"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "ranlib"
+    candidate_directories:
+      - "C:/MinGW/bin/"
+      - "C:/WINDOWS.X64_193000_db_home/bin/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Program Files/cursor/resources/app/bin/"
+      - "C:/Program Files/Docker/Docker/resources/bin/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Program Files/nodejs/"
+      - "C:/Program Files/MySQL/MySQL Shell 8.0/bin/"
+      - "C:/Users/irfan/AppData/Local/Programs/Python/Python312/Scripts/"
+      - "C:/Users/irfan/AppData/Local/Programs/Python/Python312/"
+      - "C:/Users/irfan/AppData/Local/Programs/Python/Python313/Scripts/"
+      - "C:/Users/irfan/AppData/Local/Programs/Python/Python313/"
+      - "C:/Users/irfan/AppData/Local/Programs/Python/Launcher/"
+      - "C:/Users/irfan/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Users/irfan/AppData/Local/Programs/Microsoft VS Code/bin/"
+      - "C:/Users/irfan/AppData/Local/Programs/cursor/resources/app/bin/"
+      - "C:/Users/irfan/AppData/Roaming/npm/"
+      - "C:/msys64/ucrt64/bin/"
+    searched_directories:
+      - "C:/MinGW/bin/ranlib.com"
+    found: "C:/MinGW/bin/ranlib.exe"
+    search_context:
+      ENV{PATH}:
+        - "C:\\WINDOWS.X64_193000_db_home\\bin"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\MinGW\\bin"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\cursor\\resources\\app\\bin"
+        - "C:\\Program Files\\Docker\\Docker\\resources\\bin"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Program Files\\nodejs\\"
+        - "C:\\Program Files\\MySQL\\MySQL Shell 8.0\\bin\\"
+        - "C:\\Users\\irfan\\AppData\\Local\\Programs\\Python\\Python312\\Scripts\\"
+        - "C:\\Users\\irfan\\AppData\\Local\\Programs\\Python\\Python312\\"
+        - "C:\\Users\\irfan\\AppData\\Local\\Programs\\Python\\Python313\\Scripts\\"
+        - "C:\\Users\\irfan\\AppData\\Local\\Programs\\Python\\Python313\\"
+        - "C:\\Users\\irfan\\AppData\\Local\\Programs\\Python\\Launcher\\"
+        - "C:\\Users\\irfan\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\irfan\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\irfan\\AppData\\Local\\Programs\\Python\\Python313"
+        - "C:\\Users\\irfan\\AppData\\Local\\Programs\\Python\\Python313\\Scripts"
+        - "C:\\Users\\irfan\\AppData\\Local\\Programs\\cursor\\resources\\app\\bin"
+        - "C:\\Users\\irfan\\AppData\\Roaming\\npm"
+        - "C:\\msys64\\ucrt64\\bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_STRIP"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "strip"
+    candidate_directories:
+      - "C:/MinGW/bin/"
+      - "C:/WINDOWS.X64_193000_db_home/bin/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Program Files/cursor/resources/app/bin/"
+      - "C:/Program Files/Docker/Docker/resources/bin/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Program Files/nodejs/"
+      - "C:/Program Files/MySQL/MySQL Shell 8.0/bin/"
+      - "C:/Users/irfan/AppData/Local/Programs/Python/Python312/Scripts/"
+      - "C:/Users/irfan/AppData/Local/Programs/Python/Python312/"
+      - "C:/Users/irfan/AppData/Local/Programs/Python/Python313/Scripts/"
+      - "C:/Users/irfan/AppData/Local/Programs/Python/Python313/"
+      - "C:/Users/irfan/AppData/Local/Programs/Python/Launcher/"
+      - "C:/Users/irfan/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Users/irfan/AppData/Local/Programs/Microsoft VS Code/bin/"
+      - "C:/Users/irfan/AppData/Local/Programs/cursor/resources/app/bin/"
+      - "C:/Users/irfan/AppData/Roaming/npm/"
+      - "C:/msys64/ucrt64/bin/"
+    searched_directories:
+      - "C:/MinGW/bin/strip.com"
+    found: "C:/MinGW/bin/strip.exe"
+    search_context:
+      ENV{PATH}:
+        - "C:\\WINDOWS.X64_193000_db_home\\bin"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\MinGW\\bin"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\cursor\\resources\\app\\bin"
+        - "C:\\Program Files\\Docker\\Docker\\resources\\bin"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Program Files\\nodejs\\"
+        - "C:\\Program Files\\MySQL\\MySQL Shell 8.0\\bin\\"
+        - "C:\\Users\\irfan\\AppData\\Local\\Programs\\Python\\Python312\\Scripts\\"
+        - "C:\\Users\\irfan\\AppData\\Local\\Programs\\Python\\Python312\\"
+        - "C:\\Users\\irfan\\AppData\\Local\\Programs\\Python\\Python313\\Scripts\\"
+        - "C:\\Users\\irfan\\AppData\\Local\\Programs\\Python\\Python313\\"
+        - "C:\\Users\\irfan\\AppData\\Local\\Programs\\Python\\Launcher\\"
+        - "C:\\Users\\irfan\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\irfan\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\irfan\\AppData\\Local\\Programs\\Python\\Python313"
+        - "C:\\Users\\irfan\\AppData\\Local\\Programs\\Python\\Python313\\Scripts"
+        - "C:\\Users\\irfan\\AppData\\Local\\Programs\\cursor\\resources\\app\\bin"
+        - "C:\\Users\\irfan\\AppData\\Roaming\\npm"
+        - "C:\\msys64\\ucrt64\\bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_LINKER"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "ld"
+    candidate_directories:
+      - "C:/MinGW/bin/"
+      - "C:/WINDOWS.X64_193000_db_home/bin/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Program Files/cursor/resources/app/bin/"
+      - "C:/Program Files/Docker/Docker/resources/bin/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Program Files/nodejs/"
+      - "C:/Program Files/MySQL/MySQL Shell 8.0/bin/"
+      - "C:/Users/irfan/AppData/Local/Programs/Python/Python312/Scripts/"
+      - "C:/Users/irfan/AppData/Local/Programs/Python/Python312/"
+      - "C:/Users/irfan/AppData/Local/Programs/Python/Python313/Scripts/"
+      - "C:/Users/irfan/AppData/Local/Programs/Python/Python313/"
+      - "C:/Users/irfan/AppData/Local/Programs/Python/Launcher/"
+      - "C:/Users/irfan/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Users/irfan/AppData/Local/Programs/Microsoft VS Code/bin/"
+      - "C:/Users/irfan/AppData/Local/Programs/cursor/resources/app/bin/"
+      - "C:/Users/irfan/AppData/Roaming/npm/"
+      - "C:/msys64/ucrt64/bin/"
+    searched_directories:
+      - "C:/MinGW/bin/ld.com"
+    found: "C:/MinGW/bin/ld.exe"
+    search_context:
+      ENV{PATH}:
+        - "C:\\WINDOWS.X64_193000_db_home\\bin"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\MinGW\\bin"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\cursor\\resources\\app\\bin"
+        - "C:\\Program Files\\Docker\\Docker\\resources\\bin"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Program Files\\nodejs\\"
+        - "C:\\Program Files\\MySQL\\MySQL Shell 8.0\\bin\\"
+        - "C:\\Users\\irfan\\AppData\\Local\\Programs\\Python\\Python312\\Scripts\\"
+        - "C:\\Users\\irfan\\AppData\\Local\\Programs\\Python\\Python312\\"
+        - "C:\\Users\\irfan\\AppData\\Local\\Programs\\Python\\Python313\\Scripts\\"
+        - "C:\\Users\\irfan\\AppData\\Local\\Programs\\Python\\Python313\\"
+        - "C:\\Users\\irfan\\AppData\\Local\\Programs\\Python\\Launcher\\"
+        - "C:\\Users\\irfan\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\irfan\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\irfan\\AppData\\Local\\Programs\\Python\\Python313"
+        - "C:\\Users\\irfan\\AppData\\Local\\Programs\\Python\\Python313\\Scripts"
+        - "C:\\Users\\irfan\\AppData\\Local\\Programs\\cursor\\resources\\app\\bin"
+        - "C:\\Users\\irfan\\AppData\\Roaming\\npm"
+        - "C:\\msys64\\ucrt64\\bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_NM"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "nm"
+    candidate_directories:
+      - "C:/MinGW/bin/"
+      - "C:/WINDOWS.X64_193000_db_home/bin/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Program Files/cursor/resources/app/bin/"
+      - "C:/Program Files/Docker/Docker/resources/bin/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Program Files/nodejs/"
+      - "C:/Program Files/MySQL/MySQL Shell 8.0/bin/"
+      - "C:/Users/irfan/AppData/Local/Programs/Python/Python312/Scripts/"
+      - "C:/Users/irfan/AppData/Local/Programs/Python/Python312/"
+      - "C:/Users/irfan/AppData/Local/Programs/Python/Python313/Scripts/"
+      - "C:/Users/irfan/AppData/Local/Programs/Python/Python313/"
+      - "C:/Users/irfan/AppData/Local/Programs/Python/Launcher/"
+      - "C:/Users/irfan/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Users/irfan/AppData/Local/Programs/Microsoft VS Code/bin/"
+      - "C:/Users/irfan/AppData/Local/Programs/cursor/resources/app/bin/"
+      - "C:/Users/irfan/AppData/Roaming/npm/"
+      - "C:/msys64/ucrt64/bin/"
+    searched_directories:
+      - "C:/MinGW/bin/nm.com"
+    found: "C:/MinGW/bin/nm.exe"
+    search_context:
+      ENV{PATH}:
+        - "C:\\WINDOWS.X64_193000_db_home\\bin"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\MinGW\\bin"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\cursor\\resources\\app\\bin"
+        - "C:\\Program Files\\Docker\\Docker\\resources\\bin"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Program Files\\nodejs\\"
+        - "C:\\Program Files\\MySQL\\MySQL Shell 8.0\\bin\\"
+        - "C:\\Users\\irfan\\AppData\\Local\\Programs\\Python\\Python312\\Scripts\\"
+        - "C:\\Users\\irfan\\AppData\\Local\\Programs\\Python\\Python312\\"
+        - "C:\\Users\\irfan\\AppData\\Local\\Programs\\Python\\Python313\\Scripts\\"
+        - "C:\\Users\\irfan\\AppData\\Local\\Programs\\Python\\Python313\\"
+        - "C:\\Users\\irfan\\AppData\\Local\\Programs\\Python\\Launcher\\"
+        - "C:\\Users\\irfan\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\irfan\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\irfan\\AppData\\Local\\Programs\\Python\\Python313"
+        - "C:\\Users\\irfan\\AppData\\Local\\Programs\\Python\\Python313\\Scripts"
+        - "C:\\Users\\irfan\\AppData\\Local\\Programs\\cursor\\resources\\app\\bin"
+        - "C:\\Users\\irfan\\AppData\\Roaming\\npm"
+        - "C:\\msys64\\ucrt64\\bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_OBJDUMP"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "objdump"
+    candidate_directories:
+      - "C:/MinGW/bin/"
+      - "C:/WINDOWS.X64_193000_db_home/bin/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Program Files/cursor/resources/app/bin/"
+      - "C:/Program Files/Docker/Docker/resources/bin/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Program Files/nodejs/"
+      - "C:/Program Files/MySQL/MySQL Shell 8.0/bin/"
+      - "C:/Users/irfan/AppData/Local/Programs/Python/Python312/Scripts/"
+      - "C:/Users/irfan/AppData/Local/Programs/Python/Python312/"
+      - "C:/Users/irfan/AppData/Local/Programs/Python/Python313/Scripts/"
+      - "C:/Users/irfan/AppData/Local/Programs/Python/Python313/"
+      - "C:/Users/irfan/AppData/Local/Programs/Python/Launcher/"
+      - "C:/Users/irfan/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Users/irfan/AppData/Local/Programs/Microsoft VS Code/bin/"
+      - "C:/Users/irfan/AppData/Local/Programs/cursor/resources/app/bin/"
+      - "C:/Users/irfan/AppData/Roaming/npm/"
+      - "C:/msys64/ucrt64/bin/"
+    searched_directories:
+      - "C:/MinGW/bin/objdump.com"
+    found: "C:/MinGW/bin/objdump.exe"
+    search_context:
+      ENV{PATH}:
+        - "C:\\WINDOWS.X64_193000_db_home\\bin"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\MinGW\\bin"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\cursor\\resources\\app\\bin"
+        - "C:\\Program Files\\Docker\\Docker\\resources\\bin"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Program Files\\nodejs\\"
+        - "C:\\Program Files\\MySQL\\MySQL Shell 8.0\\bin\\"
+        - "C:\\Users\\irfan\\AppData\\Local\\Programs\\Python\\Python312\\Scripts\\"
+        - "C:\\Users\\irfan\\AppData\\Local\\Programs\\Python\\Python312\\"
+        - "C:\\Users\\irfan\\AppData\\Local\\Programs\\Python\\Python313\\Scripts\\"
+        - "C:\\Users\\irfan\\AppData\\Local\\Programs\\Python\\Python313\\"
+        - "C:\\Users\\irfan\\AppData\\Local\\Programs\\Python\\Launcher\\"
+        - "C:\\Users\\irfan\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\irfan\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\irfan\\AppData\\Local\\Programs\\Python\\Python313"
+        - "C:\\Users\\irfan\\AppData\\Local\\Programs\\Python\\Python313\\Scripts"
+        - "C:\\Users\\irfan\\AppData\\Local\\Programs\\cursor\\resources\\app\\bin"
+        - "C:\\Users\\irfan\\AppData\\Roaming\\npm"
+        - "C:\\msys64\\ucrt64\\bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_OBJCOPY"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "objcopy"
+    candidate_directories:
+      - "C:/MinGW/bin/"
+      - "C:/WINDOWS.X64_193000_db_home/bin/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Program Files/cursor/resources/app/bin/"
+      - "C:/Program Files/Docker/Docker/resources/bin/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Program Files/nodejs/"
+      - "C:/Program Files/MySQL/MySQL Shell 8.0/bin/"
+      - "C:/Users/irfan/AppData/Local/Programs/Python/Python312/Scripts/"
+      - "C:/Users/irfan/AppData/Local/Programs/Python/Python312/"
+      - "C:/Users/irfan/AppData/Local/Programs/Python/Python313/Scripts/"
+      - "C:/Users/irfan/AppData/Local/Programs/Python/Python313/"
+      - "C:/Users/irfan/AppData/Local/Programs/Python/Launcher/"
+      - "C:/Users/irfan/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Users/irfan/AppData/Local/Programs/Microsoft VS Code/bin/"
+      - "C:/Users/irfan/AppData/Local/Programs/cursor/resources/app/bin/"
+      - "C:/Users/irfan/AppData/Roaming/npm/"
+      - "C:/msys64/ucrt64/bin/"
+    searched_directories:
+      - "C:/MinGW/bin/objcopy.com"
+    found: "C:/MinGW/bin/objcopy.exe"
+    search_context:
+      ENV{PATH}:
+        - "C:\\WINDOWS.X64_193000_db_home\\bin"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\MinGW\\bin"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\cursor\\resources\\app\\bin"
+        - "C:\\Program Files\\Docker\\Docker\\resources\\bin"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Program Files\\nodejs\\"
+        - "C:\\Program Files\\MySQL\\MySQL Shell 8.0\\bin\\"
+        - "C:\\Users\\irfan\\AppData\\Local\\Programs\\Python\\Python312\\Scripts\\"
+        - "C:\\Users\\irfan\\AppData\\Local\\Programs\\Python\\Python312\\"
+        - "C:\\Users\\irfan\\AppData\\Local\\Programs\\Python\\Python313\\Scripts\\"
+        - "C:\\Users\\irfan\\AppData\\Local\\Programs\\Python\\Python313\\"
+        - "C:\\Users\\irfan\\AppData\\Local\\Programs\\Python\\Launcher\\"
+        - "C:\\Users\\irfan\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\irfan\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\irfan\\AppData\\Local\\Programs\\Python\\Python313"
+        - "C:\\Users\\irfan\\AppData\\Local\\Programs\\Python\\Python313\\Scripts"
+        - "C:\\Users\\irfan\\AppData\\Local\\Programs\\cursor\\resources\\app\\bin"
+        - "C:\\Users\\irfan\\AppData\\Roaming\\npm"
+        - "C:\\msys64\\ucrt64\\bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_READELF"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "readelf"
+    candidate_directories:
+      - "C:/MinGW/bin/"
+      - "C:/WINDOWS.X64_193000_db_home/bin/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Program Files/cursor/resources/app/bin/"
+      - "C:/Program Files/Docker/Docker/resources/bin/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Program Files/nodejs/"
+      - "C:/Program Files/MySQL/MySQL Shell 8.0/bin/"
+      - "C:/Users/irfan/AppData/Local/Programs/Python/Python312/Scripts/"
+      - "C:/Users/irfan/AppData/Local/Programs/Python/Python312/"
+      - "C:/Users/irfan/AppData/Local/Programs/Python/Python313/Scripts/"
+      - "C:/Users/irfan/AppData/Local/Programs/Python/Python313/"
+      - "C:/Users/irfan/AppData/Local/Programs/Python/Launcher/"
+      - "C:/Users/irfan/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Users/irfan/AppData/Local/Programs/Microsoft VS Code/bin/"
+      - "C:/Users/irfan/AppData/Local/Programs/cursor/resources/app/bin/"
+      - "C:/Users/irfan/AppData/Roaming/npm/"
+      - "C:/msys64/ucrt64/bin/"
+    searched_directories:
+      - "C:/MinGW/bin/readelf.com"
+    found: "C:/MinGW/bin/readelf.exe"
+    search_context:
+      ENV{PATH}:
+        - "C:\\WINDOWS.X64_193000_db_home\\bin"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\MinGW\\bin"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\cursor\\resources\\app\\bin"
+        - "C:\\Program Files\\Docker\\Docker\\resources\\bin"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Program Files\\nodejs\\"
+        - "C:\\Program Files\\MySQL\\MySQL Shell 8.0\\bin\\"
+        - "C:\\Users\\irfan\\AppData\\Local\\Programs\\Python\\Python312\\Scripts\\"
+        - "C:\\Users\\irfan\\AppData\\Local\\Programs\\Python\\Python312\\"
+        - "C:\\Users\\irfan\\AppData\\Local\\Programs\\Python\\Python313\\Scripts\\"
+        - "C:\\Users\\irfan\\AppData\\Local\\Programs\\Python\\Python313\\"
+        - "C:\\Users\\irfan\\AppData\\Local\\Programs\\Python\\Launcher\\"
+        - "C:\\Users\\irfan\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\irfan\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\irfan\\AppData\\Local\\Programs\\Python\\Python313"
+        - "C:\\Users\\irfan\\AppData\\Local\\Programs\\Python\\Python313\\Scripts"
+        - "C:\\Users\\irfan\\AppData\\Local\\Programs\\cursor\\resources\\app\\bin"
+        - "C:\\Users\\irfan\\AppData\\Roaming\\npm"
+        - "C:\\msys64\\ucrt64\\bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_DLLTOOL"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "dlltool"
+    candidate_directories:
+      - "C:/MinGW/bin/"
+      - "C:/WINDOWS.X64_193000_db_home/bin/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Program Files/cursor/resources/app/bin/"
+      - "C:/Program Files/Docker/Docker/resources/bin/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Program Files/nodejs/"
+      - "C:/Program Files/MySQL/MySQL Shell 8.0/bin/"
+      - "C:/Users/irfan/AppData/Local/Programs/Python/Python312/Scripts/"
+      - "C:/Users/irfan/AppData/Local/Programs/Python/Python312/"
+      - "C:/Users/irfan/AppData/Local/Programs/Python/Python313/Scripts/"
+      - "C:/Users/irfan/AppData/Local/Programs/Python/Python313/"
+      - "C:/Users/irfan/AppData/Local/Programs/Python/Launcher/"
+      - "C:/Users/irfan/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Users/irfan/AppData/Local/Programs/Microsoft VS Code/bin/"
+      - "C:/Users/irfan/AppData/Local/Programs/cursor/resources/app/bin/"
+      - "C:/Users/irfan/AppData/Roaming/npm/"
+      - "C:/msys64/ucrt64/bin/"
+    searched_directories:
+      - "C:/MinGW/bin/dlltool.com"
+    found: "C:/MinGW/bin/dlltool.exe"
+    search_context:
+      ENV{PATH}:
+        - "C:\\WINDOWS.X64_193000_db_home\\bin"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\MinGW\\bin"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\cursor\\resources\\app\\bin"
+        - "C:\\Program Files\\Docker\\Docker\\resources\\bin"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Program Files\\nodejs\\"
+        - "C:\\Program Files\\MySQL\\MySQL Shell 8.0\\bin\\"
+        - "C:\\Users\\irfan\\AppData\\Local\\Programs\\Python\\Python312\\Scripts\\"
+        - "C:\\Users\\irfan\\AppData\\Local\\Programs\\Python\\Python312\\"
+        - "C:\\Users\\irfan\\AppData\\Local\\Programs\\Python\\Python313\\Scripts\\"
+        - "C:\\Users\\irfan\\AppData\\Local\\Programs\\Python\\Python313\\"
+        - "C:\\Users\\irfan\\AppData\\Local\\Programs\\Python\\Launcher\\"
+        - "C:\\Users\\irfan\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\irfan\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\irfan\\AppData\\Local\\Programs\\Python\\Python313"
+        - "C:\\Users\\irfan\\AppData\\Local\\Programs\\Python\\Python313\\Scripts"
+        - "C:\\Users\\irfan\\AppData\\Local\\Programs\\cursor\\resources\\app\\bin"
+        - "C:\\Users\\irfan\\AppData\\Roaming\\npm"
+        - "C:\\msys64\\ucrt64\\bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_ADDR2LINE"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "addr2line"
+    candidate_directories:
+      - "C:/MinGW/bin/"
+      - "C:/WINDOWS.X64_193000_db_home/bin/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Program Files/cursor/resources/app/bin/"
+      - "C:/Program Files/Docker/Docker/resources/bin/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Program Files/nodejs/"
+      - "C:/Program Files/MySQL/MySQL Shell 8.0/bin/"
+      - "C:/Users/irfan/AppData/Local/Programs/Python/Python312/Scripts/"
+      - "C:/Users/irfan/AppData/Local/Programs/Python/Python312/"
+      - "C:/Users/irfan/AppData/Local/Programs/Python/Python313/Scripts/"
+      - "C:/Users/irfan/AppData/Local/Programs/Python/Python313/"
+      - "C:/Users/irfan/AppData/Local/Programs/Python/Launcher/"
+      - "C:/Users/irfan/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Users/irfan/AppData/Local/Programs/Microsoft VS Code/bin/"
+      - "C:/Users/irfan/AppData/Local/Programs/cursor/resources/app/bin/"
+      - "C:/Users/irfan/AppData/Roaming/npm/"
+      - "C:/msys64/ucrt64/bin/"
+    searched_directories:
+      - "C:/MinGW/bin/addr2line.com"
+    found: "C:/MinGW/bin/addr2line.exe"
+    search_context:
+      ENV{PATH}:
+        - "C:\\WINDOWS.X64_193000_db_home\\bin"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\MinGW\\bin"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\cursor\\resources\\app\\bin"
+        - "C:\\Program Files\\Docker\\Docker\\resources\\bin"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Program Files\\nodejs\\"
+        - "C:\\Program Files\\MySQL\\MySQL Shell 8.0\\bin\\"
+        - "C:\\Users\\irfan\\AppData\\Local\\Programs\\Python\\Python312\\Scripts\\"
+        - "C:\\Users\\irfan\\AppData\\Local\\Programs\\Python\\Python312\\"
+        - "C:\\Users\\irfan\\AppData\\Local\\Programs\\Python\\Python313\\Scripts\\"
+        - "C:\\Users\\irfan\\AppData\\Local\\Programs\\Python\\Python313\\"
+        - "C:\\Users\\irfan\\AppData\\Local\\Programs\\Python\\Launcher\\"
+        - "C:\\Users\\irfan\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\irfan\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\irfan\\AppData\\Local\\Programs\\Python\\Python313"
+        - "C:\\Users\\irfan\\AppData\\Local\\Programs\\Python\\Python313\\Scripts"
+        - "C:\\Users\\irfan\\AppData\\Local\\Programs\\cursor\\resources\\app\\bin"
+        - "C:\\Users\\irfan\\AppData\\Roaming\\npm"
+        - "C:\\msys64\\ucrt64\\bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_TAPI"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "tapi"
+    candidate_directories:
+      - "C:/MinGW/bin/"
+      - "C:/WINDOWS.X64_193000_db_home/bin/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Program Files/cursor/resources/app/bin/"
+      - "C:/Program Files/Docker/Docker/resources/bin/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Program Files/nodejs/"
+      - "C:/Program Files/MySQL/MySQL Shell 8.0/bin/"
+      - "C:/Users/irfan/AppData/Local/Programs/Python/Python312/Scripts/"
+      - "C:/Users/irfan/AppData/Local/Programs/Python/Python312/"
+      - "C:/Users/irfan/AppData/Local/Programs/Python/Python313/Scripts/"
+      - "C:/Users/irfan/AppData/Local/Programs/Python/Python313/"
+      - "C:/Users/irfan/AppData/Local/Programs/Python/Launcher/"
+      - "C:/Users/irfan/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Users/irfan/AppData/Local/Programs/Microsoft VS Code/bin/"
+      - "C:/Users/irfan/AppData/Local/Programs/cursor/resources/app/bin/"
+      - "C:/Users/irfan/AppData/Roaming/npm/"
+      - "C:/msys64/ucrt64/bin/"
+    searched_directories:
+      - "C:/MinGW/bin/tapi.com"
+      - "C:/MinGW/bin/tapi.exe"
+      - "C:/MinGW/bin/tapi"
+      - "C:/WINDOWS.X64_193000_db_home/bin/tapi.com"
+      - "C:/WINDOWS.X64_193000_db_home/bin/tapi.exe"
+      - "C:/WINDOWS.X64_193000_db_home/bin/tapi"
+      - "C:/Windows/System32/tapi.com"
+      - "C:/Windows/System32/tapi.exe"
+      - "C:/Windows/System32/tapi"
+      - "C:/Windows/tapi.com"
+      - "C:/Windows/tapi.exe"
+      - "C:/Windows/tapi"
+      - "C:/Windows/System32/wbem/tapi.com"
+      - "C:/Windows/System32/wbem/tapi.exe"
+      - "C:/Windows/System32/wbem/tapi"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/tapi.com"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/tapi.exe"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/tapi"
+      - "C:/Windows/System32/OpenSSH/tapi.com"
+      - "C:/Windows/System32/OpenSSH/tapi.exe"
+      - "C:/Windows/System32/OpenSSH/tapi"
+      - "C:/Program Files/Git/cmd/tapi.com"
+      - "C:/Program Files/Git/cmd/tapi.exe"
+      - "C:/Program Files/Git/cmd/tapi"
+      - "C:/Program Files/cursor/resources/app/bin/tapi.com"
+      - "C:/Program Files/cursor/resources/app/bin/tapi.exe"
+      - "C:/Program Files/cursor/resources/app/bin/tapi"
+      - "C:/Program Files/Docker/Docker/resources/bin/tapi.com"
+      - "C:/Program Files/Docker/Docker/resources/bin/tapi.exe"
+      - "C:/Program Files/Docker/Docker/resources/bin/tapi"
+      - "C:/Program Files/CMake/bin/tapi.com"
+      - "C:/Program Files/CMake/bin/tapi.exe"
+      - "C:/Program Files/CMake/bin/tapi"
+      - "C:/Program Files/nodejs/tapi.com"
+      - "C:/Program Files/nodejs/tapi.exe"
+      - "C:/Program Files/nodejs/tapi"
+      - "C:/Program Files/MySQL/MySQL Shell 8.0/bin/tapi.com"
+      - "C:/Program Files/MySQL/MySQL Shell 8.0/bin/tapi.exe"
+      - "C:/Program Files/MySQL/MySQL Shell 8.0/bin/tapi"
+      - "C:/Users/irfan/AppData/Local/Programs/Python/Python312/Scripts/tapi.com"
+      - "C:/Users/irfan/AppData/Local/Programs/Python/Python312/Scripts/tapi.exe"
+      - "C:/Users/irfan/AppData/Local/Programs/Python/Python312/Scripts/tapi"
+      - "C:/Users/irfan/AppData/Local/Programs/Python/Python312/tapi.com"
+      - "C:/Users/irfan/AppData/Local/Programs/Python/Python312/tapi.exe"
+      - "C:/Users/irfan/AppData/Local/Programs/Python/Python312/tapi"
+      - "C:/Users/irfan/AppData/Local/Programs/Python/Python313/Scripts/tapi.com"
+      - "C:/Users/irfan/AppData/Local/Programs/Python/Python313/Scripts/tapi.exe"
+      - "C:/Users/irfan/AppData/Local/Programs/Python/Python313/Scripts/tapi"
+      - "C:/Users/irfan/AppData/Local/Programs/Python/Python313/tapi.com"
+      - "C:/Users/irfan/AppData/Local/Programs/Python/Python313/tapi.exe"
+      - "C:/Users/irfan/AppData/Local/Programs/Python/Python313/tapi"
+      - "C:/Users/irfan/AppData/Local/Programs/Python/Launcher/tapi.com"
+      - "C:/Users/irfan/AppData/Local/Programs/Python/Launcher/tapi.exe"
+      - "C:/Users/irfan/AppData/Local/Programs/Python/Launcher/tapi"
+      - "C:/Users/irfan/AppData/Local/Microsoft/WindowsApps/tapi.com"
+      - "C:/Users/irfan/AppData/Local/Microsoft/WindowsApps/tapi.exe"
+      - "C:/Users/irfan/AppData/Local/Microsoft/WindowsApps/tapi"
+      - "C:/Users/irfan/AppData/Local/Programs/Microsoft VS Code/bin/tapi.com"
+      - "C:/Users/irfan/AppData/Local/Programs/Microsoft VS Code/bin/tapi.exe"
+      - "C:/Users/irfan/AppData/Local/Programs/Microsoft VS Code/bin/tapi"
+      - "C:/Users/irfan/AppData/Local/Programs/cursor/resources/app/bin/tapi.com"
+      - "C:/Users/irfan/AppData/Local/Programs/cursor/resources/app/bin/tapi.exe"
+      - "C:/Users/irfan/AppData/Local/Programs/cursor/resources/app/bin/tapi"
+      - "C:/Users/irfan/AppData/Roaming/npm/tapi.com"
+      - "C:/Users/irfan/AppData/Roaming/npm/tapi.exe"
+      - "C:/Users/irfan/AppData/Roaming/npm/tapi"
+      - "C:/msys64/ucrt64/bin/tapi.com"
+      - "C:/msys64/ucrt64/bin/tapi.exe"
+      - "C:/msys64/ucrt64/bin/tapi"
+    found: false
+    search_context:
+      ENV{PATH}:
+        - "C:\\WINDOWS.X64_193000_db_home\\bin"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\MinGW\\bin"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\cursor\\resources\\app\\bin"
+        - "C:\\Program Files\\Docker\\Docker\\resources\\bin"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Program Files\\nodejs\\"
+        - "C:\\Program Files\\MySQL\\MySQL Shell 8.0\\bin\\"
+        - "C:\\Users\\irfan\\AppData\\Local\\Programs\\Python\\Python312\\Scripts\\"
+        - "C:\\Users\\irfan\\AppData\\Local\\Programs\\Python\\Python312\\"
+        - "C:\\Users\\irfan\\AppData\\Local\\Programs\\Python\\Python313\\Scripts\\"
+        - "C:\\Users\\irfan\\AppData\\Local\\Programs\\Python\\Python313\\"
+        - "C:\\Users\\irfan\\AppData\\Local\\Programs\\Python\\Launcher\\"
+        - "C:\\Users\\irfan\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\irfan\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\irfan\\AppData\\Local\\Programs\\Python\\Python313"
+        - "C:\\Users\\irfan\\AppData\\Local\\Programs\\Python\\Python313\\Scripts"
+        - "C:\\Users\\irfan\\AppData\\Local\\Programs\\cursor\\resources\\app\\bin"
+        - "C:\\Users\\irfan\\AppData\\Roaming\\npm"
+        - "C:\\msys64\\ucrt64\\bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/Compiler/GNU-FindBinUtils.cmake:18 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCXXCompiler.cmake:207 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_CXX_COMPILER_AR"
+    description: "A wrapper around 'ar' adding the appropriate '--plugin' option for the GCC compiler"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "gcc-ar-6.3"
+      - "gcc-ar-6"
+      - "gcc-ar6"
+      - "gcc-ar"
+    candidate_directories:
+      - "C:/MinGW/bin/"
+      - "C:/WINDOWS.X64_193000_db_home/bin/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Program Files/cursor/resources/app/bin/"
+      - "C:/Program Files/Docker/Docker/resources/bin/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Program Files/nodejs/"
+      - "C:/Program Files/MySQL/MySQL Shell 8.0/bin/"
+      - "C:/Users/irfan/AppData/Local/Programs/Python/Python312/Scripts/"
+      - "C:/Users/irfan/AppData/Local/Programs/Python/Python312/"
+      - "C:/Users/irfan/AppData/Local/Programs/Python/Python313/Scripts/"
+      - "C:/Users/irfan/AppData/Local/Programs/Python/Python313/"
+      - "C:/Users/irfan/AppData/Local/Programs/Python/Launcher/"
+      - "C:/Users/irfan/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Users/irfan/AppData/Local/Programs/Microsoft VS Code/bin/"
+      - "C:/Users/irfan/AppData/Local/Programs/cursor/resources/app/bin/"
+      - "C:/Users/irfan/AppData/Roaming/npm/"
+      - "C:/msys64/ucrt64/bin/"
+    searched_directories:
+      - "C:/MinGW/bin/gcc-ar-6.3.com"
+      - "C:/MinGW/bin/gcc-ar-6.3.exe"
+      - "C:/MinGW/bin/gcc-ar-6.3"
+      - "C:/WINDOWS.X64_193000_db_home/bin/gcc-ar-6.3.com"
+      - "C:/WINDOWS.X64_193000_db_home/bin/gcc-ar-6.3.exe"
+      - "C:/WINDOWS.X64_193000_db_home/bin/gcc-ar-6.3"
+      - "C:/Windows/System32/gcc-ar-6.3.com"
+      - "C:/Windows/System32/gcc-ar-6.3.exe"
+      - "C:/Windows/System32/gcc-ar-6.3"
+      - "C:/Windows/gcc-ar-6.3.com"
+      - "C:/Windows/gcc-ar-6.3.exe"
+      - "C:/Windows/gcc-ar-6.3"
+      - "C:/Windows/System32/wbem/gcc-ar-6.3.com"
+      - "C:/Windows/System32/wbem/gcc-ar-6.3.exe"
+      - "C:/Windows/System32/wbem/gcc-ar-6.3"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/gcc-ar-6.3.com"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/gcc-ar-6.3.exe"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/gcc-ar-6.3"
+      - "C:/Windows/System32/OpenSSH/gcc-ar-6.3.com"
+      - "C:/Windows/System32/OpenSSH/gcc-ar-6.3.exe"
+      - "C:/Windows/System32/OpenSSH/gcc-ar-6.3"
+      - "C:/Program Files/Git/cmd/gcc-ar-6.3.com"
+      - "C:/Program Files/Git/cmd/gcc-ar-6.3.exe"
+      - "C:/Program Files/Git/cmd/gcc-ar-6.3"
+      - "C:/Program Files/cursor/resources/app/bin/gcc-ar-6.3.com"
+      - "C:/Program Files/cursor/resources/app/bin/gcc-ar-6.3.exe"
+      - "C:/Program Files/cursor/resources/app/bin/gcc-ar-6.3"
+      - "C:/Program Files/Docker/Docker/resources/bin/gcc-ar-6.3.com"
+      - "C:/Program Files/Docker/Docker/resources/bin/gcc-ar-6.3.exe"
+      - "C:/Program Files/Docker/Docker/resources/bin/gcc-ar-6.3"
+      - "C:/Program Files/CMake/bin/gcc-ar-6.3.com"
+      - "C:/Program Files/CMake/bin/gcc-ar-6.3.exe"
+      - "C:/Program Files/CMake/bin/gcc-ar-6.3"
+      - "C:/Program Files/nodejs/gcc-ar-6.3.com"
+      - "C:/Program Files/nodejs/gcc-ar-6.3.exe"
+      - "C:/Program Files/nodejs/gcc-ar-6.3"
+      - "C:/Program Files/MySQL/MySQL Shell 8.0/bin/gcc-ar-6.3.com"
+      - "C:/Program Files/MySQL/MySQL Shell 8.0/bin/gcc-ar-6.3.exe"
+      - "C:/Program Files/MySQL/MySQL Shell 8.0/bin/gcc-ar-6.3"
+      - "C:/Users/irfan/AppData/Local/Programs/Python/Python312/Scripts/gcc-ar-6.3.com"
+      - "C:/Users/irfan/AppData/Local/Programs/Python/Python312/Scripts/gcc-ar-6.3.exe"
+      - "C:/Users/irfan/AppData/Local/Programs/Python/Python312/Scripts/gcc-ar-6.3"
+      - "C:/Users/irfan/AppData/Local/Programs/Python/Python312/gcc-ar-6.3.com"
+      - "C:/Users/irfan/AppData/Local/Programs/Python/Python312/gcc-ar-6.3.exe"
+      - "C:/Users/irfan/AppData/Local/Programs/Python/Python312/gcc-ar-6.3"
+      - "C:/Users/irfan/AppData/Local/Programs/Python/Python313/Scripts/gcc-ar-6.3.com"
+      - "C:/Users/irfan/AppData/Local/Programs/Python/Python313/Scripts/gcc-ar-6.3.exe"
+      - "C:/Users/irfan/AppData/Local/Programs/Python/Python313/Scripts/gcc-ar-6.3"
+      - "C:/Users/irfan/AppData/Local/Programs/Python/Python313/gcc-ar-6.3.com"
+      - "C:/Users/irfan/AppData/Local/Programs/Python/Python313/gcc-ar-6.3.exe"
+      - "C:/Users/irfan/AppData/Local/Programs/Python/Python313/gcc-ar-6.3"
+      - "C:/Users/irfan/AppData/Local/Programs/Python/Launcher/gcc-ar-6.3.com"
+      - "C:/Users/irfan/AppData/Local/Programs/Python/Launcher/gcc-ar-6.3.exe"
+      - "C:/Users/irfan/AppData/Local/Programs/Python/Launcher/gcc-ar-6.3"
+      - "C:/Users/irfan/AppData/Local/Microsoft/WindowsApps/gcc-ar-6.3.com"
+      - "C:/Users/irfan/AppData/Local/Microsoft/WindowsApps/gcc-ar-6.3.exe"
+      - "C:/Users/irfan/AppData/Local/Microsoft/WindowsApps/gcc-ar-6.3"
+      - "C:/Users/irfan/AppData/Local/Programs/Microsoft VS Code/bin/gcc-ar-6.3.com"
+      - "C:/Users/irfan/AppData/Local/Programs/Microsoft VS Code/bin/gcc-ar-6.3.exe"
+      - "C:/Users/irfan/AppData/Local/Programs/Microsoft VS Code/bin/gcc-ar-6.3"
+      - "C:/Users/irfan/AppData/Local/Programs/cursor/resources/app/bin/gcc-ar-6.3.com"
+      - "C:/Users/irfan/AppData/Local/Programs/cursor/resources/app/bin/gcc-ar-6.3.exe"
+      - "C:/Users/irfan/AppData/Local/Programs/cursor/resources/app/bin/gcc-ar-6.3"
+      - "C:/Users/irfan/AppData/Roaming/npm/gcc-ar-6.3.com"
+      - "C:/Users/irfan/AppData/Roaming/npm/gcc-ar-6.3.exe"
+      - "C:/Users/irfan/AppData/Roaming/npm/gcc-ar-6.3"
+      - "C:/msys64/ucrt64/bin/gcc-ar-6.3.com"
+      - "C:/msys64/ucrt64/bin/gcc-ar-6.3.exe"
+      - "C:/msys64/ucrt64/bin/gcc-ar-6.3"
+      - "C:/MinGW/bin/gcc-ar-6.com"
+      - "C:/MinGW/bin/gcc-ar-6.exe"
+      - "C:/MinGW/bin/gcc-ar-6"
+      - "C:/WINDOWS.X64_193000_db_home/bin/gcc-ar-6.com"
+      - "C:/WINDOWS.X64_193000_db_home/bin/gcc-ar-6.exe"
+      - "C:/WINDOWS.X64_193000_db_home/bin/gcc-ar-6"
+      - "C:/Windows/System32/gcc-ar-6.com"
+      - "C:/Windows/System32/gcc-ar-6.exe"
+      - "C:/Windows/System32/gcc-ar-6"
+      - "C:/Windows/gcc-ar-6.com"
+      - "C:/Windows/gcc-ar-6.exe"
+      - "C:/Windows/gcc-ar-6"
+      - "C:/Windows/System32/wbem/gcc-ar-6.com"
+      - "C:/Windows/System32/wbem/gcc-ar-6.exe"
+      - "C:/Windows/System32/wbem/gcc-ar-6"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/gcc-ar-6.com"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/gcc-ar-6.exe"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/gcc-ar-6"
+      - "C:/Windows/System32/OpenSSH/gcc-ar-6.com"
+      - "C:/Windows/System32/OpenSSH/gcc-ar-6.exe"
+      - "C:/Windows/System32/OpenSSH/gcc-ar-6"
+      - "C:/Program Files/Git/cmd/gcc-ar-6.com"
+      - "C:/Program Files/Git/cmd/gcc-ar-6.exe"
+      - "C:/Program Files/Git/cmd/gcc-ar-6"
+      - "C:/Program Files/cursor/resources/app/bin/gcc-ar-6.com"
+      - "C:/Program Files/cursor/resources/app/bin/gcc-ar-6.exe"
+      - "C:/Program Files/cursor/resources/app/bin/gcc-ar-6"
+      - "C:/Program Files/Docker/Docker/resources/bin/gcc-ar-6.com"
+      - "C:/Program Files/Docker/Docker/resources/bin/gcc-ar-6.exe"
+      - "C:/Program Files/Docker/Docker/resources/bin/gcc-ar-6"
+      - "C:/Program Files/CMake/bin/gcc-ar-6.com"
+      - "C:/Program Files/CMake/bin/gcc-ar-6.exe"
+      - "C:/Program Files/CMake/bin/gcc-ar-6"
+      - "C:/Program Files/nodejs/gcc-ar-6.com"
+      - "C:/Program Files/nodejs/gcc-ar-6.exe"
+      - "C:/Program Files/nodejs/gcc-ar-6"
+      - "C:/Program Files/MySQL/MySQL Shell 8.0/bin/gcc-ar-6.com"
+      - "C:/Program Files/MySQL/MySQL Shell 8.0/bin/gcc-ar-6.exe"
+      - "C:/Program Files/MySQL/MySQL Shell 8.0/bin/gcc-ar-6"
+      - "C:/Users/irfan/AppData/Local/Programs/Python/Python312/Scripts/gcc-ar-6.com"
+      - "C:/Users/irfan/AppData/Local/Programs/Python/Python312/Scripts/gcc-ar-6.exe"
+      - "C:/Users/irfan/AppData/Local/Programs/Python/Python312/Scripts/gcc-ar-6"
+      - "C:/Users/irfan/AppData/Local/Programs/Python/Python312/gcc-ar-6.com"
+      - "C:/Users/irfan/AppData/Local/Programs/Python/Python312/gcc-ar-6.exe"
+      - "C:/Users/irfan/AppData/Local/Programs/Python/Python312/gcc-ar-6"
+      - "C:/Users/irfan/AppData/Local/Programs/Python/Python313/Scripts/gcc-ar-6.com"
+      - "C:/Users/irfan/AppData/Local/Programs/Python/Python313/Scripts/gcc-ar-6.exe"
+      - "C:/Users/irfan/AppData/Local/Programs/Python/Python313/Scripts/gcc-ar-6"
+      - "C:/Users/irfan/AppData/Local/Programs/Python/Python313/gcc-ar-6.com"
+      - "C:/Users/irfan/AppData/Local/Programs/Python/Python313/gcc-ar-6.exe"
+      - "C:/Users/irfan/AppData/Local/Programs/Python/Python313/gcc-ar-6"
+      - "C:/Users/irfan/AppData/Local/Programs/Python/Launcher/gcc-ar-6.com"
+      - "C:/Users/irfan/AppData/Local/Programs/Python/Launcher/gcc-ar-6.exe"
+      - "C:/Users/irfan/AppData/Local/Programs/Python/Launcher/gcc-ar-6"
+      - "C:/Users/irfan/AppData/Local/Microsoft/WindowsApps/gcc-ar-6.com"
+      - "C:/Users/irfan/AppData/Local/Microsoft/WindowsApps/gcc-ar-6.exe"
+      - "C:/Users/irfan/AppData/Local/Microsoft/WindowsApps/gcc-ar-6"
+      - "C:/Users/irfan/AppData/Local/Programs/Microsoft VS Code/bin/gcc-ar-6.com"
+      - "C:/Users/irfan/AppData/Local/Programs/Microsoft VS Code/bin/gcc-ar-6.exe"
+      - "C:/Users/irfan/AppData/Local/Programs/Microsoft VS Code/bin/gcc-ar-6"
+      - "C:/Users/irfan/AppData/Local/Programs/cursor/resources/app/bin/gcc-ar-6.com"
+      - "C:/Users/irfan/AppData/Local/Programs/cursor/resources/app/bin/gcc-ar-6.exe"
+      - "C:/Users/irfan/AppData/Local/Programs/cursor/resources/app/bin/gcc-ar-6"
+      - "C:/Users/irfan/AppData/Roaming/npm/gcc-ar-6.com"
+      - "C:/Users/irfan/AppData/Roaming/npm/gcc-ar-6.exe"
+      - "C:/Users/irfan/AppData/Roaming/npm/gcc-ar-6"
+      - "C:/msys64/ucrt64/bin/gcc-ar-6.com"
+      - "C:/msys64/ucrt64/bin/gcc-ar-6.exe"
+      - "C:/msys64/ucrt64/bin/gcc-ar-6"
+      - "C:/MinGW/bin/gcc-ar6.com"
+      - "C:/MinGW/bin/gcc-ar6.exe"
+      - "C:/MinGW/bin/gcc-ar6"
+      - "C:/WINDOWS.X64_193000_db_home/bin/gcc-ar6.com"
+      - "C:/WINDOWS.X64_193000_db_home/bin/gcc-ar6.exe"
+      - "C:/WINDOWS.X64_193000_db_home/bin/gcc-ar6"
+      - "C:/Windows/System32/gcc-ar6.com"
+      - "C:/Windows/System32/gcc-ar6.exe"
+      - "C:/Windows/System32/gcc-ar6"
+      - "C:/Windows/gcc-ar6.com"
+      - "C:/Windows/gcc-ar6.exe"
+      - "C:/Windows/gcc-ar6"
+      - "C:/Windows/System32/wbem/gcc-ar6.com"
+      - "C:/Windows/System32/wbem/gcc-ar6.exe"
+      - "C:/Windows/System32/wbem/gcc-ar6"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/gcc-ar6.com"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/gcc-ar6.exe"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/gcc-ar6"
+      - "C:/Windows/System32/OpenSSH/gcc-ar6.com"
+      - "C:/Windows/System32/OpenSSH/gcc-ar6.exe"
+      - "C:/Windows/System32/OpenSSH/gcc-ar6"
+      - "C:/Program Files/Git/cmd/gcc-ar6.com"
+      - "C:/Program Files/Git/cmd/gcc-ar6.exe"
+      - "C:/Program Files/Git/cmd/gcc-ar6"
+      - "C:/Program Files/cursor/resources/app/bin/gcc-ar6.com"
+      - "C:/Program Files/cursor/resources/app/bin/gcc-ar6.exe"
+      - "C:/Program Files/cursor/resources/app/bin/gcc-ar6"
+      - "C:/Program Files/Docker/Docker/resources/bin/gcc-ar6.com"
+      - "C:/Program Files/Docker/Docker/resources/bin/gcc-ar6.exe"
+      - "C:/Program Files/Docker/Docker/resources/bin/gcc-ar6"
+      - "C:/Program Files/CMake/bin/gcc-ar6.com"
+      - "C:/Program Files/CMake/bin/gcc-ar6.exe"
+      - "C:/Program Files/CMake/bin/gcc-ar6"
+      - "C:/Program Files/nodejs/gcc-ar6.com"
+      - "C:/Program Files/nodejs/gcc-ar6.exe"
+      - "C:/Program Files/nodejs/gcc-ar6"
+      - "C:/Program Files/MySQL/MySQL Shell 8.0/bin/gcc-ar6.com"
+      - "C:/Program Files/MySQL/MySQL Shell 8.0/bin/gcc-ar6.exe"
+      - "C:/Program Files/MySQL/MySQL Shell 8.0/bin/gcc-ar6"
+      - "C:/Users/irfan/AppData/Local/Programs/Python/Python312/Scripts/gcc-ar6.com"
+      - "C:/Users/irfan/AppData/Local/Programs/Python/Python312/Scripts/gcc-ar6.exe"
+      - "C:/Users/irfan/AppData/Local/Programs/Python/Python312/Scripts/gcc-ar6"
+      - "C:/Users/irfan/AppData/Local/Programs/Python/Python312/gcc-ar6.com"
+      - "C:/Users/irfan/AppData/Local/Programs/Python/Python312/gcc-ar6.exe"
+      - "C:/Users/irfan/AppData/Local/Programs/Python/Python312/gcc-ar6"
+      - "C:/Users/irfan/AppData/Local/Programs/Python/Python313/Scripts/gcc-ar6.com"
+      - "C:/Users/irfan/AppData/Local/Programs/Python/Python313/Scripts/gcc-ar6.exe"
+      - "C:/Users/irfan/AppData/Local/Programs/Python/Python313/Scripts/gcc-ar6"
+      - "C:/Users/irfan/AppData/Local/Programs/Python/Python313/gcc-ar6.com"
+      - "C:/Users/irfan/AppData/Local/Programs/Python/Python313/gcc-ar6.exe"
+      - "C:/Users/irfan/AppData/Local/Programs/Python/Python313/gcc-ar6"
+      - "C:/Users/irfan/AppData/Local/Programs/Python/Launcher/gcc-ar6.com"
+      - "C:/Users/irfan/AppData/Local/Programs/Python/Launcher/gcc-ar6.exe"
+      - "C:/Users/irfan/AppData/Local/Programs/Python/Launcher/gcc-ar6"
+      - "C:/Users/irfan/AppData/Local/Microsoft/WindowsApps/gcc-ar6.com"
+      - "C:/Users/irfan/AppData/Local/Microsoft/WindowsApps/gcc-ar6.exe"
+      - "C:/Users/irfan/AppData/Local/Microsoft/WindowsApps/gcc-ar6"
+      - "C:/Users/irfan/AppData/Local/Programs/Microsoft VS Code/bin/gcc-ar6.com"
+      - "C:/Users/irfan/AppData/Local/Programs/Microsoft VS Code/bin/gcc-ar6.exe"
+      - "C:/Users/irfan/AppData/Local/Programs/Microsoft VS Code/bin/gcc-ar6"
+      - "C:/Users/irfan/AppData/Local/Programs/cursor/resources/app/bin/gcc-ar6.com"
+      - "C:/Users/irfan/AppData/Local/Programs/cursor/resources/app/bin/gcc-ar6.exe"
+      - "C:/Users/irfan/AppData/Local/Programs/cursor/resources/app/bin/gcc-ar6"
+      - "C:/Users/irfan/AppData/Roaming/npm/gcc-ar6.com"
+      - "C:/Users/irfan/AppData/Roaming/npm/gcc-ar6.exe"
+      - "C:/Users/irfan/AppData/Roaming/npm/gcc-ar6"
+      - "C:/msys64/ucrt64/bin/gcc-ar6.com"
+      - "C:/msys64/ucrt64/bin/gcc-ar6.exe"
+      - "C:/msys64/ucrt64/bin/gcc-ar6"
+      - "C:/MinGW/bin/gcc-ar.com"
+    found: "C:/MinGW/bin/gcc-ar.exe"
+    search_context:
+      ENV{PATH}:
+        - "C:\\WINDOWS.X64_193000_db_home\\bin"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\MinGW\\bin"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\cursor\\resources\\app\\bin"
+        - "C:\\Program Files\\Docker\\Docker\\resources\\bin"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Program Files\\nodejs\\"
+        - "C:\\Program Files\\MySQL\\MySQL Shell 8.0\\bin\\"
+        - "C:\\Users\\irfan\\AppData\\Local\\Programs\\Python\\Python312\\Scripts\\"
+        - "C:\\Users\\irfan\\AppData\\Local\\Programs\\Python\\Python312\\"
+        - "C:\\Users\\irfan\\AppData\\Local\\Programs\\Python\\Python313\\Scripts\\"
+        - "C:\\Users\\irfan\\AppData\\Local\\Programs\\Python\\Python313\\"
+        - "C:\\Users\\irfan\\AppData\\Local\\Programs\\Python\\Launcher\\"
+        - "C:\\Users\\irfan\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\irfan\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\irfan\\AppData\\Local\\Programs\\Python\\Python313"
+        - "C:\\Users\\irfan\\AppData\\Local\\Programs\\Python\\Python313\\Scripts"
+        - "C:\\Users\\irfan\\AppData\\Local\\Programs\\cursor\\resources\\app\\bin"
+        - "C:\\Users\\irfan\\AppData\\Roaming\\npm"
+        - "C:\\msys64\\ucrt64\\bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/Compiler/GNU-FindBinUtils.cmake:30 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCXXCompiler.cmake:207 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_CXX_COMPILER_RANLIB"
+    description: "A wrapper around 'ranlib' adding the appropriate '--plugin' option for the GCC compiler"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "gcc-ranlib-6.3"
+      - "gcc-ranlib-6"
+      - "gcc-ranlib6"
+      - "gcc-ranlib"
+    candidate_directories:
+      - "C:/MinGW/bin/"
+      - "C:/WINDOWS.X64_193000_db_home/bin/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Program Files/cursor/resources/app/bin/"
+      - "C:/Program Files/Docker/Docker/resources/bin/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Program Files/nodejs/"
+      - "C:/Program Files/MySQL/MySQL Shell 8.0/bin/"
+      - "C:/Users/irfan/AppData/Local/Programs/Python/Python312/Scripts/"
+      - "C:/Users/irfan/AppData/Local/Programs/Python/Python312/"
+      - "C:/Users/irfan/AppData/Local/Programs/Python/Python313/Scripts/"
+      - "C:/Users/irfan/AppData/Local/Programs/Python/Python313/"
+      - "C:/Users/irfan/AppData/Local/Programs/Python/Launcher/"
+      - "C:/Users/irfan/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Users/irfan/AppData/Local/Programs/Microsoft VS Code/bin/"
+      - "C:/Users/irfan/AppData/Local/Programs/cursor/resources/app/bin/"
+      - "C:/Users/irfan/AppData/Roaming/npm/"
+      - "C:/msys64/ucrt64/bin/"
+    searched_directories:
+      - "C:/MinGW/bin/gcc-ranlib-6.3.com"
+      - "C:/MinGW/bin/gcc-ranlib-6.3.exe"
+      - "C:/MinGW/bin/gcc-ranlib-6.3"
+      - "C:/WINDOWS.X64_193000_db_home/bin/gcc-ranlib-6.3.com"
+      - "C:/WINDOWS.X64_193000_db_home/bin/gcc-ranlib-6.3.exe"
+      - "C:/WINDOWS.X64_193000_db_home/bin/gcc-ranlib-6.3"
+      - "C:/Windows/System32/gcc-ranlib-6.3.com"
+      - "C:/Windows/System32/gcc-ranlib-6.3.exe"
+      - "C:/Windows/System32/gcc-ranlib-6.3"
+      - "C:/Windows/gcc-ranlib-6.3.com"
+      - "C:/Windows/gcc-ranlib-6.3.exe"
+      - "C:/Windows/gcc-ranlib-6.3"
+      - "C:/Windows/System32/wbem/gcc-ranlib-6.3.com"
+      - "C:/Windows/System32/wbem/gcc-ranlib-6.3.exe"
+      - "C:/Windows/System32/wbem/gcc-ranlib-6.3"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/gcc-ranlib-6.3.com"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/gcc-ranlib-6.3.exe"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/gcc-ranlib-6.3"
+      - "C:/Windows/System32/OpenSSH/gcc-ranlib-6.3.com"
+      - "C:/Windows/System32/OpenSSH/gcc-ranlib-6.3.exe"
+      - "C:/Windows/System32/OpenSSH/gcc-ranlib-6.3"
+      - "C:/Program Files/Git/cmd/gcc-ranlib-6.3.com"
+      - "C:/Program Files/Git/cmd/gcc-ranlib-6.3.exe"
+      - "C:/Program Files/Git/cmd/gcc-ranlib-6.3"
+      - "C:/Program Files/cursor/resources/app/bin/gcc-ranlib-6.3.com"
+      - "C:/Program Files/cursor/resources/app/bin/gcc-ranlib-6.3.exe"
+      - "C:/Program Files/cursor/resources/app/bin/gcc-ranlib-6.3"
+      - "C:/Program Files/Docker/Docker/resources/bin/gcc-ranlib-6.3.com"
+      - "C:/Program Files/Docker/Docker/resources/bin/gcc-ranlib-6.3.exe"
+      - "C:/Program Files/Docker/Docker/resources/bin/gcc-ranlib-6.3"
+      - "C:/Program Files/CMake/bin/gcc-ranlib-6.3.com"
+      - "C:/Program Files/CMake/bin/gcc-ranlib-6.3.exe"
+      - "C:/Program Files/CMake/bin/gcc-ranlib-6.3"
+      - "C:/Program Files/nodejs/gcc-ranlib-6.3.com"
+      - "C:/Program Files/nodejs/gcc-ranlib-6.3.exe"
+      - "C:/Program Files/nodejs/gcc-ranlib-6.3"
+      - "C:/Program Files/MySQL/MySQL Shell 8.0/bin/gcc-ranlib-6.3.com"
+      - "C:/Program Files/MySQL/MySQL Shell 8.0/bin/gcc-ranlib-6.3.exe"
+      - "C:/Program Files/MySQL/MySQL Shell 8.0/bin/gcc-ranlib-6.3"
+      - "C:/Users/irfan/AppData/Local/Programs/Python/Python312/Scripts/gcc-ranlib-6.3.com"
+      - "C:/Users/irfan/AppData/Local/Programs/Python/Python312/Scripts/gcc-ranlib-6.3.exe"
+      - "C:/Users/irfan/AppData/Local/Programs/Python/Python312/Scripts/gcc-ranlib-6.3"
+      - "C:/Users/irfan/AppData/Local/Programs/Python/Python312/gcc-ranlib-6.3.com"
+      - "C:/Users/irfan/AppData/Local/Programs/Python/Python312/gcc-ranlib-6.3.exe"
+      - "C:/Users/irfan/AppData/Local/Programs/Python/Python312/gcc-ranlib-6.3"
+      - "C:/Users/irfan/AppData/Local/Programs/Python/Python313/Scripts/gcc-ranlib-6.3.com"
+      - "C:/Users/irfan/AppData/Local/Programs/Python/Python313/Scripts/gcc-ranlib-6.3.exe"
+      - "C:/Users/irfan/AppData/Local/Programs/Python/Python313/Scripts/gcc-ranlib-6.3"
+      - "C:/Users/irfan/AppData/Local/Programs/Python/Python313/gcc-ranlib-6.3.com"
+      - "C:/Users/irfan/AppData/Local/Programs/Python/Python313/gcc-ranlib-6.3.exe"
+      - "C:/Users/irfan/AppData/Local/Programs/Python/Python313/gcc-ranlib-6.3"
+      - "C:/Users/irfan/AppData/Local/Programs/Python/Launcher/gcc-ranlib-6.3.com"
+      - "C:/Users/irfan/AppData/Local/Programs/Python/Launcher/gcc-ranlib-6.3.exe"
+      - "C:/Users/irfan/AppData/Local/Programs/Python/Launcher/gcc-ranlib-6.3"
+      - "C:/Users/irfan/AppData/Local/Microsoft/WindowsApps/gcc-ranlib-6.3.com"
+      - "C:/Users/irfan/AppData/Local/Microsoft/WindowsApps/gcc-ranlib-6.3.exe"
+      - "C:/Users/irfan/AppData/Local/Microsoft/WindowsApps/gcc-ranlib-6.3"
+      - "C:/Users/irfan/AppData/Local/Programs/Microsoft VS Code/bin/gcc-ranlib-6.3.com"
+      - "C:/Users/irfan/AppData/Local/Programs/Microsoft VS Code/bin/gcc-ranlib-6.3.exe"
+      - "C:/Users/irfan/AppData/Local/Programs/Microsoft VS Code/bin/gcc-ranlib-6.3"
+      - "C:/Users/irfan/AppData/Local/Programs/cursor/resources/app/bin/gcc-ranlib-6.3.com"
+      - "C:/Users/irfan/AppData/Local/Programs/cursor/resources/app/bin/gcc-ranlib-6.3.exe"
+      - "C:/Users/irfan/AppData/Local/Programs/cursor/resources/app/bin/gcc-ranlib-6.3"
+      - "C:/Users/irfan/AppData/Roaming/npm/gcc-ranlib-6.3.com"
+      - "C:/Users/irfan/AppData/Roaming/npm/gcc-ranlib-6.3.exe"
+      - "C:/Users/irfan/AppData/Roaming/npm/gcc-ranlib-6.3"
+      - "C:/msys64/ucrt64/bin/gcc-ranlib-6.3.com"
+      - "C:/msys64/ucrt64/bin/gcc-ranlib-6.3.exe"
+      - "C:/msys64/ucrt64/bin/gcc-ranlib-6.3"
+      - "C:/MinGW/bin/gcc-ranlib-6.com"
+      - "C:/MinGW/bin/gcc-ranlib-6.exe"
+      - "C:/MinGW/bin/gcc-ranlib-6"
+      - "C:/WINDOWS.X64_193000_db_home/bin/gcc-ranlib-6.com"
+      - "C:/WINDOWS.X64_193000_db_home/bin/gcc-ranlib-6.exe"
+      - "C:/WINDOWS.X64_193000_db_home/bin/gcc-ranlib-6"
+      - "C:/Windows/System32/gcc-ranlib-6.com"
+      - "C:/Windows/System32/gcc-ranlib-6.exe"
+      - "C:/Windows/System32/gcc-ranlib-6"
+      - "C:/Windows/gcc-ranlib-6.com"
+      - "C:/Windows/gcc-ranlib-6.exe"
+      - "C:/Windows/gcc-ranlib-6"
+      - "C:/Windows/System32/wbem/gcc-ranlib-6.com"
+      - "C:/Windows/System32/wbem/gcc-ranlib-6.exe"
+      - "C:/Windows/System32/wbem/gcc-ranlib-6"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/gcc-ranlib-6.com"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/gcc-ranlib-6.exe"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/gcc-ranlib-6"
+      - "C:/Windows/System32/OpenSSH/gcc-ranlib-6.com"
+      - "C:/Windows/System32/OpenSSH/gcc-ranlib-6.exe"
+      - "C:/Windows/System32/OpenSSH/gcc-ranlib-6"
+      - "C:/Program Files/Git/cmd/gcc-ranlib-6.com"
+      - "C:/Program Files/Git/cmd/gcc-ranlib-6.exe"
+      - "C:/Program Files/Git/cmd/gcc-ranlib-6"
+      - "C:/Program Files/cursor/resources/app/bin/gcc-ranlib-6.com"
+      - "C:/Program Files/cursor/resources/app/bin/gcc-ranlib-6.exe"
+      - "C:/Program Files/cursor/resources/app/bin/gcc-ranlib-6"
+      - "C:/Program Files/Docker/Docker/resources/bin/gcc-ranlib-6.com"
+      - "C:/Program Files/Docker/Docker/resources/bin/gcc-ranlib-6.exe"
+      - "C:/Program Files/Docker/Docker/resources/bin/gcc-ranlib-6"
+      - "C:/Program Files/CMake/bin/gcc-ranlib-6.com"
+      - "C:/Program Files/CMake/bin/gcc-ranlib-6.exe"
+      - "C:/Program Files/CMake/bin/gcc-ranlib-6"
+      - "C:/Program Files/nodejs/gcc-ranlib-6.com"
+      - "C:/Program Files/nodejs/gcc-ranlib-6.exe"
+      - "C:/Program Files/nodejs/gcc-ranlib-6"
+      - "C:/Program Files/MySQL/MySQL Shell 8.0/bin/gcc-ranlib-6.com"
+      - "C:/Program Files/MySQL/MySQL Shell 8.0/bin/gcc-ranlib-6.exe"
+      - "C:/Program Files/MySQL/MySQL Shell 8.0/bin/gcc-ranlib-6"
+      - "C:/Users/irfan/AppData/Local/Programs/Python/Python312/Scripts/gcc-ranlib-6.com"
+      - "C:/Users/irfan/AppData/Local/Programs/Python/Python312/Scripts/gcc-ranlib-6.exe"
+      - "C:/Users/irfan/AppData/Local/Programs/Python/Python312/Scripts/gcc-ranlib-6"
+      - "C:/Users/irfan/AppData/Local/Programs/Python/Python312/gcc-ranlib-6.com"
+      - "C:/Users/irfan/AppData/Local/Programs/Python/Python312/gcc-ranlib-6.exe"
+      - "C:/Users/irfan/AppData/Local/Programs/Python/Python312/gcc-ranlib-6"
+      - "C:/Users/irfan/AppData/Local/Programs/Python/Python313/Scripts/gcc-ranlib-6.com"
+      - "C:/Users/irfan/AppData/Local/Programs/Python/Python313/Scripts/gcc-ranlib-6.exe"
+      - "C:/Users/irfan/AppData/Local/Programs/Python/Python313/Scripts/gcc-ranlib-6"
+      - "C:/Users/irfan/AppData/Local/Programs/Python/Python313/gcc-ranlib-6.com"
+      - "C:/Users/irfan/AppData/Local/Programs/Python/Python313/gcc-ranlib-6.exe"
+      - "C:/Users/irfan/AppData/Local/Programs/Python/Python313/gcc-ranlib-6"
+      - "C:/Users/irfan/AppData/Local/Programs/Python/Launcher/gcc-ranlib-6.com"
+      - "C:/Users/irfan/AppData/Local/Programs/Python/Launcher/gcc-ranlib-6.exe"
+      - "C:/Users/irfan/AppData/Local/Programs/Python/Launcher/gcc-ranlib-6"
+      - "C:/Users/irfan/AppData/Local/Microsoft/WindowsApps/gcc-ranlib-6.com"
+      - "C:/Users/irfan/AppData/Local/Microsoft/WindowsApps/gcc-ranlib-6.exe"
+      - "C:/Users/irfan/AppData/Local/Microsoft/WindowsApps/gcc-ranlib-6"
+      - "C:/Users/irfan/AppData/Local/Programs/Microsoft VS Code/bin/gcc-ranlib-6.com"
+      - "C:/Users/irfan/AppData/Local/Programs/Microsoft VS Code/bin/gcc-ranlib-6.exe"
+      - "C:/Users/irfan/AppData/Local/Programs/Microsoft VS Code/bin/gcc-ranlib-6"
+      - "C:/Users/irfan/AppData/Local/Programs/cursor/resources/app/bin/gcc-ranlib-6.com"
+      - "C:/Users/irfan/AppData/Local/Programs/cursor/resources/app/bin/gcc-ranlib-6.exe"
+      - "C:/Users/irfan/AppData/Local/Programs/cursor/resources/app/bin/gcc-ranlib-6"
+      - "C:/Users/irfan/AppData/Roaming/npm/gcc-ranlib-6.com"
+      - "C:/Users/irfan/AppData/Roaming/npm/gcc-ranlib-6.exe"
+      - "C:/Users/irfan/AppData/Roaming/npm/gcc-ranlib-6"
+      - "C:/msys64/ucrt64/bin/gcc-ranlib-6.com"
+      - "C:/msys64/ucrt64/bin/gcc-ranlib-6.exe"
+      - "C:/msys64/ucrt64/bin/gcc-ranlib-6"
+      - "C:/MinGW/bin/gcc-ranlib6.com"
+      - "C:/MinGW/bin/gcc-ranlib6.exe"
+      - "C:/MinGW/bin/gcc-ranlib6"
+      - "C:/WINDOWS.X64_193000_db_home/bin/gcc-ranlib6.com"
+      - "C:/WINDOWS.X64_193000_db_home/bin/gcc-ranlib6.exe"
+      - "C:/WINDOWS.X64_193000_db_home/bin/gcc-ranlib6"
+      - "C:/Windows/System32/gcc-ranlib6.com"
+      - "C:/Windows/System32/gcc-ranlib6.exe"
+      - "C:/Windows/System32/gcc-ranlib6"
+      - "C:/Windows/gcc-ranlib6.com"
+      - "C:/Windows/gcc-ranlib6.exe"
+      - "C:/Windows/gcc-ranlib6"
+      - "C:/Windows/System32/wbem/gcc-ranlib6.com"
+      - "C:/Windows/System32/wbem/gcc-ranlib6.exe"
+      - "C:/Windows/System32/wbem/gcc-ranlib6"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/gcc-ranlib6.com"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/gcc-ranlib6.exe"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/gcc-ranlib6"
+      - "C:/Windows/System32/OpenSSH/gcc-ranlib6.com"
+      - "C:/Windows/System32/OpenSSH/gcc-ranlib6.exe"
+      - "C:/Windows/System32/OpenSSH/gcc-ranlib6"
+      - "C:/Program Files/Git/cmd/gcc-ranlib6.com"
+      - "C:/Program Files/Git/cmd/gcc-ranlib6.exe"
+      - "C:/Program Files/Git/cmd/gcc-ranlib6"
+      - "C:/Program Files/cursor/resources/app/bin/gcc-ranlib6.com"
+      - "C:/Program Files/cursor/resources/app/bin/gcc-ranlib6.exe"
+      - "C:/Program Files/cursor/resources/app/bin/gcc-ranlib6"
+      - "C:/Program Files/Docker/Docker/resources/bin/gcc-ranlib6.com"
+      - "C:/Program Files/Docker/Docker/resources/bin/gcc-ranlib6.exe"
+      - "C:/Program Files/Docker/Docker/resources/bin/gcc-ranlib6"
+      - "C:/Program Files/CMake/bin/gcc-ranlib6.com"
+      - "C:/Program Files/CMake/bin/gcc-ranlib6.exe"
+      - "C:/Program Files/CMake/bin/gcc-ranlib6"
+      - "C:/Program Files/nodejs/gcc-ranlib6.com"
+      - "C:/Program Files/nodejs/gcc-ranlib6.exe"
+      - "C:/Program Files/nodejs/gcc-ranlib6"
+      - "C:/Program Files/MySQL/MySQL Shell 8.0/bin/gcc-ranlib6.com"
+      - "C:/Program Files/MySQL/MySQL Shell 8.0/bin/gcc-ranlib6.exe"
+      - "C:/Program Files/MySQL/MySQL Shell 8.0/bin/gcc-ranlib6"
+      - "C:/Users/irfan/AppData/Local/Programs/Python/Python312/Scripts/gcc-ranlib6.com"
+      - "C:/Users/irfan/AppData/Local/Programs/Python/Python312/Scripts/gcc-ranlib6.exe"
+      - "C:/Users/irfan/AppData/Local/Programs/Python/Python312/Scripts/gcc-ranlib6"
+      - "C:/Users/irfan/AppData/Local/Programs/Python/Python312/gcc-ranlib6.com"
+      - "C:/Users/irfan/AppData/Local/Programs/Python/Python312/gcc-ranlib6.exe"
+      - "C:/Users/irfan/AppData/Local/Programs/Python/Python312/gcc-ranlib6"
+      - "C:/Users/irfan/AppData/Local/Programs/Python/Python313/Scripts/gcc-ranlib6.com"
+      - "C:/Users/irfan/AppData/Local/Programs/Python/Python313/Scripts/gcc-ranlib6.exe"
+      - "C:/Users/irfan/AppData/Local/Programs/Python/Python313/Scripts/gcc-ranlib6"
+      - "C:/Users/irfan/AppData/Local/Programs/Python/Python313/gcc-ranlib6.com"
+      - "C:/Users/irfan/AppData/Local/Programs/Python/Python313/gcc-ranlib6.exe"
+      - "C:/Users/irfan/AppData/Local/Programs/Python/Python313/gcc-ranlib6"
+      - "C:/Users/irfan/AppData/Local/Programs/Python/Launcher/gcc-ranlib6.com"
+      - "C:/Users/irfan/AppData/Local/Programs/Python/Launcher/gcc-ranlib6.exe"
+      - "C:/Users/irfan/AppData/Local/Programs/Python/Launcher/gcc-ranlib6"
+      - "C:/Users/irfan/AppData/Local/Microsoft/WindowsApps/gcc-ranlib6.com"
+      - "C:/Users/irfan/AppData/Local/Microsoft/WindowsApps/gcc-ranlib6.exe"
+      - "C:/Users/irfan/AppData/Local/Microsoft/WindowsApps/gcc-ranlib6"
+      - "C:/Users/irfan/AppData/Local/Programs/Microsoft VS Code/bin/gcc-ranlib6.com"
+      - "C:/Users/irfan/AppData/Local/Programs/Microsoft VS Code/bin/gcc-ranlib6.exe"
+      - "C:/Users/irfan/AppData/Local/Programs/Microsoft VS Code/bin/gcc-ranlib6"
+      - "C:/Users/irfan/AppData/Local/Programs/cursor/resources/app/bin/gcc-ranlib6.com"
+      - "C:/Users/irfan/AppData/Local/Programs/cursor/resources/app/bin/gcc-ranlib6.exe"
+      - "C:/Users/irfan/AppData/Local/Programs/cursor/resources/app/bin/gcc-ranlib6"
+      - "C:/Users/irfan/AppData/Roaming/npm/gcc-ranlib6.com"
+      - "C:/Users/irfan/AppData/Roaming/npm/gcc-ranlib6.exe"
+      - "C:/Users/irfan/AppData/Roaming/npm/gcc-ranlib6"
+      - "C:/msys64/ucrt64/bin/gcc-ranlib6.com"
+      - "C:/msys64/ucrt64/bin/gcc-ranlib6.exe"
+      - "C:/msys64/ucrt64/bin/gcc-ranlib6"
+      - "C:/MinGW/bin/gcc-ranlib.com"
+    found: "C:/MinGW/bin/gcc-ranlib.exe"
+    search_context:
+      ENV{PATH}:
+        - "C:\\WINDOWS.X64_193000_db_home\\bin"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\MinGW\\bin"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\cursor\\resources\\app\\bin"
+        - "C:\\Program Files\\Docker\\Docker\\resources\\bin"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Program Files\\nodejs\\"
+        - "C:\\Program Files\\MySQL\\MySQL Shell 8.0\\bin\\"
+        - "C:\\Users\\irfan\\AppData\\Local\\Programs\\Python\\Python312\\Scripts\\"
+        - "C:\\Users\\irfan\\AppData\\Local\\Programs\\Python\\Python312\\"
+        - "C:\\Users\\irfan\\AppData\\Local\\Programs\\Python\\Python313\\Scripts\\"
+        - "C:\\Users\\irfan\\AppData\\Local\\Programs\\Python\\Python313\\"
+        - "C:\\Users\\irfan\\AppData\\Local\\Programs\\Python\\Launcher\\"
+        - "C:\\Users\\irfan\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\irfan\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\irfan\\AppData\\Local\\Programs\\Python\\Python313"
+        - "C:\\Users\\irfan\\AppData\\Local\\Programs\\Python\\Python313\\Scripts"
+        - "C:\\Users\\irfan\\AppData\\Local\\Programs\\cursor\\resources\\app\\bin"
+        - "C:\\Users\\irfan\\AppData\\Roaming\\npm"
+        - "C:\\msys64\\ucrt64\\bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineRCCompiler.cmake:40 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/Platform/Windows-GNU.cmake:167 (enable_language)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/Platform/Windows-GNU-CXX.cmake:2 (__windows_compiler_gnu)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeCXXInformation.cmake:48 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_RC_COMPILER"
+    description: "RC compiler"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "windres"
+      - "windres"
+    candidate_directories:
+      - "C:/WINDOWS.X64_193000_db_home/bin/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/MinGW/bin/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Program Files/cursor/resources/app/bin/"
+      - "C:/Program Files/Docker/Docker/resources/bin/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Program Files/nodejs/"
+      - "C:/Program Files/MySQL/MySQL Shell 8.0/bin/"
+      - "C:/Users/irfan/AppData/Local/Programs/Python/Python312/Scripts/"
+      - "C:/Users/irfan/AppData/Local/Programs/Python/Python312/"
+      - "C:/Users/irfan/AppData/Local/Programs/Python/Python313/Scripts/"
+      - "C:/Users/irfan/AppData/Local/Programs/Python/Python313/"
+      - "C:/Users/irfan/AppData/Local/Programs/Python/Launcher/"
+      - "C:/Users/irfan/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Users/irfan/AppData/Local/Programs/Microsoft VS Code/bin/"
+      - "C:/Users/irfan/AppData/Local/Programs/cursor/resources/app/bin/"
+      - "C:/Users/irfan/AppData/Roaming/npm/"
+      - "C:/msys64/ucrt64/bin/"
+      - "C:/Program Files/bin/"
+      - "C:/Program Files/sbin/"
+      - "C:/Program Files/"
+      - "C:/Program Files (x86)/bin/"
+      - "C:/Program Files (x86)/sbin/"
+      - "C:/Program Files (x86)/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Program Files/CMake/sbin/"
+      - "C:/Program Files/CMake/"
+      - "C:/Program Files (x86)/milestone1/bin/"
+      - "C:/Program Files (x86)/milestone1/sbin/"
+      - "C:/Program Files (x86)/milestone1/"
+    searched_directories:
+      - "C:/WINDOWS.X64_193000_db_home/bin/windres.com"
+      - "C:/WINDOWS.X64_193000_db_home/bin/windres.exe"
+      - "C:/WINDOWS.X64_193000_db_home/bin/windres"
+      - "C:/Windows/System32/windres.com"
+      - "C:/Windows/System32/windres.exe"
+      - "C:/Windows/System32/windres"
+      - "C:/Windows/windres.com"
+      - "C:/Windows/windres.exe"
+      - "C:/Windows/windres"
+      - "C:/Windows/System32/wbem/windres.com"
+      - "C:/Windows/System32/wbem/windres.exe"
+      - "C:/Windows/System32/wbem/windres"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/windres.com"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/windres.exe"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/windres"
+      - "C:/Windows/System32/OpenSSH/windres.com"
+      - "C:/Windows/System32/OpenSSH/windres.exe"
+      - "C:/Windows/System32/OpenSSH/windres"
+      - "C:/MinGW/bin/windres.com"
+    found: "C:/MinGW/bin/windres.exe"
+    search_context:
+      ENV{PATH}:
+        - "C:\\WINDOWS.X64_193000_db_home\\bin"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\MinGW\\bin"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\cursor\\resources\\app\\bin"
+        - "C:\\Program Files\\Docker\\Docker\\resources\\bin"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Program Files\\nodejs\\"
+        - "C:\\Program Files\\MySQL\\MySQL Shell 8.0\\bin\\"
+        - "C:\\Users\\irfan\\AppData\\Local\\Programs\\Python\\Python312\\Scripts\\"
+        - "C:\\Users\\irfan\\AppData\\Local\\Programs\\Python\\Python312\\"
+        - "C:\\Users\\irfan\\AppData\\Local\\Programs\\Python\\Python313\\Scripts\\"
+        - "C:\\Users\\irfan\\AppData\\Local\\Programs\\Python\\Python313\\"
+        - "C:\\Users\\irfan\\AppData\\Local\\Programs\\Python\\Launcher\\"
+        - "C:\\Users\\irfan\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\irfan\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\irfan\\AppData\\Local\\Programs\\Python\\Python313"
+        - "C:\\Users\\irfan\\AppData\\Local\\Programs\\Python\\Python313\\Scripts"
+        - "C:\\Users\\irfan\\AppData\\Local\\Programs\\cursor\\resources\\app\\bin"
+        - "C:\\Users\\irfan\\AppData\\Roaming\\npm"
+        - "C:\\msys64\\ucrt64\\bin"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/milestone1"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "C:/Program Files"
+        - "C:/Program Files (x86)"
+        - "C:/Program Files/CMake"
+        - "C:/Program Files (x86)/milestone1"
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCompilerABI.cmake:83 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "C:/Users/irfan/OneDrive/Documents/IBA/PDC Project/Project/build_win_ps/CMakeFiles/CMakeScratch/TryCompile-vi5nse"
+      binary: "C:/Users/irfan/OneDrive/Documents/IBA/PDC Project/Project/build_win_ps/CMakeFiles/CMakeScratch/TryCompile-vi5nse"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_CXX_SCAN_FOR_MODULES: "OFF"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/irfan/OneDrive/Documents/IBA/PDC Project/Project/build_win_ps/CMakeFiles/CMakeScratch/TryCompile-vi5nse'
+        
+        Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_9231d/fast
+        C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_9231d.dir\\build.make CMakeFiles/cmTC_9231d.dir/build
+        mingw32-make.exe[1]: Entering directory 'C:/Users/irfan/OneDrive/Documents/IBA/PDC Project/Project/build_win_ps/CMakeFiles/CMakeScratch/TryCompile-vi5nse'
+        Building CXX object CMakeFiles/cmTC_9231d.dir/CMakeCXXCompilerABI.cpp.obj
+        C:\\MinGW\\bin\\c++.exe   -v -o CMakeFiles\\cmTC_9231d.dir\\CMakeCXXCompilerABI.cpp.obj -c "C:\\Program Files\\CMake\\share\\cmake-4.2\\Modules\\CMakeCXXCompilerABI.cpp"
+        Using built-in specs.
+        COLLECT_GCC=C:\\MinGW\\bin\\c++.exe
+        Target: mingw32
+        Configured with: ../src/gcc-6.3.0/configure --build=x86_64-pc-linux-gnu --host=mingw32 --with-gmp=/mingw --with-mpfr=/mingw --with-mpc=/mingw --with-isl=/mingw --prefix=/mingw --disable-win32-registry --target=mingw32 --with-arch=i586 --enable-languages=c,c++,objc,obj-c++,fortran,ada --with-pkgversion='MinGW.org GCC-6.3.0-1' --enable-static --enable-shared --enable-threads --with-dwarf2 --disable-sjlj-exceptions --enable-version-specific-runtime-libs --with-libiconv-prefix=/mingw --with-libintl-prefix=/mingw --enable-libstdcxx-debug --with-tune=generic --enable-libgomp --disable-libvtv --enable-nls
+        Thread model: win32
+        gcc version 6.3.0 (MinGW.org GCC-6.3.0-1) 
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_9231d.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=i586'
+         c:/mingw/bin/../libexec/gcc/mingw32/6.3.0/cc1plus.exe -quiet -v -iprefix c:\\mingw\\bin\\../lib/gcc/mingw32/6.3.0/ C:\\Program Files\\CMake\\share\\cmake-4.2\\Modules\\CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mtune=generic -march=i586 -auxbase-strip CMakeFiles\\cmTC_9231d.dir\\CMakeCXXCompilerABI.cpp.obj -version -o C:\\Users\\irfan\\AppData\\Local\\Temp\\ccj4Wrjl.s
+        GNU C++14 (MinGW.org GCC-6.3.0-1) version 6.3.0 (mingw32)
+        	compiled by GNU C version 6.3.0, GMP version 6.1.2, MPFR version 3.1.5, MPC version 1.0.2, isl version 0.15
+        warning: MPC header version 1.0.2 differs from library version 1.0.3.
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring duplicate directory "c:/mingw/lib/gcc/../../lib/gcc/mingw32/6.3.0/include/c++"
+        ignoring duplicate directory "c:/mingw/lib/gcc/../../lib/gcc/mingw32/6.3.0/include/c++/mingw32"
+        ignoring duplicate directory "c:/mingw/lib/gcc/../../lib/gcc/mingw32/6.3.0/include/c++/backward"
+        ignoring duplicate directory "c:/mingw/lib/gcc/../../lib/gcc/mingw32/6.3.0/include"
+        ignoring duplicate directory "/mingw/lib/gcc/mingw32/6.3.0/../../../../include"
+        ignoring duplicate directory "c:/mingw/lib/gcc/../../include"
+        ignoring duplicate directory "c:/mingw/lib/gcc/../../lib/gcc/mingw32/6.3.0/include-fixed"
+        ignoring duplicate directory "c:/mingw/lib/gcc/../../lib/gcc/mingw32/6.3.0/../../../../mingw32/include"
+        ignoring duplicate directory "/mingw/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         c:\\mingw\\bin\\../lib/gcc/mingw32/6.3.0/include/c++
+         c:\\mingw\\bin\\../lib/gcc/mingw32/6.3.0/include/c++/mingw32
+         c:\\mingw\\bin\\../lib/gcc/mingw32/6.3.0/include/c++/backward
+         c:\\mingw\\bin\\../lib/gcc/mingw32/6.3.0/include
+         c:\\mingw\\bin\\../lib/gcc/mingw32/6.3.0/../../../../include
+         c:\\mingw\\bin\\../lib/gcc/mingw32/6.3.0/include-fixed
+         c:\\mingw\\bin\\../lib/gcc/mingw32/6.3.0/../../../../mingw32/include
+        End of search list.
+        GNU C++14 (MinGW.org GCC-6.3.0-1) version 6.3.0 (mingw32)
+        	compiled by GNU C version 6.3.0, GMP version 6.1.2, MPFR version 3.1.5, MPC version 1.0.2, isl version 0.15
+        warning: MPC header version 1.0.2 differs from library version 1.0.3.
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        Compiler executable checksum: af09a87986453bf79da3565f33c7648f
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_9231d.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=i586'
+         c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/as.exe -v -o CMakeFiles\\cmTC_9231d.dir\\CMakeCXXCompilerABI.cpp.obj C:\\Users\\irfan\\AppData\\Local\\Temp\\ccj4Wrjl.s
+        GNU assembler version 2.28 (mingw32) using BFD version (GNU Binutils) 2.28
+        COMPILER_PATH=c:/mingw/bin/../libexec/gcc/mingw32/6.3.0/;c:/mingw/bin/../libexec/gcc/;c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/
+        LIBRARY_PATH=c:/mingw/bin/../lib/gcc/mingw32/6.3.0/;c:/mingw/bin/../lib/gcc/;c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/lib/;c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_9231d.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=i586'
+        Linking CXX executable cmTC_9231d.exe
+        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_9231d.dir\\link.txt --verbose=1
+        Using built-in specs.
+        COLLECT_GCC=C:\\MinGW\\bin\\c++.exe
+        COLLECT_LTO_WRAPPER=c:/mingw/bin/../libexec/gcc/mingw32/6.3.0/lto-wrapper.exe
+        Target: mingw32
+        Configured with: ../src/gcc-6.3.0/configure --build=x86_64-pc-linux-gnu --host=mingw32 --with-gmp=/mingw --with-mpfr=/mingw --with-mpc=/mingw --with-isl=/mingw --prefix=/mingw --disable-win32-registry --target=mingw32 --with-arch=i586 --enable-languages=c,c++,objc,obj-c++,fortran,ada --with-pkgversion='MinGW.org GCC-6.3.0-1' --enable-static --enable-shared --enable-threads --with-dwarf2 --disable-sjlj-exceptions --enable-version-specific-runtime-libs --with-libiconv-prefix=/mingw --with-libintl-prefix=/mingw --enable-libstdcxx-debug --with-tune=generic --enable-libgomp --disable-libvtv --enable-nls
+        Thread model: win32
+        gcc version 6.3.0 (MinGW.org GCC-6.3.0-1) 
+        COMPILER_PATH=c:/mingw/bin/../libexec/gcc/mingw32/6.3.0/;c:/mingw/bin/../libexec/gcc/;c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/
+        LIBRARY_PATH=c:/mingw/bin/../lib/gcc/mingw32/6.3.0/;c:/mingw/bin/../lib/gcc/;c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/lib/;c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_9231d.exe' '-shared-libgcc' '-mtune=generic' '-march=i586'
+         c:/mingw/bin/../libexec/gcc/mingw32/6.3.0/collect2.exe -plugin c:/mingw/bin/../libexec/gcc/mingw32/6.3.0/liblto_plugin-0.dll -plugin-opt=c:/mingw/bin/../libexec/gcc/mingw32/6.3.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\irfan\\AppData\\Local\\Temp\\cckOeQbG.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -Bdynamic -u ___register_frame_info -u ___deregister_frame_info -o cmTC_9231d.exe c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../crt2.o c:/mingw/bin/../lib/gcc/mingw32/6.3.0/crtbegin.o -Lc:/mingw/bin/../lib/gcc/mingw32/6.3.0 -Lc:/mingw/bin/../lib/gcc -Lc:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/lib -Lc:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../.. -v --whole-archive CMakeFiles\\cmTC_9231d.dir/objects.a --no-whole-archive --out-implib libcmTC_9231d.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt c:/mingw/bin/../lib/gcc/mingw32/6.3.0/crtend.o
+        collect2 version 6.3.0
+        c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe -plugin c:/mingw/bin/../libexec/gcc/mingw32/6.3.0/liblto_plugin-0.dll -plugin-opt=c:/mingw/bin/../libexec/gcc/mingw32/6.3.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\irfan\\AppData\\Local\\Temp\\cckOeQbG.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -Bdynamic -u ___register_frame_info -u ___deregister_frame_info -o cmTC_9231d.exe c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../crt2.o c:/mingw/bin/../lib/gcc/mingw32/6.3.0/crtbegin.o -Lc:/mingw/bin/../lib/gcc/mingw32/6.3.0 -Lc:/mingw/bin/../lib/gcc -Lc:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/lib -Lc:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../.. -v --whole-archive CMakeFiles\\cmTC_9231d.dir/objects.a --no-whole-archive --out-implib libcmTC_9231d.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt c:/mingw/bin/../lib/gcc/mingw32/6.3.0/crtend.o
+        GNU ld (GNU Binutils) 2.28
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_9231d.exe' '-shared-libgcc' '-mtune=generic' '-march=i586'
+        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E rm -f CMakeFiles\\cmTC_9231d.dir/objects.a
+        C:\\MinGW\\bin\\ar.exe qc CMakeFiles\\cmTC_9231d.dir/objects.a @CMakeFiles\\cmTC_9231d.dir\\objects1.rsp
+        C:\\MinGW\\bin\\c++.exe  -v -Wl,-v -Wl,--whole-archive CMakeFiles\\cmTC_9231d.dir/objects.a -Wl,--no-whole-archive -o cmTC_9231d.exe -Wl,--out-implib,libcmTC_9231d.dll.a -Wl,--major-image-version,0,--minor-image-version,0
+        mingw32-make.exe[1]: Leaving directory 'C:/Users/irfan/OneDrive/Documents/IBA/PDC Project/Project/build_win_ps/CMakeFiles/CMakeScratch/TryCompile-vi5nse'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCompilerABI.cmake:217 (message)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed CXX implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [c:/mingw/bin/../lib/gcc/mingw32/6.3.0/include/c++]
+          add: [c:/mingw/bin/../lib/gcc/mingw32/6.3.0/include/c++/mingw32]
+          add: [c:/mingw/bin/../lib/gcc/mingw32/6.3.0/include/c++/backward]
+          add: [c:/mingw/bin/../lib/gcc/mingw32/6.3.0/include]
+          add: [c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../include]
+          add: [c:/mingw/bin/../lib/gcc/mingw32/6.3.0/include-fixed]
+          add: [c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/include]
+        end of search list found
+        collapse include dir [c:/mingw/bin/../lib/gcc/mingw32/6.3.0/include/c++] ==> [C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++]
+        collapse include dir [c:/mingw/bin/../lib/gcc/mingw32/6.3.0/include/c++/mingw32] ==> [C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/mingw32]
+        collapse include dir [c:/mingw/bin/../lib/gcc/mingw32/6.3.0/include/c++/backward] ==> [C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/backward]
+        collapse include dir [c:/mingw/bin/../lib/gcc/mingw32/6.3.0/include] ==> [C:/MinGW/lib/gcc/mingw32/6.3.0/include]
+        collapse include dir [c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../include] ==> [C:/MinGW/include]
+        collapse include dir [c:/mingw/bin/../lib/gcc/mingw32/6.3.0/include-fixed] ==> [C:/MinGW/lib/gcc/mingw32/6.3.0/include-fixed]
+        collapse include dir [c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/include] ==> [C:/MinGW/mingw32/include]
+        implicit include dirs: [C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++;C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/mingw32;C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/backward;C:/MinGW/lib/gcc/mingw32/6.3.0/include;C:/MinGW/include;C:/MinGW/lib/gcc/mingw32/6.3.0/include-fixed;C:/MinGW/mingw32/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCompilerABI.cmake:253 (message)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed CXX implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|"|[0-9]+>[ 	-]*Build:[ 	0-9]+ ms[ 	]*)?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)))("|,| |$)]
+        ignore line: [Change Dir: 'C:/Users/irfan/OneDrive/Documents/IBA/PDC Project/Project/build_win_ps/CMakeFiles/CMakeScratch/TryCompile-vi5nse']
+        ignore line: []
+        ignore line: [Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_9231d/fast]
+        ignore line: [C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_9231d.dir\\build.make CMakeFiles/cmTC_9231d.dir/build]
+        ignore line: [mingw32-make.exe[1]: Entering directory 'C:/Users/irfan/OneDrive/Documents/IBA/PDC Project/Project/build_win_ps/CMakeFiles/CMakeScratch/TryCompile-vi5nse']
+        ignore line: [Building CXX object CMakeFiles/cmTC_9231d.dir/CMakeCXXCompilerABI.cpp.obj]
+        ignore line: [C:\\MinGW\\bin\\c++.exe   -v -o CMakeFiles\\cmTC_9231d.dir\\CMakeCXXCompilerABI.cpp.obj -c "C:\\Program Files\\CMake\\share\\cmake-4.2\\Modules\\CMakeCXXCompilerABI.cpp"]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=C:\\MinGW\\bin\\c++.exe]
+        ignore line: [Target: mingw32]
+        ignore line: [Configured with: ../src/gcc-6.3.0/configure --build=x86_64-pc-linux-gnu --host=mingw32 --with-gmp=/mingw --with-mpfr=/mingw --with-mpc=/mingw --with-isl=/mingw --prefix=/mingw --disable-win32-registry --target=mingw32 --with-arch=i586 --enable-languages=c c++ objc obj-c++ fortran ada --with-pkgversion='MinGW.org GCC-6.3.0-1' --enable-static --enable-shared --enable-threads --with-dwarf2 --disable-sjlj-exceptions --enable-version-specific-runtime-libs --with-libiconv-prefix=/mingw --with-libintl-prefix=/mingw --enable-libstdcxx-debug --with-tune=generic --enable-libgomp --disable-libvtv --enable-nls]
+        ignore line: [Thread model: win32]
+        ignore line: [gcc version 6.3.0 (MinGW.org GCC-6.3.0-1) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_9231d.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=i586']
+        ignore line: [ c:/mingw/bin/../libexec/gcc/mingw32/6.3.0/cc1plus.exe -quiet -v -iprefix c:\\mingw\\bin\\../lib/gcc/mingw32/6.3.0/ C:\\Program Files\\CMake\\share\\cmake-4.2\\Modules\\CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mtune=generic -march=i586 -auxbase-strip CMakeFiles\\cmTC_9231d.dir\\CMakeCXXCompilerABI.cpp.obj -version -o C:\\Users\\irfan\\AppData\\Local\\Temp\\ccj4Wrjl.s]
+        ignore line: [GNU C++14 (MinGW.org GCC-6.3.0-1) version 6.3.0 (mingw32)]
+        ignore line: [	compiled by GNU C version 6.3.0  GMP version 6.1.2  MPFR version 3.1.5  MPC version 1.0.2  isl version 0.15]
+        ignore line: [warning: MPC header version 1.0.2 differs from library version 1.0.3.]
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring duplicate directory "c:/mingw/lib/gcc/../../lib/gcc/mingw32/6.3.0/include/c++"]
+        ignore line: [ignoring duplicate directory "c:/mingw/lib/gcc/../../lib/gcc/mingw32/6.3.0/include/c++/mingw32"]
+        ignore line: [ignoring duplicate directory "c:/mingw/lib/gcc/../../lib/gcc/mingw32/6.3.0/include/c++/backward"]
+        ignore line: [ignoring duplicate directory "c:/mingw/lib/gcc/../../lib/gcc/mingw32/6.3.0/include"]
+        ignore line: [ignoring duplicate directory "/mingw/lib/gcc/mingw32/6.3.0/../../../../include"]
+        ignore line: [ignoring duplicate directory "c:/mingw/lib/gcc/../../include"]
+        ignore line: [ignoring duplicate directory "c:/mingw/lib/gcc/../../lib/gcc/mingw32/6.3.0/include-fixed"]
+        ignore line: [ignoring duplicate directory "c:/mingw/lib/gcc/../../lib/gcc/mingw32/6.3.0/../../../../mingw32/include"]
+        ignore line: [ignoring duplicate directory "/mingw/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ c:\\mingw\\bin\\../lib/gcc/mingw32/6.3.0/include/c++]
+        ignore line: [ c:\\mingw\\bin\\../lib/gcc/mingw32/6.3.0/include/c++/mingw32]
+        ignore line: [ c:\\mingw\\bin\\../lib/gcc/mingw32/6.3.0/include/c++/backward]
+        ignore line: [ c:\\mingw\\bin\\../lib/gcc/mingw32/6.3.0/include]
+        ignore line: [ c:\\mingw\\bin\\../lib/gcc/mingw32/6.3.0/../../../../include]
+        ignore line: [ c:\\mingw\\bin\\../lib/gcc/mingw32/6.3.0/include-fixed]
+        ignore line: [ c:\\mingw\\bin\\../lib/gcc/mingw32/6.3.0/../../../../mingw32/include]
+        ignore line: [End of search list.]
+        ignore line: [GNU C++14 (MinGW.org GCC-6.3.0-1) version 6.3.0 (mingw32)]
+        ignore line: [	compiled by GNU C version 6.3.0  GMP version 6.1.2  MPFR version 3.1.5  MPC version 1.0.2  isl version 0.15]
+        ignore line: [warning: MPC header version 1.0.2 differs from library version 1.0.3.]
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [Compiler executable checksum: af09a87986453bf79da3565f33c7648f]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_9231d.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=i586']
+        ignore line: [ c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/as.exe -v -o CMakeFiles\\cmTC_9231d.dir\\CMakeCXXCompilerABI.cpp.obj C:\\Users\\irfan\\AppData\\Local\\Temp\\ccj4Wrjl.s]
+        ignore line: [GNU assembler version 2.28 (mingw32) using BFD version (GNU Binutils) 2.28]
+        ignore line: [COMPILER_PATH=c:/mingw/bin/../libexec/gcc/mingw32/6.3.0/]
+        ignore line: [c:/mingw/bin/../libexec/gcc/]
+        ignore line: [c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/]
+        ignore line: [LIBRARY_PATH=c:/mingw/bin/../lib/gcc/mingw32/6.3.0/]
+        ignore line: [c:/mingw/bin/../lib/gcc/]
+        ignore line: [c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/lib/]
+        ignore line: [c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_9231d.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=i586']
+        ignore line: [Linking CXX executable cmTC_9231d.exe]
+        ignore line: ["C:\\Program Files\\CMake\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_9231d.dir\\link.txt --verbose=1]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=C:\\MinGW\\bin\\c++.exe]
+        ignore line: [COLLECT_LTO_WRAPPER=c:/mingw/bin/../libexec/gcc/mingw32/6.3.0/lto-wrapper.exe]
+        ignore line: [Target: mingw32]
+        ignore line: [Configured with: ../src/gcc-6.3.0/configure --build=x86_64-pc-linux-gnu --host=mingw32 --with-gmp=/mingw --with-mpfr=/mingw --with-mpc=/mingw --with-isl=/mingw --prefix=/mingw --disable-win32-registry --target=mingw32 --with-arch=i586 --enable-languages=c c++ objc obj-c++ fortran ada --with-pkgversion='MinGW.org GCC-6.3.0-1' --enable-static --enable-shared --enable-threads --with-dwarf2 --disable-sjlj-exceptions --enable-version-specific-runtime-libs --with-libiconv-prefix=/mingw --with-libintl-prefix=/mingw --enable-libstdcxx-debug --with-tune=generic --enable-libgomp --disable-libvtv --enable-nls]
+        ignore line: [Thread model: win32]
+        ignore line: [gcc version 6.3.0 (MinGW.org GCC-6.3.0-1) ]
+        ignore line: [COMPILER_PATH=c:/mingw/bin/../libexec/gcc/mingw32/6.3.0/]
+        ignore line: [c:/mingw/bin/../libexec/gcc/]
+        ignore line: [c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/]
+        ignore line: [LIBRARY_PATH=c:/mingw/bin/../lib/gcc/mingw32/6.3.0/]
+        ignore line: [c:/mingw/bin/../lib/gcc/]
+        ignore line: [c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/lib/]
+        ignore line: [c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_9231d.exe' '-shared-libgcc' '-mtune=generic' '-march=i586']
+        link line: [ c:/mingw/bin/../libexec/gcc/mingw32/6.3.0/collect2.exe -plugin c:/mingw/bin/../libexec/gcc/mingw32/6.3.0/liblto_plugin-0.dll -plugin-opt=c:/mingw/bin/../libexec/gcc/mingw32/6.3.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\irfan\\AppData\\Local\\Temp\\cckOeQbG.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -Bdynamic -u ___register_frame_info -u ___deregister_frame_info -o cmTC_9231d.exe c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../crt2.o c:/mingw/bin/../lib/gcc/mingw32/6.3.0/crtbegin.o -Lc:/mingw/bin/../lib/gcc/mingw32/6.3.0 -Lc:/mingw/bin/../lib/gcc -Lc:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/lib -Lc:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../.. -v --whole-archive CMakeFiles\\cmTC_9231d.dir/objects.a --no-whole-archive --out-implib libcmTC_9231d.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt c:/mingw/bin/../lib/gcc/mingw32/6.3.0/crtend.o]
+          arg [c:/mingw/bin/../libexec/gcc/mingw32/6.3.0/collect2.exe] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [c:/mingw/bin/../libexec/gcc/mingw32/6.3.0/liblto_plugin-0.dll] ==> ignore
+          arg [-plugin-opt=c:/mingw/bin/../libexec/gcc/mingw32/6.3.0/lto-wrapper.exe] ==> ignore
+          arg [-plugin-opt=-fresolution=C:\\Users\\irfan\\AppData\\Local\\Temp\\cckOeQbG.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lmingw32] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lmoldname] ==> ignore
+          arg [-plugin-opt=-pass-through=-lmingwex] ==> ignore
+          arg [-plugin-opt=-pass-through=-lmsvcrt] ==> ignore
+          arg [-plugin-opt=-pass-through=-ladvapi32] ==> ignore
+          arg [-plugin-opt=-pass-through=-lshell32] ==> ignore
+          arg [-plugin-opt=-pass-through=-luser32] ==> ignore
+          arg [-plugin-opt=-pass-through=-lkernel32] ==> ignore
+          arg [-plugin-opt=-pass-through=-lmingw32] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lmoldname] ==> ignore
+          arg [-plugin-opt=-pass-through=-lmingwex] ==> ignore
+          arg [-plugin-opt=-pass-through=-lmsvcrt] ==> ignore
+          arg [-Bdynamic] ==> search dynamic
+          arg [-u] ==> ignore
+          arg [___register_frame_info] ==> ignore
+          arg [-u] ==> ignore
+          arg [___deregister_frame_info] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_9231d.exe] ==> ignore
+          arg [c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../crt2.o] ==> obj [c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../crt2.o]
+          arg [c:/mingw/bin/../lib/gcc/mingw32/6.3.0/crtbegin.o] ==> obj [c:/mingw/bin/../lib/gcc/mingw32/6.3.0/crtbegin.o]
+          arg [-Lc:/mingw/bin/../lib/gcc/mingw32/6.3.0] ==> dir [c:/mingw/bin/../lib/gcc/mingw32/6.3.0]
+          arg [-Lc:/mingw/bin/../lib/gcc] ==> dir [c:/mingw/bin/../lib/gcc]
+          arg [-Lc:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/lib] ==> dir [c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/lib]
+          arg [-Lc:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../..] ==> dir [c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../..]
+          arg [-v] ==> ignore
+          arg [--whole-archive] ==> ignore
+          arg [CMakeFiles\\cmTC_9231d.dir/objects.a] ==> ignore
+          arg [--no-whole-archive] ==> ignore
+          arg [--out-implib] ==> ignore
+          arg [libcmTC_9231d.dll.a] ==> ignore
+          arg [--major-image-version] ==> ignore
+          arg [0] ==> ignore
+          arg [--minor-image-version] ==> ignore
+          arg [0] ==> ignore
+          arg [-lstdc++] ==> lib [stdc++]
+          arg [-lmingw32] ==> lib [mingw32]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [-lmoldname] ==> lib [moldname]
+          arg [-lmingwex] ==> lib [mingwex]
+          arg [-lmsvcrt] ==> lib [msvcrt]
+          arg [-ladvapi32] ==> lib [advapi32]
+          arg [-lshell32] ==> lib [shell32]
+          arg [-luser32] ==> lib [user32]
+          arg [-lkernel32] ==> lib [kernel32]
+          arg [-lmingw32] ==> lib [mingw32]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [-lmoldname] ==> lib [moldname]
+          arg [-lmingwex] ==> lib [mingwex]
+          arg [-lmsvcrt] ==> lib [msvcrt]
+          arg [c:/mingw/bin/../lib/gcc/mingw32/6.3.0/crtend.o] ==> obj [c:/mingw/bin/../lib/gcc/mingw32/6.3.0/crtend.o]
+        ignore line: [collect2 version 6.3.0]
+        ignore line: [c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe -plugin c:/mingw/bin/../libexec/gcc/mingw32/6.3.0/liblto_plugin-0.dll -plugin-opt=c:/mingw/bin/../libexec/gcc/mingw32/6.3.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\irfan\\AppData\\Local\\Temp\\cckOeQbG.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -Bdynamic -u ___register_frame_info -u ___deregister_frame_info -o cmTC_9231d.exe c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../crt2.o c:/mingw/bin/../lib/gcc/mingw32/6.3.0/crtbegin.o -Lc:/mingw/bin/../lib/gcc/mingw32/6.3.0 -Lc:/mingw/bin/../lib/gcc -Lc:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/lib -Lc:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../.. -v --whole-archive CMakeFiles\\cmTC_9231d.dir/objects.a --no-whole-archive --out-implib libcmTC_9231d.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt c:/mingw/bin/../lib/gcc/mingw32/6.3.0/crtend.o]
+        linker tool for 'CXX': c:/mingw/mingw32/bin/ld.exe
+        remove lib [msvcrt]
+        remove lib [msvcrt]
+        collapse obj [c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../crt2.o] ==> [C:/MinGW/lib/crt2.o]
+        collapse obj [c:/mingw/bin/../lib/gcc/mingw32/6.3.0/crtbegin.o] ==> [C:/MinGW/lib/gcc/mingw32/6.3.0/crtbegin.o]
+        collapse obj [c:/mingw/bin/../lib/gcc/mingw32/6.3.0/crtend.o] ==> [C:/MinGW/lib/gcc/mingw32/6.3.0/crtend.o]
+        collapse library dir [c:/mingw/bin/../lib/gcc/mingw32/6.3.0] ==> [C:/MinGW/lib/gcc/mingw32/6.3.0]
+        collapse library dir [c:/mingw/bin/../lib/gcc] ==> [C:/MinGW/lib/gcc]
+        collapse library dir [c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/lib] ==> [C:/MinGW/mingw32/lib]
+        collapse library dir [c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../..] ==> [C:/MinGW/lib]
+        implicit libs: [stdc++;mingw32;gcc_s;gcc;moldname;mingwex;advapi32;shell32;user32;kernel32;mingw32;gcc_s;gcc;moldname;mingwex]
+        implicit objs: [C:/MinGW/lib/crt2.o;C:/MinGW/lib/gcc/mingw32/6.3.0/crtbegin.o;C:/MinGW/lib/gcc/mingw32/6.3.0/crtend.o]
+        implicit dirs: [C:/MinGW/lib/gcc/mingw32/6.3.0;C:/MinGW/lib/gcc;C:/MinGW/mingw32/lib;C:/MinGW/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/Internal/CMakeDetermineLinkerId.cmake:38 (message)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCompilerABI.cmake:299 (cmake_determine_linker_id)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Running the CXX compiler's linker: "c:/mingw/mingw32/bin/ld.exe" "-v"
+      GNU ld (GNU Binutils) 2.28
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/Internal/CheckSourceCompiles.cmake:104 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CheckCXXSourceCompiles.cmake:103 (cmake_check_source_compiles)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/FindThreads.cmake:162 (check_cxx_source_compiles)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/FindThreads.cmake:226 (_threads_check_libc)"
+      - "CMakeLists.txt:20 (find_package)"
+    checks:
+      - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
+    directories:
+      source: "C:/Users/irfan/OneDrive/Documents/IBA/PDC Project/Project/build_win_ps/CMakeFiles/CMakeScratch/TryCompile-tnbz0x"
+      binary: "C:/Users/irfan/OneDrive/Documents/IBA/PDC Project/Project/build_win_ps/CMakeFiles/CMakeScratch/TryCompile-tnbz0x"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g -O0 -fsanitize=address,undefined"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_HAVE_LIBC_PTHREAD"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/irfan/OneDrive/Documents/IBA/PDC Project/Project/build_win_ps/CMakeFiles/CMakeScratch/TryCompile-tnbz0x'
+        
+        Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_80501/fast
+        C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_80501.dir\\build.make CMakeFiles/cmTC_80501.dir/build
+        mingw32-make.exe[1]: Entering directory 'C:/Users/irfan/OneDrive/Documents/IBA/PDC Project/Project/build_win_ps/CMakeFiles/CMakeScratch/TryCompile-tnbz0x'
+        Building CXX object CMakeFiles/cmTC_80501.dir/src.cxx.obj
+        C:\\MinGW\\bin\\c++.exe -DCMAKE_HAVE_LIBC_PTHREAD  -std=c++1z -o CMakeFiles\\cmTC_80501.dir\\src.cxx.obj -c "C:\\Users\\irfan\\OneDrive\\Documents\\IBA\\PDC Project\\Project\\build_win_ps\\CMakeFiles\\CMakeScratch\\TryCompile-tnbz0x\\src.cxx"
+        C:\\Users\\irfan\\OneDrive\\Documents\\IBA\\PDC Project\\Project\\build_win_ps\\CMakeFiles\\CMakeScratch\\TryCompile-tnbz0x\\src.cxx: In function 'int main()':
+        C:\\Users\\irfan\\OneDrive\\Documents\\IBA\\PDC Project\\Project\\build_win_ps\\CMakeFiles\\CMakeScratch\\TryCompile-tnbz0x\\src.cxx:15:34: error: 'pthread_atfork' was not declared in this scope
+           pthread_atfork(NULL, NULL, NULL);
+                                          ^
+        CMakeFiles\\cmTC_80501.dir\\build.make:79: recipe for target 'CMakeFiles/cmTC_80501.dir/src.cxx.obj' failed
+        mingw32-make.exe[1]: *** [CMakeFiles/cmTC_80501.dir/src.cxx.obj] Error 1
+        mingw32-make.exe[1]: Leaving directory 'C:/Users/irfan/OneDrive/Documents/IBA/PDC Project/Project/build_win_ps/CMakeFiles/CMakeScratch/TryCompile-tnbz0x'
+        Makefile:133: recipe for target 'cmTC_80501/fast' failed
+        mingw32-make.exe: *** [cmTC_80501/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CheckLibraryExists.cmake:154 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/FindThreads.cmake:175 (check_library_exists)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/FindThreads.cmake:238 (_threads_check_lib)"
+      - "CMakeLists.txt:20 (find_package)"
+    checks:
+      - "Looking for pthread_create in pthreads"
+    directories:
+      source: "C:/Users/irfan/OneDrive/Documents/IBA/PDC Project/Project/build_win_ps/CMakeFiles/CMakeScratch/TryCompile-y192wx"
+      binary: "C:/Users/irfan/OneDrive/Documents/IBA/PDC Project/Project/build_win_ps/CMakeFiles/CMakeScratch/TryCompile-y192wx"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g -O0 -fsanitize=address,undefined"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_HAVE_PTHREADS_CREATE"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/irfan/OneDrive/Documents/IBA/PDC Project/Project/build_win_ps/CMakeFiles/CMakeScratch/TryCompile-y192wx'
+        
+        Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_1d984/fast
+        C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_1d984.dir\\build.make CMakeFiles/cmTC_1d984.dir/build
+        mingw32-make.exe[1]: Entering directory 'C:/Users/irfan/OneDrive/Documents/IBA/PDC Project/Project/build_win_ps/CMakeFiles/CMakeScratch/TryCompile-y192wx'
+        Building CXX object CMakeFiles/cmTC_1d984.dir/CheckFunctionExists.cxx.obj
+        C:\\MinGW\\bin\\c++.exe   -DCHECK_FUNCTION_EXISTS=pthread_create -std=c++1z -o CMakeFiles\\cmTC_1d984.dir\\CheckFunctionExists.cxx.obj -c "C:\\Users\\irfan\\OneDrive\\Documents\\IBA\\PDC Project\\Project\\build_win_ps\\CMakeFiles\\CMakeScratch\\TryCompile-y192wx\\CheckFunctionExists.cxx"
+        Linking CXX executable cmTC_1d984.exe
+        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_1d984.dir\\link.txt --verbose=1
+        c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot find -lpthreads
+        collect2.exe: error: ld returned 1 exit status
+        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E rm -f CMakeFiles\\cmTC_1d984.dir/objects.a
+        C:\\MinGW\\bin\\ar.exe qc CMakeFiles\\cmTC_1d984.dir/objects.a @CMakeFiles\\cmTC_1d984.dir\\objects1.rsp
+        C:\\MinGW\\bin\\c++.exe  -DCHECK_FUNCTION_EXISTS=pthread_create -Wl,--whole-archive CMakeFiles\\cmTC_1d984.dir/objects.a -Wl,--no-whole-archive -o cmTC_1d984.exe -Wl,--out-implib,libcmTC_1d984.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\\cmTC_1d984.dir\\linkLibs.rsp
+        CMakeFiles\\cmTC_1d984.dir\\build.make:102: recipe for target 'cmTC_1d984.exe' failed
+        mingw32-make.exe[1]: *** [cmTC_1d984.exe] Error 1
+        mingw32-make.exe[1]: Leaving directory 'C:/Users/irfan/OneDrive/Documents/IBA/PDC Project/Project/build_win_ps/CMakeFiles/CMakeScratch/TryCompile-y192wx'
+        Makefile:133: recipe for target 'cmTC_1d984/fast' failed
+        mingw32-make.exe: *** [cmTC_1d984/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CheckLibraryExists.cmake:154 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/FindThreads.cmake:175 (check_library_exists)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/FindThreads.cmake:239 (_threads_check_lib)"
+      - "CMakeLists.txt:20 (find_package)"
+    checks:
+      - "Looking for pthread_create in pthread"
+    directories:
+      source: "C:/Users/irfan/OneDrive/Documents/IBA/PDC Project/Project/build_win_ps/CMakeFiles/CMakeScratch/TryCompile-n3vezf"
+      binary: "C:/Users/irfan/OneDrive/Documents/IBA/PDC Project/Project/build_win_ps/CMakeFiles/CMakeScratch/TryCompile-n3vezf"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g -O0 -fsanitize=address,undefined"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_HAVE_PTHREAD_CREATE"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/irfan/OneDrive/Documents/IBA/PDC Project/Project/build_win_ps/CMakeFiles/CMakeScratch/TryCompile-n3vezf'
+        
+        Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_6f48f/fast
+        C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_6f48f.dir\\build.make CMakeFiles/cmTC_6f48f.dir/build
+        mingw32-make.exe[1]: Entering directory 'C:/Users/irfan/OneDrive/Documents/IBA/PDC Project/Project/build_win_ps/CMakeFiles/CMakeScratch/TryCompile-n3vezf'
+        Building CXX object CMakeFiles/cmTC_6f48f.dir/CheckFunctionExists.cxx.obj
+        C:\\MinGW\\bin\\c++.exe   -DCHECK_FUNCTION_EXISTS=pthread_create -std=c++1z -o CMakeFiles\\cmTC_6f48f.dir\\CheckFunctionExists.cxx.obj -c "C:\\Users\\irfan\\OneDrive\\Documents\\IBA\\PDC Project\\Project\\build_win_ps\\CMakeFiles\\CMakeScratch\\TryCompile-n3vezf\\CheckFunctionExists.cxx"
+        Linking CXX executable cmTC_6f48f.exe
+        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_6f48f.dir\\link.txt --verbose=1
+        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E rm -f CMakeFiles\\cmTC_6f48f.dir/objects.a
+        C:\\MinGW\\bin\\ar.exe qc CMakeFiles\\cmTC_6f48f.dir/objects.a @CMakeFiles\\cmTC_6f48f.dir\\objects1.rsp
+        C:\\MinGW\\bin\\c++.exe  -DCHECK_FUNCTION_EXISTS=pthread_create -Wl,--whole-archive CMakeFiles\\cmTC_6f48f.dir/objects.a -Wl,--no-whole-archive -o cmTC_6f48f.exe -Wl,--out-implib,libcmTC_6f48f.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\\cmTC_6f48f.dir\\linkLibs.rsp
+        mingw32-make.exe[1]: Leaving directory 'C:/Users/irfan/OneDrive/Documents/IBA/PDC Project/Project/build_win_ps/CMakeFiles/CMakeScratch/TryCompile-n3vezf'
+        
+      exitCode: 0
+  -
+    kind: "find-v1"
+    backtrace:
+      - "CMakeLists.txt:33 (find_path)"
+    mode: "path"
+    variable: "TIFF_INCLUDE_DIR"
+    description: "Path to a file."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "tiff.h"
+    candidate_directories:
+      - "C:/WINDOWS.X64_193000_db_home/bin/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/MinGW/bin/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Program Files/cursor/resources/app/bin/"
+      - "C:/Program Files/Docker/Docker/resources/bin/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Program Files/nodejs/"
+      - "C:/Program Files/MySQL/MySQL Shell 8.0/bin/"
+      - "C:/Users/irfan/AppData/Local/Programs/Python/Python312/Scripts/"
+      - "C:/Users/irfan/AppData/Local/Programs/Python/Python312/"
+      - "C:/Users/irfan/AppData/Local/Programs/Python/Python313/Scripts/"
+      - "C:/Users/irfan/AppData/Local/Programs/Python/Python313/"
+      - "C:/Users/irfan/AppData/Local/Programs/Python/Launcher/"
+      - "C:/Users/irfan/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Users/irfan/AppData/Local/Programs/Microsoft VS Code/bin/"
+      - "C:/Users/irfan/AppData/Local/Programs/cursor/resources/app/bin/"
+      - "C:/Users/irfan/AppData/Roaming/npm/"
+      - "C:/msys64/ucrt64/bin/"
+      - "C:/Program Files/include/"
+      - "C:/Program Files/"
+      - "C:/Program Files (x86)/include/"
+      - "C:/Program Files (x86)/"
+      - "C:/Program Files/CMake/include/"
+      - "C:/Program Files/CMake/"
+      - "C:/Program Files (x86)/milestone1/include/"
+      - "C:/Program Files (x86)/milestone1/"
+    searched_directories:
+      - "C:/WINDOWS.X64_193000_db_home/bin/tiff.h"
+      - "C:/Windows/System32/tiff.h"
+      - "C:/Windows/tiff.h"
+      - "C:/Windows/System32/wbem/tiff.h"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/tiff.h"
+      - "C:/Windows/System32/OpenSSH/tiff.h"
+      - "C:/MinGW/bin/tiff.h"
+      - "C:/Program Files/Git/cmd/tiff.h"
+      - "C:/Program Files/cursor/resources/app/bin/tiff.h"
+      - "C:/Program Files/Docker/Docker/resources/bin/tiff.h"
+      - "C:/Program Files/CMake/bin/tiff.h"
+      - "C:/Program Files/nodejs/tiff.h"
+      - "C:/Program Files/MySQL/MySQL Shell 8.0/bin/tiff.h"
+      - "C:/Users/irfan/AppData/Local/Programs/Python/Python312/Scripts/tiff.h"
+      - "C:/Users/irfan/AppData/Local/Programs/Python/Python312/tiff.h"
+      - "C:/Users/irfan/AppData/Local/Programs/Python/Python313/Scripts/tiff.h"
+      - "C:/Users/irfan/AppData/Local/Programs/Python/Python313/tiff.h"
+      - "C:/Users/irfan/AppData/Local/Programs/Python/Launcher/tiff.h"
+      - "C:/Users/irfan/AppData/Local/Microsoft/WindowsApps/tiff.h"
+      - "C:/Users/irfan/AppData/Local/Programs/Microsoft VS Code/bin/tiff.h"
+      - "C:/Users/irfan/AppData/Local/Programs/cursor/resources/app/bin/tiff.h"
+      - "C:/Users/irfan/AppData/Roaming/npm/tiff.h"
+      - "C:/msys64/ucrt64/bin/tiff.h"
+      - "C:/Program Files/include/tiff.h"
+      - "C:/Program Files/tiff.h"
+      - "C:/Program Files (x86)/include/tiff.h"
+      - "C:/Program Files (x86)/tiff.h"
+      - "C:/Program Files/CMake/include/tiff.h"
+      - "C:/Program Files/CMake/tiff.h"
+      - "C:/Program Files (x86)/milestone1/include/tiff.h"
+      - "C:/Program Files (x86)/milestone1/tiff.h"
+    found: false
+    search_context:
+      ENV{PATH}:
+        - "C:\\WINDOWS.X64_193000_db_home\\bin"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\MinGW\\bin"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\cursor\\resources\\app\\bin"
+        - "C:\\Program Files\\Docker\\Docker\\resources\\bin"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Program Files\\nodejs\\"
+        - "C:\\Program Files\\MySQL\\MySQL Shell 8.0\\bin\\"
+        - "C:\\Users\\irfan\\AppData\\Local\\Programs\\Python\\Python312\\Scripts\\"
+        - "C:\\Users\\irfan\\AppData\\Local\\Programs\\Python\\Python312\\"
+        - "C:\\Users\\irfan\\AppData\\Local\\Programs\\Python\\Python313\\Scripts\\"
+        - "C:\\Users\\irfan\\AppData\\Local\\Programs\\Python\\Python313\\"
+        - "C:\\Users\\irfan\\AppData\\Local\\Programs\\Python\\Launcher\\"
+        - "C:\\Users\\irfan\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\irfan\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\irfan\\AppData\\Local\\Programs\\Python\\Python313"
+        - "C:\\Users\\irfan\\AppData\\Local\\Programs\\Python\\Python313\\Scripts"
+        - "C:\\Users\\irfan\\AppData\\Local\\Programs\\cursor\\resources\\app\\bin"
+        - "C:\\Users\\irfan\\AppData\\Roaming\\npm"
+        - "C:\\msys64\\ucrt64\\bin"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/milestone1"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "C:/Program Files"
+        - "C:/Program Files (x86)"
+        - "C:/Program Files/CMake"
+        - "C:/Program Files (x86)/milestone1"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "CMakeLists.txt:34 (find_library)"
+    mode: "library"
+    variable: "TIFF_LIBRARY"
+    description: "Path to a library."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "tiff"
+    candidate_directories:
+      - "C:/WINDOWS.X64_193000_db_home/bin/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/MinGW/bin/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Program Files/cursor/resources/app/bin/"
+      - "C:/Program Files/Docker/Docker/resources/bin/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Program Files/nodejs/"
+      - "C:/Program Files/MySQL/MySQL Shell 8.0/bin/"
+      - "C:/Users/irfan/AppData/Local/Programs/Python/Python312/Scripts/"
+      - "C:/Users/irfan/AppData/Local/Programs/Python/Python312/"
+      - "C:/Users/irfan/AppData/Local/Programs/Python/Python313/Scripts/"
+      - "C:/Users/irfan/AppData/Local/Programs/Python/Python313/"
+      - "C:/Users/irfan/AppData/Local/Programs/Python/Launcher/"
+      - "C:/Users/irfan/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Users/irfan/AppData/Local/Programs/Microsoft VS Code/bin/"
+      - "C:/Users/irfan/AppData/Local/Programs/cursor/resources/app/bin/"
+      - "C:/Users/irfan/AppData/Roaming/npm/"
+      - "C:/msys64/ucrt64/bin/"
+      - "C:/Program Files/lib/"
+      - "C:/Program Files/"
+      - "C:/Program Files (x86)/lib/"
+      - "C:/Program Files (x86)/"
+      - "C:/Program Files/CMake/lib/"
+      - "C:/Program Files/CMake/"
+      - "C:/Program Files (x86)/milestone1/lib/"
+      - "C:/Program Files (x86)/milestone1/"
+      - "C:/Program Files (x86)/milestone1/bin/"
+      - "/bin/"
+    searched_directories:
+      - "C:/WINDOWS.X64_193000_db_home/bin/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/MinGW/bin/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Program Files/cursor/resources/app/bin/"
+      - "C:/Program Files/Docker/Docker/resources/bin/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Program Files/nodejs/"
+      - "C:/Program Files/MySQL/MySQL Shell 8.0/bin/"
+      - "C:/Users/irfan/AppData/Local/Programs/Python/Python312/Scripts/"
+      - "C:/Users/irfan/AppData/Local/Programs/Python/Python312/"
+      - "C:/Users/irfan/AppData/Local/Programs/Python/Python313/Scripts/"
+      - "C:/Users/irfan/AppData/Local/Programs/Python/Python313/"
+      - "C:/Users/irfan/AppData/Local/Programs/Python/Launcher/"
+      - "C:/Users/irfan/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Users/irfan/AppData/Local/Programs/Microsoft VS Code/bin/"
+      - "C:/Users/irfan/AppData/Local/Programs/cursor/resources/app/bin/"
+      - "C:/Users/irfan/AppData/Roaming/npm/"
+      - "C:/msys64/ucrt64/bin/"
+      - "C:/Program Files/lib/"
+      - "C:/Program Files/"
+      - "C:/Program Files (x86)/lib/"
+      - "C:/Program Files (x86)/"
+      - "C:/Program Files/CMake/lib/"
+      - "C:/Program Files/CMake/"
+      - "C:/Program Files (x86)/milestone1/lib/"
+      - "C:/Program Files (x86)/milestone1/"
+      - "C:/Program Files (x86)/milestone1/bin/"
+      - "/bin/"
+    found: false
+    search_context:
+      ENV{PATH}:
+        - "C:\\WINDOWS.X64_193000_db_home\\bin"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\MinGW\\bin"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\cursor\\resources\\app\\bin"
+        - "C:\\Program Files\\Docker\\Docker\\resources\\bin"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Program Files\\nodejs\\"
+        - "C:\\Program Files\\MySQL\\MySQL Shell 8.0\\bin\\"
+        - "C:\\Users\\irfan\\AppData\\Local\\Programs\\Python\\Python312\\Scripts\\"
+        - "C:\\Users\\irfan\\AppData\\Local\\Programs\\Python\\Python312\\"
+        - "C:\\Users\\irfan\\AppData\\Local\\Programs\\Python\\Python313\\Scripts\\"
+        - "C:\\Users\\irfan\\AppData\\Local\\Programs\\Python\\Python313\\"
+        - "C:\\Users\\irfan\\AppData\\Local\\Programs\\Python\\Launcher\\"
+        - "C:\\Users\\irfan\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\irfan\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\irfan\\AppData\\Local\\Programs\\Python\\Python313"
+        - "C:\\Users\\irfan\\AppData\\Local\\Programs\\Python\\Python313\\Scripts"
+        - "C:\\Users\\irfan\\AppData\\Local\\Programs\\cursor\\resources\\app\\bin"
+        - "C:\\Users\\irfan\\AppData\\Roaming\\npm"
+        - "C:\\msys64\\ucrt64\\bin"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/milestone1"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "C:/Program Files"
+        - "C:/Program Files (x86)"
+        - "C:/Program Files/CMake"
+        - "C:/Program Files (x86)/milestone1"
+      CMAKE_SYSTEM_LIBRARY_PATH:
+        - "C:/Program Files (x86)/milestone1/bin"
+        - "C:/Program Files/CMake/bin"
+        - "/bin"
+...
