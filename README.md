@@ -1,10 +1,10 @@
 The project targets parallel image transformation and filtering of gigapixel images using heterogeneous computing (CPU + GPU).
 
-Group Members:
-*Gehna Bhatia*
-*Muhammad Zayed Nauman*
-*Zainab Irfan*
-*Muhammad Anis Imran*
+**Group Members:**
+**Gehna Bhatia**
+**Muhammad Zayed Nauman**
+**Zainab Irfan**
+**Muhammad Anis Imran**
 
 Steps for compiling and executing the files:
 
