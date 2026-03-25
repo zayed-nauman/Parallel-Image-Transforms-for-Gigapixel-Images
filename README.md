@@ -1,4 +1,4 @@
-The project targets parallel image transformation and filtering of gigapixel images using heterogeneous computing (CPU + GPU).
+The project aims at parallel image transform and filtering of gigapixel images with heterogeneous computing (CPU + GPU), creating a system capable of processing images larger than available memory with high throughput. The core challenge is out-of-core processing, handling data larger than working memory by streaming it in chunks, never loading more than a small portion of the image at once.
 
 **Group Members:**
 **Gehna Bhatia**
