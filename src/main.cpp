@@ -2,12 +2,15 @@
 #include "tile_reader.h"
 #include "tile_writer.h"
 #include "tile_processor.h"
+#include "sequential_processor.h"
 #include "transforms.h"
 
 #include <iostream>
 #include <string>
 #include <stdexcept>
 #include <cstring>
+#include <iomanip>
+#include <thread>
 
 // ─────────────────────────────────────────────────────────────────────────────
 //  CLI usage
@@ -16,6 +19,11 @@
 static void print_usage(const char* prog) {
     std::cout <<
         "Usage: " << prog << " [options] <input.tiff> <output.tiff>\n"
+        "\n"
+        "Mode:\n"
+        "  --mode parallel      Run parallel pipeline (default)\n"
+        "  --mode sequential    Run sequential single-thread pipeline\n"
+        "  --mode both          Run BOTH and print speedup comparison\n"
         "\n"
         "Options:\n"
         "  --transform <name>   Add a transform (can be repeated).\n"
@@ -35,6 +43,7 @@ static void print_usage(const char* prog) {
         "\n"
         "Examples:\n"
         "  " << prog << " input.tiff output.tiff\n"
+        "  " << prog << " --mode both input.tiff output.tiff\n"
         "  " << prog << " --transform blur 4 input.tiff output.tiff\n"
         "  " << prog << " --transform rotate 30 --transform resize 0.5 0.5 in.tiff out.tiff\n";
 }
@@ -43,11 +52,49 @@ static void print_usage(const char* prog) {
 //  Argument parsing helpers
 // ─────────────────────────────────────────────────────────────────────────────
 
-static int parse_int(const char* s) {
-    return std::stoi(s);
-}
-static float parse_float(const char* s) {
-    return std::stof(s);
+static int   parse_int(const char* s)   { return std::stoi(s); }
+static float parse_float(const char* s) { return std::stof(s); }
+
+// ─────────────────────────────────────────────────────────────────────────────
+//  Speedup table
+// ─────────────────────────────────────────────────────────────────────────────
+
+static void print_speedup_table(
+    double par_elapsed,  double par_mpix,
+    double seq_elapsed,  double seq_mpix,
+    int    num_threads,
+    uint32_t img_w,      uint32_t img_h)
+{
+    double speedup    = (par_elapsed > 0) ? seq_elapsed / par_elapsed : 0.0;
+    double efficiency = speedup / num_threads * 100.0;
+
+    std::cout << "\n";
+    std::cout << "╔══════════════════════════════════════════════════════╗\n";
+    std::cout << "║           SPEEDUP ANALYSIS REPORT                   ║\n";
+    std::cout << "╠══════════════════════════════════════════════════════╣\n";
+    std::cout << "║  Image : " << img_w << " x " << img_h
+              << "  (" << std::fixed << std::setprecision(1)
+              << (double)img_w * img_h / 1e6 << " Mpix)\n";
+    std::cout << "╠══════════════════════════════════════════════════════╣\n";
+    std::cout << "║  Mode            Threads    Time(s)    Mpix/s       ║\n";
+    std::cout << "║  ─────────────  ────────   ────────   ────────      ║\n";
+    std::cout << "║  Sequential          1    "
+              << std::setw(8) << std::fixed << std::setprecision(4) << seq_elapsed
+              << "   "
+              << std::setw(8) << std::fixed << std::setprecision(2) << seq_mpix
+              << "      ║\n";
+    std::cout << "║  Parallel     "
+              << std::setw(8) << num_threads << "    "
+              << std::setw(8) << std::fixed << std::setprecision(4) << par_elapsed
+              << "   "
+              << std::setw(8) << std::fixed << std::setprecision(2) << par_mpix
+              << "      ║\n";
+    std::cout << "╠══════════════════════════════════════════════════════╣\n";
+    std::cout << "║  Speedup    : " << std::fixed << std::setprecision(2)
+              << speedup << "x  (ideal: " << num_threads << "x)              ║\n";
+    std::cout << "║  Efficiency : " << std::fixed << std::setprecision(1)
+              << efficiency << "% per thread                       ║\n";
+    std::cout << "╚══════════════════════════════════════════════════════╝\n\n";
 }
 
 // ─────────────────────────────────────────────────────────────────────────────
@@ -59,18 +106,24 @@ int main(int argc, char* argv[]) {
 
     PipelineConfig cfg;
     TransformChain chain;
-    BorderMode border = BorderMode::CLAMP;
-
-    // Input and output paths are the last two positional arguments.
-    std::string input_path;
-    std::string output_path;
+    BorderMode     border = BorderMode::CLAMP;
+    std::string    mode   = "parallel";
+    std::string    input_path;
+    std::string    output_path;
 
     // ── Parse arguments ───────────────────────────────────────────────────
     int i = 1;
     while (i < argc) {
         std::string arg = argv[i];
 
-        if (arg == "--tile-size" && i + 1 < argc) {
+        if (arg == "--mode" && i + 1 < argc) {
+            mode = argv[++i];
+            if (mode != "parallel" && mode != "sequential" && mode != "both") {
+                std::cerr << "Unknown mode: " << mode
+                          << " (use: parallel | sequential | both)\n";
+                return 1;
+            }
+        } else if (arg == "--tile-size" && i + 1 < argc) {
             cfg.tile_size = parse_int(argv[++i]);
         } else if (arg == "--halo" && i + 1 < argc) {
             cfg.halo_size = parse_int(argv[++i]);
@@ -121,8 +174,7 @@ int main(int argc, char* argv[]) {
             return 1;
 
         } else {
-            // Positional: first = input, second = output.
-            if (input_path.empty())       input_path  = arg;
+            if      (input_path.empty())  input_path  = arg;
             else if (output_path.empty()) output_path = arg;
             else { std::cerr << "Unexpected argument: " << arg << "\n"; return 1; }
         }
@@ -136,14 +188,19 @@ int main(int argc, char* argv[]) {
         return 1;
     }
 
-    // If no transform was specified, add identity so the pipeline has work.
     if (chain.size() == 0)
         chain.add(std::make_unique<IdentityTransform>());
 
     cfg.input_path  = input_path;
     cfg.output_path = output_path;
 
-    // ── Open reader ────────────────────────────────────────────────────────
+    // Resolve actual thread count now so we can report it correctly.
+    int actual_threads = cfg.num_threads;
+    if (actual_threads <= 0)
+        actual_threads = static_cast<int>(std::thread::hardware_concurrency());
+    if (actual_threads <= 0) actual_threads = 2;
+
+    // ── Open reader ───────────────────────────────────────────────────────
     try {
         TileReader reader(input_path, border);
         const ImageInfo& info = reader.info();
@@ -154,30 +211,68 @@ int main(int argc, char* argv[]) {
                   << "Output: " << output_path << "\n"
                   << "Config: tile=" << cfg.tile_size
                   << "  halo=" << std::max(cfg.halo_size, chain.max_halo())
-                  << "  threads=" << cfg.num_threads
-                  << "\n";
+                  << "  threads=" << actual_threads
+                  << "  mode=" << mode << "\n";
 
-        // Output image has the same dimensions as input unless a resize was added.
-        // (For a resize, the processor writes to the scaled-down coordinates.)
-        // For simplicity, we use the input dimensions for the output file.
-        // A production system would compute the output dimensions from the chain.
-        uint32_t out_w = info.width;
-        uint32_t out_h = info.height;
+        double par_elapsed = 0, par_mpix = 0;
+        double seq_elapsed = 0, seq_mpix = 0;
 
-        TileWriter writer(output_path, out_w, out_h, info.fmt, 256);
-        TileProcessor proc(cfg, reader, writer, chain);
+        // ── Sequential run ────────────────────────────────────────────────
+        if (mode == "sequential" || mode == "both") {
+            std::string seq_out = (mode == "both")
+                ? output_path + ".seq.tiff"
+                : output_path;
 
-        TileProcessor::Stats stats = proc.run();
+            std::cout << "\n── Running SEQUENTIAL ────────────────────────────\n";
+            TileWriter seq_writer(seq_out, info.width, info.height, info.fmt, 256);
+            SequentialProcessor seq(cfg, reader, seq_writer, chain);
+            auto s = seq.run();
+            seq_writer.close();
 
-        std::cout << "\n── Results ─────────────────────────────────────\n"
-                  << "  Tiles read:      " << stats.tiles_read      << "\n"
-                  << "  Tiles processed: " << stats.tiles_processed  << "\n"
-                  << "  Tiles skipped:   " << stats.tiles_skipped    << "\n"
-                  << "  Tiles written:   " << stats.tiles_written     << "\n"
-                  << "  Elapsed:         " << stats.elapsed_sec      << " s\n"
-                  << "  Throughput:      " << stats.mpix_per_sec     << " Mpix/s\n";
+            seq_elapsed = s.elapsed_sec;
+            seq_mpix    = s.mpix_per_sec;
 
-        writer.close();
+            std::cout << "\n── Sequential Results ────────────────────────────\n"
+                      << "  Tiles read:      " << s.tiles_read      << "\n"
+                      << "  Tiles processed: " << s.tiles_processed  << "\n"
+                      << "  Tiles skipped:   " << s.tiles_skipped    << "\n"
+                      << "  Tiles written:   " << s.tiles_written    << "\n"
+                      << "  Elapsed:         " << std::fixed << std::setprecision(4)
+                      << s.elapsed_sec << " s\n"
+                      << "  Throughput:      " << std::fixed << std::setprecision(2)
+                      << s.mpix_per_sec << " Mpix/s\n";
+        }
+
+        // ── Parallel run ──────────────────────────────────────────────────
+        if (mode == "parallel" || mode == "both") {
+            std::cout << "\n── Running PARALLEL ──────────────────────────────\n";
+            TileWriter par_writer(output_path, info.width, info.height, info.fmt, 256);
+            TileProcessor proc(cfg, reader, par_writer, chain);
+            auto s = proc.run();
+            par_writer.close();
+
+            par_elapsed = s.elapsed_sec;
+            par_mpix    = s.mpix_per_sec;
+
+            std::cout << "\n── Parallel Results ──────────────────────────────\n"
+                      << "  Tiles read:      " << s.tiles_read      << "\n"
+                      << "  Tiles processed: " << s.tiles_processed  << "\n"
+                      << "  Tiles skipped:   " << s.tiles_skipped    << "\n"
+                      << "  Tiles written:   " << s.tiles_written    << "\n"
+                      << "  Elapsed:         " << std::fixed << std::setprecision(4)
+                      << s.elapsed_sec << " s\n"
+                      << "  Throughput:      " << std::fixed << std::setprecision(2)
+                      << s.mpix_per_sec << " Mpix/s\n";
+        }
+
+        // ── Speedup table (only when both ran) ────────────────────────────
+        if (mode == "both") {
+            print_speedup_table(par_elapsed, par_mpix,
+                                seq_elapsed, seq_mpix,
+                                actual_threads,
+                                info.width, info.height);
+        }
+
         return 0;
 
     } catch (const std::exception& ex) {
