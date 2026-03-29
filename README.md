@@ -25,22 +25,6 @@ Milestone 1 delivers the complete **CPU-only foundation**: a tiled reader, overl
 
 ---
 
-## Build
-
-```bash
-git clone <your-repo-url>
-cd Project
-
-mkdir build
-cd build
-cmake ..
-make -j$(nproc)          # Linux
-make -j$(sysctl -n hw.logicalcpu)   # macOS
-```
-
-The compiled binary will be at `build/milestone1`.
-
----
 
 ## Generating Test Images
 
