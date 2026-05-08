@@ -1,4 +1,3 @@
-
 #pragma once
 
 #include "common.h"
@@ -21,8 +20,11 @@ struct RoutingDecision {
 };
 
 struct SchedulerConfig {
-    bool gpu_available = true;  // Force GPU available
-    int min_gpu_tile_pixels = 1;  // Allow any tile size
+    // BUG FIX: was `true` — routed ALL tiles to GPU even without --gpu flag,
+    // causing the GPU path to execute on every tile unconditionally and
+    // crashing when no CUDA context was ready.  Default must be false.
+    bool gpu_available = false;
+    int min_gpu_tile_pixels = 1;
     float gpu_queue_spill_threshold = 0.99f;
     float cpu_queue_spill_threshold = 0.99f;
     double pcie_bandwidth_bytes_per_sec = 8.0e9;
@@ -33,15 +35,15 @@ struct SchedulerConfig {
 class WorkScheduler {
 public:
     explicit WorkScheduler(const SchedulerConfig& cfg = {});
-    
+
     RoutingDecision route_tile(const Tile& tile, const TransformChain& chain);
     static OperationClass classify(const TransformChain& chain);
-    
+
     void set_gpu_queue_occupancy(float occupancy);
     void set_cpu_queue_occupancy(float occupancy);
     void report_gpu_tile_time(double seconds, int tile_pixels);
     void report_cpu_tile_time(double seconds, int tile_pixels);
-    
+
     struct Stats {
         uint64_t routed_to_gpu = 0;
         uint64_t routed_to_cpu = 0;
@@ -52,7 +54,7 @@ public:
     };
     Stats stats() const;
     void reset();
-    
+
 private:
     SchedulerConfig cfg_;
     mutable std::mutex mu_;
@@ -64,7 +66,7 @@ private:
     std::atomic<uint64_t> cnt_cpu_{0};
     std::atomic<uint64_t> spill_gpu_{0};
     std::atomic<uint64_t> spill_cpu_{0};
-    
+
     double transfer_time(std::size_t bytes) const;
     double kernel_time(int tile_pixels, OperationClass op) const;
 };

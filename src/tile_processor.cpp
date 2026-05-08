@@ -135,7 +135,8 @@ TileProcessor::Stats TileProcessor::run() {
     if (num_threads <= 0) num_threads = 2;
 
     int tile_size = I.cfg.tile_size;
-    int halo      = std::max(I.cfg.halo_size, I.chain.max_halo());
+    int halo      = std::max(I.cfg.halo_size,
+                             I.chain.max_halo_for_image(I.img_info.width, I.img_info.height));
     int ncols     = I.reader.num_tile_cols(tile_size);
     int nrows     = I.reader.num_tile_rows(tile_size);
     int total     = ncols * nrows;

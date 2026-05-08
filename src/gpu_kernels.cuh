@@ -1,7 +1,5 @@
 #pragma once
 // =============================================================================
-//  gpu_kernels.cuh   —  Milestone 2
-//  Zainab Irfan Ansari  (29091)
 //
 //  Declares every kernel and host-side launcher used by gpu_tile_processor.cpp.
 //
