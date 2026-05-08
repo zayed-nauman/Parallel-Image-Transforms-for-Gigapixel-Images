@@ -13,6 +13,7 @@
 #include "sequential_processor.h"
 #include "gpu_tile_processor.h"
 #include "transforms.h"
+#include "benchmark_sweep.h"
 
 #include <iostream>
 #include <string>
@@ -31,6 +32,7 @@ static void print_usage(const char* prog) {
         "  --mode both            Parallel vs sequential speedup\n"
         "  --mode hetero          Heterogeneous CPU+GPU pipeline (Milestone 2)\n"
         "  --mode hetero-bench    Hetero vs CPU-parallel speedup comparison\n"
+        "  --mode analysis-sweep  Milestone 3 tile/halo/depth/1GP-50GP CSV sweep\n"
         "\n"
         "GPU options (Milestone 2):\n"
         "  --gpu                  Enable GPU routing (requires CUDA build)\n"
@@ -105,6 +107,7 @@ int main(int argc, char* argv[]) {
     TransformChain      chain;
     BorderMode          border = BorderMode::CLAMP;
     std::string         mode   = "parallel";
+    BenchmarkImagePaths bench_paths;
     std::string         input_path, output_path;
 
     int i = 1;
@@ -132,6 +135,12 @@ int main(int argc, char* argv[]) {
             cfg.num_threads = parse_int(argv[++i]);
         } else if (arg == "--in-flight" && i + 1 < argc) {
             cfg.max_in_flight = parse_int(argv[++i]);
+        } else if (arg == "--bench-1gp" && i + 1 < argc) {
+            bench_paths.gp1 = argv[++i];
+        } else if (arg == "--bench-10gp" && i + 1 < argc) {
+            bench_paths.gp10 = argv[++i];
+        } else if (arg == "--bench-50gp" && i + 1 < argc) {
+            bench_paths.gp50 = argv[++i];
         } else if (arg == "--border" && i + 1 < argc) {
             std::string m = argv[++i];
             if      (m == "zero")    border = BorderMode::ZERO;
@@ -200,6 +209,14 @@ int main(int argc, char* argv[]) {
                   << "        " << out_w << " x " << out_h << " (after transforms)\n"
                   << "Mode:   " << mode
                   << "  gpu=" << (hcfg.gpu_available ? "ON" : "OFF") << "\n";
+
+
+        // ── Milestone 3 analysis sweep ───────────────────────────────────
+        if (mode == "analysis-sweep") {
+            std::string csv = output_path + ".milestone3_analysis.csv";
+            run_milestone3_analysis_sweep(cfg, reader, chain, out_w, out_h, csv, bench_paths);
+            return 0;
+        }
 
         double par_elapsed = 0, par_mpix = 0;
         double seq_elapsed = 0, seq_mpix = 0;

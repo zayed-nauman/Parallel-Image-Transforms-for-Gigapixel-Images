@@ -40,6 +40,9 @@ public:
         uint64_t tiles_written   = 0;
         double   elapsed_sec     = 0.0;
         double   mpix_per_sec    = 0.0;
+        uint64_t prefetch_ready  = 0;
+        uint64_t prefetch_stalls = 0;
+        double   io_overlap_ratio = 0.0;
     };
 
     TileProcessor(const PipelineConfig& cfg,

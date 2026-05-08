@@ -5,6 +5,7 @@
 #include <filesystem>
 #include <fstream>
 #include <stdexcept>
+#include <cstdio>
 
 #ifdef HAVE_CUDA
 #include <cuda_runtime.h>
@@ -131,8 +132,98 @@ void MemoryManager::release_gpu(std::unique_ptr<DeviceBuffer> buf) {
     gpu_bytes_used_ -= std::min(buf->bytes, gpu_bytes_used_);
 }
 
-std::string MemoryManager::spill_tile(const Tile& t) { return ""; }
-Tile MemoryManager::restore_tile(const std::string& spill_path) { return Tile(); }
+namespace {
+struct SpillHeader {
+    char magic[8] = {'M','3','S','P','I','L','L','1'};
+    int32_t global_x = 0, global_y = 0, core_w = 0, core_h = 0, halo = 0;
+    int32_t fmt = 0;
+    uint64_t raw_bytes = 0;
+    uint64_t rle_bytes = 0;
+};
+
+static std::vector<uint8_t> rle_compress(const std::vector<uint8_t>& in) {
+    std::vector<uint8_t> out;
+    out.reserve(in.size() / 2 + 16);
+    for (size_t i = 0; i < in.size();) {
+        uint8_t v = in[i];
+        size_t run = 1;
+        while (i + run < in.size() && in[i + run] == v && run < 255) ++run;
+        out.push_back(static_cast<uint8_t>(run));
+        out.push_back(v);
+        i += run;
+    }
+    return out;
+}
+
+static std::vector<uint8_t> rle_decompress(const std::vector<uint8_t>& in, size_t expected) {
+    std::vector<uint8_t> out;
+    out.reserve(expected);
+    for (size_t i = 0; i + 1 < in.size(); i += 2) {
+        uint8_t run = in[i], v = in[i + 1];
+        out.insert(out.end(), run, v);
+    }
+    if (out.size() != expected)
+        throw std::runtime_error("spill restore failed: decompressed byte count mismatch");
+    return out;
+}
+}
+
+std::string MemoryManager::spill_tile(const Tile& t) {
+    std::filesystem::create_directories(cfg_.spill_dir);
+
+    SpillHeader h;
+    h.global_x = t.global_x; h.global_y = t.global_y;
+    h.core_w = t.core_w; h.core_h = t.core_h; h.halo = t.halo;
+    h.fmt = static_cast<int32_t>(t.fmt);
+    h.raw_bytes = static_cast<uint64_t>(t.data.size());
+
+    std::vector<uint8_t> payload = rle_compress(t.data);
+    h.rle_bytes = static_cast<uint64_t>(payload.size());
+
+    uint64_t seq;
+    {
+        std::lock_guard<std::mutex> lk(mu_);
+        seq = spill_seq_++;
+        ++spill_count_;
+    }
+
+    std::filesystem::path path = std::filesystem::path(cfg_.spill_dir) /
+        ("tile_" + std::to_string(seq) + ".m3rle");
+
+    std::ofstream out(path, std::ios::binary);
+    if (!out) throw std::runtime_error("cannot open spill file for writing: " + path.string());
+    out.write(reinterpret_cast<const char*>(&h), sizeof(h));
+    out.write(reinterpret_cast<const char*>(payload.data()), static_cast<std::streamsize>(payload.size()));
+    return path.string();
+}
+
+Tile MemoryManager::restore_tile(const std::string& spill_path) {
+    std::ifstream in(spill_path, std::ios::binary);
+    if (!in) throw std::runtime_error("cannot open spill file for reading: " + spill_path);
+
+    SpillHeader h;
+    in.read(reinterpret_cast<char*>(&h), sizeof(h));
+    if (!in || std::string(h.magic, h.magic + 7) != "M3SPILL")
+        throw std::runtime_error("invalid spill file header: " + spill_path);
+
+    std::vector<uint8_t> payload(static_cast<size_t>(h.rle_bytes));
+    in.read(reinterpret_cast<char*>(payload.data()), static_cast<std::streamsize>(payload.size()));
+    if (!in) throw std::runtime_error("truncated spill file: " + spill_path);
+
+    Tile t;
+    t.global_x = h.global_x; t.global_y = h.global_y;
+    t.core_w = h.core_w; t.core_h = h.core_h; t.halo = h.halo;
+    t.fmt = static_cast<PixelFormat>(h.fmt);
+    t.data = rle_decompress(payload, static_cast<size_t>(h.raw_bytes));
+
+    {
+        std::lock_guard<std::mutex> lk(mu_);
+        ++restore_count_;
+    }
+    std::error_code ec;
+    std::filesystem::remove(spill_path, ec);
+    return t;
+}
 
 MemoryManager::Stats MemoryManager::stats() const {
     std::lock_guard<std::mutex> lk(mu_);

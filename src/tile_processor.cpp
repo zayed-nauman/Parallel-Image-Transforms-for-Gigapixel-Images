@@ -1,6 +1,9 @@
 #include "tile_processor.h"
 #include "tile_reader.h"
 #include "tile_writer.h"
+#include "tile_prefetcher.h"
+#include "pipeline_fusion.h"
+#include "memory_manager.h"
 
 #include <thread>
 #include <mutex>
@@ -10,6 +13,7 @@
 #include <chrono>
 #include <iostream>
 #include <cassert>
+#include <iomanip>
 
 // ─────────────────────────────────────────────────────────────────────────────
 //  Thread-safe bounded queue
@@ -86,22 +90,29 @@ struct TileProcessor::Impl {
     const TileReader&     reader;
     TileWriter&           writer;
     const TransformChain& chain;
+    FusedChain            fused_chain;
+    FusionOptimizer::Stats fusion_stats;
+    MemoryManager         memory_manager;
     ImageInfo             img_info;
 
     // Queues
-    BoundedQueue<TileCoord>    work_queue;    // producer → workers
+    BoundedQueue<Tile>         work_queue;    // prefetch producer → workers
     BoundedQueue<ProcessedTile> result_queue; // workers  → consumer
 
     // Shared stats
     std::atomic<uint64_t> tiles_read      {0};
     std::atomic<uint64_t> tiles_processed {0};
     std::atomic<uint64_t> tiles_skipped   {0};
+    PrefetchStats prefetch_stats{};
 
     Impl(const PipelineConfig& c,
          const TileReader&     r,
          TileWriter&           w,
          const TransformChain& ch)
         : cfg(c), reader(r), writer(w), chain(ch),
+          fused_chain(FusionOptimizer::fuse(ch)),
+          fusion_stats(FusionOptimizer::last_stats()),
+          memory_manager(MemoryManagerConfig{}),
           img_info(r.info()),
           // work_queue capacity = a few tiles ahead of worker count
           work_queue(static_cast<std::size_t>(c.max_in_flight) * 2),
@@ -143,15 +154,40 @@ TileProcessor::Stats TileProcessor::run() {
 
     std::cout << "[TileProcessor] " << num_threads << " worker threads, "
               << ncols << "x" << nrows << " tile grid ("
-              << total << " tiles), halo=" << halo << "\n";
+              << total << " tiles), halo=" << halo << "\n"
+              << "  Fusion plan: " << I.fused_chain.summary()
+              << " (" << I.fusion_stats.original_steps << " original steps -> "
+              << I.fusion_stats.fused_steps << " fused steps, "
+              << I.fusion_stats.fusions_applied << " fusion rule(s))\n";
 
     auto t_start = std::chrono::steady_clock::now();
 
-    // ── Producer thread ───────────────────────────────────────────────────
+    // ── Prefetch producer thread ──────────────────────────────────────────
+    // Milestone 3: real async prefetching. A background TilePrefetcher reads
+    // tile N+1 while the worker pool is computing tile N. The producer only
+    // blocks if the ready queue is exhausted or the pipeline back-pressure
+    // limit is reached.
     std::thread producer([&]() {
-        for (int row = 0; row < nrows; ++row)
-            for (int col = 0; col < ncols; ++col)
-                I.work_queue.push({col, row});
+        TilePrefetcher pf(I.reader, tile_size, halo, std::max(2, I.cfg.max_in_flight / 2));
+
+        int scheduled = 0;
+        auto schedule_index = [&](int idx) {
+            int row = idx / ncols;
+            int col = idx % ncols;
+            pf.schedule(col, row);
+        };
+
+        const int warmup = std::min(total, std::max(2, I.cfg.max_in_flight / 2));
+        for (; scheduled < warmup; ++scheduled) schedule_index(scheduled);
+
+        for (int consumed = 0; consumed < total; ++consumed) {
+            if (scheduled < total) schedule_index(scheduled++);
+            Tile raw = pf.next();
+            I.tiles_read.fetch_add(1, std::memory_order_relaxed);
+            I.work_queue.push(std::move(raw));
+        }
+
+        I.prefetch_stats = pf.stats();
         I.work_queue.seal();
     });
 
@@ -161,15 +197,11 @@ TileProcessor::Stats TileProcessor::run() {
 
     for (int t = 0; t < num_threads; ++t) {
         workers.emplace_back([&]() {
-            TileCoord coord;
-            while (I.work_queue.pop(coord)) {
-                // 1. Read tile from disk (includes halo).
-                Tile raw = I.reader.read_tile(coord.col, coord.row,
-                                              tile_size, halo);
-                I.tiles_read.fetch_add(1, std::memory_order_relaxed);
-
+            Tile raw;
+            while (I.work_queue.pop(raw)) {
+                // 1. Tile has already been read by the asynchronous prefetcher.
                 // 2. Apply the transform chain.
-                Tile result = I.chain.apply(std::move(raw), I.img_info);
+                Tile result = I.fused_chain.apply_with_spill(std::move(raw), I.img_info, I.memory_manager);
 
                 bool skip = (result.core_w == 0 || result.core_h == 0);
                 if (skip)
@@ -225,6 +257,19 @@ TileProcessor::Stats TileProcessor::run() {
     s.tiles_written   = written;
     s.elapsed_sec     = elapsed;
     s.mpix_per_sec    = (elapsed > 0) ? total_mpix / elapsed : 0.0;
+    s.prefetch_ready  = I.prefetch_stats.tiles_ready_on_get;
+    s.prefetch_stalls = I.prefetch_stats.tiles_stalled;
+    s.io_overlap_ratio = I.prefetch_stats.io_overlap_ratio;
+
+    std::cout << "  Prefetch: ready=" << s.prefetch_ready
+              << " stalled=" << s.prefetch_stalls
+              << " overlap=" << std::fixed << std::setprecision(2)
+              << (s.io_overlap_ratio * 100.0) << "%\n";
+
+    auto ms = I.memory_manager.stats();
+    std::cout << "  Fusion/compression: " << I.fusion_stats.description
+              << " | compressed intermediate spills=" << ms.spills
+              << " restores=" << ms.restores << "\n";
 
     return s;
 }

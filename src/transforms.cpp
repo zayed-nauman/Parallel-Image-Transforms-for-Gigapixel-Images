@@ -1,5 +1,6 @@
 #include "transforms.h"
 #include "overlap.h"
+#include "cache_optimizer.h"
 #include <cmath>
 #include <cstring>
 #include <algorithm>
@@ -174,50 +175,13 @@ Tile RotateTransform::apply(const Tile& in, const ImageInfo& img) const {
 //  BoxBlurTransform
 // ─────────────────────────────────────────────────────────────────────────────
 Tile BoxBlurTransform::apply(const Tile& in, const ImageInfo&) const {
+    // Milestone 3 cache optimisation: use the SoA + cache-blocked separable
+    // blur implementation from cache_optimizer.h. It processes contiguous
+    // channel planes and blocks the vertical pass so the active working set
+    // stays cache-friendly.
     overlap::check_halo(in, radius);
-    int ch = channels_of(in.fmt), bw = in.buf_w(), bh = in.buf_h();
-    std::vector<uint8_t> tmp(static_cast<std::size_t>(bw) * bh * ch, 0);
-
-    // Horizontal pass into tmp
-    for (int by2 = 0; by2 < bh; ++by2) {
-        for (int bx2 = 0; bx2 < bw; ++bx2) {
-            for (int c = 0; c < ch; ++c) {
-                int sum = 0, cnt = 0;
-                for (int k = -radius; k <= radius; ++k) {
-                    sum += in.px(std::clamp(bx2 + k, 0, bw - 1), by2)[c];
-                    ++cnt;
-                }
-                tmp[(static_cast<std::size_t>(by2) * bw + bx2) * ch + c] =
-                    static_cast<uint8_t>((sum + cnt / 2) / cnt);
-            }
-        }
-    }
-
-    Tile out;
-    out.global_x = in.global_x; out.global_y = in.global_y;
-    out.core_w   = in.core_w;   out.core_h   = in.core_h;
-    out.halo     = 0;           out.fmt      = in.fmt;
-    out.allocate();
-
-    // Vertical pass from tmp into core region of out
-    for (int cy = 0; cy < in.core_h; ++cy) {
-        int by2 = cy + in.halo;
-        for (int cx = 0; cx < in.core_w; ++cx) {
-            int bx2 = cx + in.halo;
-            uint8_t* dst = out.data.data() +
-                           (static_cast<std::size_t>(cy) * out.core_w + cx) * ch;
-            for (int c = 0; c < ch; ++c) {
-                int sum = 0, cnt = 0;
-                for (int k = -radius; k <= radius; ++k) {
-                    sum += tmp[(static_cast<std::size_t>(
-                                    std::clamp(by2 + k, 0, bh - 1)) * bw + bx2) * ch + c];
-                    ++cnt;
-                }
-                dst[c] = static_cast<uint8_t>((sum + cnt / 2) / cnt);
-            }
-        }
-    }
-    return out;
+    Tile blurred_with_halo = cache_opt::box_blur(in, radius);
+    return overlap::strip_halo(blurred_with_halo);
 }
 
 // ─────────────────────────────────────────────────────────────────────────────

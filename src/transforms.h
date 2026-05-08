@@ -160,6 +160,10 @@ public:
 
     std::size_t size() const { return steps_.size(); }
 
+    // Milestone 3: expose read-only transform list so FusionOptimizer can
+    // build a real fused execution plan instead of wrapping the whole chain.
+    const std::vector<std::unique_ptr<Transform>>& steps() const { return steps_; }
+
     void compute_output_size(uint32_t in_w, uint32_t in_h,
                              uint32_t& out_w, uint32_t& out_h) const;
 
