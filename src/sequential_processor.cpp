@@ -8,9 +8,7 @@
 
 SequentialProcessor::Stats SequentialProcessor::run() {
     int tile_size = cfg_.tile_size;
-    int halo      = std::max(cfg_.halo_size,
-                             chain_.max_halo_for_image(reader_.info().width,
-                                                       reader_.info().height));
+    int halo      = std::max(cfg_.halo_size, chain_.max_halo());
     int ncols     = reader_.num_tile_cols(tile_size);
     int nrows     = reader_.num_tile_rows(tile_size);
     int total     = ncols * nrows;
