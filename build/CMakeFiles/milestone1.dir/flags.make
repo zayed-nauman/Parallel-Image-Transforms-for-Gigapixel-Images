@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I"/Users/muhammadzayednauman/Documents/CSE461 - Parallel & Distributed Computing/Project/src" -I/opt/homebrew/include
+CXX_INCLUDES = -I"/Users/muhammadzayednauman/Documents/PDC Project Final/Parallel-Image-Transforms-for-Gigapixel-Images/src" -I/opt/homebrew/include
 
 CXX_FLAGSarm64 = -O3 -std=c++17 -arch arm64
 

@@ -1,3 +1,5 @@
-/Users/muhammadzayednauman/Documents/CSE461 - Parallel & Distributed Computing/Project/build/CMakeFiles/milestone1.dir
-/Users/muhammadzayednauman/Documents/CSE461 - Parallel & Distributed Computing/Project/build/CMakeFiles/edit_cache.dir
-/Users/muhammadzayednauman/Documents/CSE461 - Parallel & Distributed Computing/Project/build/CMakeFiles/rebuild_cache.dir
+/Users/muhammadzayednauman/Documents/PDC Project Final/Parallel-Image-Transforms-for-Gigapixel-Images/build/CMakeFiles/milestone1.dir
+/Users/muhammadzayednauman/Documents/PDC Project Final/Parallel-Image-Transforms-for-Gigapixel-Images/build/CMakeFiles/milestone2.dir
+/Users/muhammadzayednauman/Documents/PDC Project Final/Parallel-Image-Transforms-for-Gigapixel-Images/build/CMakeFiles/milestone3.dir
+/Users/muhammadzayednauman/Documents/PDC Project Final/Parallel-Image-Transforms-for-Gigapixel-Images/build/CMakeFiles/edit_cache.dir
+/Users/muhammadzayednauman/Documents/PDC Project Final/Parallel-Image-Transforms-for-Gigapixel-Images/build/CMakeFiles/rebuild_cache.dir

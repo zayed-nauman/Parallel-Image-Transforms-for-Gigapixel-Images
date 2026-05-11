@@ -1,7 +1,7 @@
 CMakeFiles/milestone1.dir/src/tile_reader.cpp.o: \
-  /Users/muhammadzayednauman/Documents/CSE461\ -\ Parallel\ &\ Distributed\ Computing/Project/src/tile_reader.cpp \
-  /Users/muhammadzayednauman/Documents/CSE461\ -\ Parallel\ &\ Distributed\ Computing/Project/src/tile_reader.h \
-  /Users/muhammadzayednauman/Documents/CSE461\ -\ Parallel\ &\ Distributed\ Computing/Project/src/common.h \
+  /Users/muhammadzayednauman/Documents/PDC\ Project\ Final/Parallel-Image-Transforms-for-Gigapixel-Images/src/tile_reader.cpp \
+  /Users/muhammadzayednauman/Documents/PDC\ Project\ Final/Parallel-Image-Transforms-for-Gigapixel-Images/src/tile_reader.h \
+  /Users/muhammadzayednauman/Documents/PDC\ Project\ Final/Parallel-Image-Transforms-for-Gigapixel-Images/src/common.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/cstdint \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__config \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__config_site \

@@ -54,20 +54,24 @@ RM = /opt/homebrew/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/Users/muhammadzayednauman/Documents/CSE461 - Parallel & Distributed Computing/Project"
+CMAKE_SOURCE_DIR = "/Users/muhammadzayednauman/Documents/PDC Project Final/Parallel-Image-Transforms-for-Gigapixel-Images"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/Users/muhammadzayednauman/Documents/CSE461 - Parallel & Distributed Computing/Project/build"
+CMAKE_BINARY_DIR = "/Users/muhammadzayednauman/Documents/PDC Project Final/Parallel-Image-Transforms-for-Gigapixel-Images/build"
 
 #=============================================================================
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
 all: CMakeFiles/milestone1.dir/all
+all: CMakeFiles/milestone2.dir/all
+all: CMakeFiles/milestone3.dir/all
 .PHONY : all
 
 # The main recursive "codegen" target.
 codegen: CMakeFiles/milestone1.dir/codegen
+codegen: CMakeFiles/milestone2.dir/codegen
+codegen: CMakeFiles/milestone3.dir/codegen
 .PHONY : codegen
 
 # The main recursive "preinstall" target.
@@ -76,6 +80,8 @@ preinstall:
 
 # The main recursive "clean" target.
 clean: CMakeFiles/milestone1.dir/clean
+clean: CMakeFiles/milestone2.dir/clean
+clean: CMakeFiles/milestone3.dir/clean
 .PHONY : clean
 
 #=============================================================================
@@ -85,14 +91,14 @@ clean: CMakeFiles/milestone1.dir/clean
 CMakeFiles/milestone1.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/milestone1.dir/build.make CMakeFiles/milestone1.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/milestone1.dir/build.make CMakeFiles/milestone1.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="/Users/muhammadzayednauman/Documents/CSE461 - Parallel & Distributed Computing/Project/build/CMakeFiles" --progress-num=1,2,3,4,5,6,7 "Built target milestone1"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="/Users/muhammadzayednauman/Documents/PDC Project Final/Parallel-Image-Transforms-for-Gigapixel-Images/build/CMakeFiles" --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14 "Built target milestone1"
 .PHONY : CMakeFiles/milestone1.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/milestone1.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/muhammadzayednauman/Documents/CSE461 - Parallel & Distributed Computing/Project/build/CMakeFiles" 7
+	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/muhammadzayednauman/Documents/PDC Project Final/Parallel-Image-Transforms-for-Gigapixel-Images/build/CMakeFiles" 14
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/milestone1.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/muhammadzayednauman/Documents/CSE461 - Parallel & Distributed Computing/Project/build/CMakeFiles" 0
+	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/muhammadzayednauman/Documents/PDC Project Final/Parallel-Image-Transforms-for-Gigapixel-Images/build/CMakeFiles" 0
 .PHONY : CMakeFiles/milestone1.dir/rule
 
 # Convenience name for target.
@@ -102,13 +108,77 @@ milestone1: CMakeFiles/milestone1.dir/rule
 # codegen rule for target.
 CMakeFiles/milestone1.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/milestone1.dir/build.make CMakeFiles/milestone1.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="/Users/muhammadzayednauman/Documents/CSE461 - Parallel & Distributed Computing/Project/build/CMakeFiles" --progress-num=1,2,3,4,5,6,7 "Finished codegen for target milestone1"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="/Users/muhammadzayednauman/Documents/PDC Project Final/Parallel-Image-Transforms-for-Gigapixel-Images/build/CMakeFiles" --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14 "Finished codegen for target milestone1"
 .PHONY : CMakeFiles/milestone1.dir/codegen
 
 # clean rule for target.
 CMakeFiles/milestone1.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/milestone1.dir/build.make CMakeFiles/milestone1.dir/clean
 .PHONY : CMakeFiles/milestone1.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/milestone2.dir
+
+# All Build rule for target.
+CMakeFiles/milestone2.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/milestone2.dir/build.make CMakeFiles/milestone2.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/milestone2.dir/build.make CMakeFiles/milestone2.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="/Users/muhammadzayednauman/Documents/PDC Project Final/Parallel-Image-Transforms-for-Gigapixel-Images/build/CMakeFiles" --progress-num=15,16,17,18,19,20,21,22,23,24,25,26,27,28 "Built target milestone2"
+.PHONY : CMakeFiles/milestone2.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/milestone2.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/muhammadzayednauman/Documents/PDC Project Final/Parallel-Image-Transforms-for-Gigapixel-Images/build/CMakeFiles" 14
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/milestone2.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/muhammadzayednauman/Documents/PDC Project Final/Parallel-Image-Transforms-for-Gigapixel-Images/build/CMakeFiles" 0
+.PHONY : CMakeFiles/milestone2.dir/rule
+
+# Convenience name for target.
+milestone2: CMakeFiles/milestone2.dir/rule
+.PHONY : milestone2
+
+# codegen rule for target.
+CMakeFiles/milestone2.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/milestone2.dir/build.make CMakeFiles/milestone2.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="/Users/muhammadzayednauman/Documents/PDC Project Final/Parallel-Image-Transforms-for-Gigapixel-Images/build/CMakeFiles" --progress-num=15,16,17,18,19,20,21,22,23,24,25,26,27,28 "Finished codegen for target milestone2"
+.PHONY : CMakeFiles/milestone2.dir/codegen
+
+# clean rule for target.
+CMakeFiles/milestone2.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/milestone2.dir/build.make CMakeFiles/milestone2.dir/clean
+.PHONY : CMakeFiles/milestone2.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/milestone3.dir
+
+# All Build rule for target.
+CMakeFiles/milestone3.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/milestone3.dir/build.make CMakeFiles/milestone3.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/milestone3.dir/build.make CMakeFiles/milestone3.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="/Users/muhammadzayednauman/Documents/PDC Project Final/Parallel-Image-Transforms-for-Gigapixel-Images/build/CMakeFiles" --progress-num=29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45 "Built target milestone3"
+.PHONY : CMakeFiles/milestone3.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/milestone3.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/muhammadzayednauman/Documents/PDC Project Final/Parallel-Image-Transforms-for-Gigapixel-Images/build/CMakeFiles" 17
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/milestone3.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/muhammadzayednauman/Documents/PDC Project Final/Parallel-Image-Transforms-for-Gigapixel-Images/build/CMakeFiles" 0
+.PHONY : CMakeFiles/milestone3.dir/rule
+
+# Convenience name for target.
+milestone3: CMakeFiles/milestone3.dir/rule
+.PHONY : milestone3
+
+# codegen rule for target.
+CMakeFiles/milestone3.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/milestone3.dir/build.make CMakeFiles/milestone3.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="/Users/muhammadzayednauman/Documents/PDC Project Final/Parallel-Image-Transforms-for-Gigapixel-Images/build/CMakeFiles" --progress-num=29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45 "Finished codegen for target milestone3"
+.PHONY : CMakeFiles/milestone3.dir/codegen
+
+# clean rule for target.
+CMakeFiles/milestone3.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/milestone3.dir/build.make CMakeFiles/milestone3.dir/clean
+.PHONY : CMakeFiles/milestone3.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

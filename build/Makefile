@@ -57,10 +57,10 @@ RM = /opt/homebrew/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/Users/muhammadzayednauman/Documents/CSE461 - Parallel & Distributed Computing/Project"
+CMAKE_SOURCE_DIR = "/Users/muhammadzayednauman/Documents/PDC Project Final/Parallel-Image-Transforms-for-Gigapixel-Images"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/Users/muhammadzayednauman/Documents/CSE461 - Parallel & Distributed Computing/Project/build"
+CMAKE_BINARY_DIR = "/Users/muhammadzayednauman/Documents/PDC Project Final/Parallel-Image-Transforms-for-Gigapixel-Images/build"
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/muhammadzayednauman/Documents/CSE461 - Parallel & Distributed Computing/Project/build/CMakeFiles" "/Users/muhammadzayednauman/Documents/CSE461 - Parallel & Distributed Computing/Project/build//CMakeFiles/progress.marks"
+	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/muhammadzayednauman/Documents/PDC Project Final/Parallel-Image-Transforms-for-Gigapixel-Images/build/CMakeFiles" "/Users/muhammadzayednauman/Documents/PDC Project Final/Parallel-Image-Transforms-for-Gigapixel-Images/build//CMakeFiles/progress.marks"
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/muhammadzayednauman/Documents/CSE461 - Parallel & Distributed Computing/Project/build/CMakeFiles" 0
+	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/muhammadzayednauman/Documents/PDC Project Final/Parallel-Image-Transforms-for-Gigapixel-Images/build/CMakeFiles" 0
 .PHONY : all
 
 # The main clean target
@@ -129,12 +129,130 @@ milestone1/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/milestone1.dir/build.make CMakeFiles/milestone1.dir/build
 .PHONY : milestone1/fast
 
+#=============================================================================
+# Target rules for targets named milestone2
+
+# Build rule for target.
+milestone2: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 milestone2
+.PHONY : milestone2
+
+# fast build rule for target.
+milestone2/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/milestone2.dir/build.make CMakeFiles/milestone2.dir/build
+.PHONY : milestone2/fast
+
+#=============================================================================
+# Target rules for targets named milestone3
+
+# Build rule for target.
+milestone3: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 milestone3
+.PHONY : milestone3
+
+# fast build rule for target.
+milestone3/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/milestone3.dir/build.make CMakeFiles/milestone3.dir/build
+.PHONY : milestone3/fast
+
+src/benchmark_sweep.o: src/benchmark_sweep.cpp.o
+.PHONY : src/benchmark_sweep.o
+
+# target to build an object file
+src/benchmark_sweep.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/milestone1.dir/build.make CMakeFiles/milestone1.dir/src/benchmark_sweep.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/milestone2.dir/build.make CMakeFiles/milestone2.dir/src/benchmark_sweep.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/milestone3.dir/build.make CMakeFiles/milestone3.dir/src/benchmark_sweep.cpp.o
+.PHONY : src/benchmark_sweep.cpp.o
+
+src/benchmark_sweep.i: src/benchmark_sweep.cpp.i
+.PHONY : src/benchmark_sweep.i
+
+# target to preprocess a source file
+src/benchmark_sweep.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/milestone1.dir/build.make CMakeFiles/milestone1.dir/src/benchmark_sweep.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/milestone2.dir/build.make CMakeFiles/milestone2.dir/src/benchmark_sweep.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/milestone3.dir/build.make CMakeFiles/milestone3.dir/src/benchmark_sweep.cpp.i
+.PHONY : src/benchmark_sweep.cpp.i
+
+src/benchmark_sweep.s: src/benchmark_sweep.cpp.s
+.PHONY : src/benchmark_sweep.s
+
+# target to generate assembly for a file
+src/benchmark_sweep.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/milestone1.dir/build.make CMakeFiles/milestone1.dir/src/benchmark_sweep.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/milestone2.dir/build.make CMakeFiles/milestone2.dir/src/benchmark_sweep.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/milestone3.dir/build.make CMakeFiles/milestone3.dir/src/benchmark_sweep.cpp.s
+.PHONY : src/benchmark_sweep.cpp.s
+
+src/gpu_kernels_stub.o: src/gpu_kernels_stub.cpp.o
+.PHONY : src/gpu_kernels_stub.o
+
+# target to build an object file
+src/gpu_kernels_stub.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/milestone1.dir/build.make CMakeFiles/milestone1.dir/src/gpu_kernels_stub.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/milestone2.dir/build.make CMakeFiles/milestone2.dir/src/gpu_kernels_stub.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/milestone3.dir/build.make CMakeFiles/milestone3.dir/src/gpu_kernels_stub.cpp.o
+.PHONY : src/gpu_kernels_stub.cpp.o
+
+src/gpu_kernels_stub.i: src/gpu_kernels_stub.cpp.i
+.PHONY : src/gpu_kernels_stub.i
+
+# target to preprocess a source file
+src/gpu_kernels_stub.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/milestone1.dir/build.make CMakeFiles/milestone1.dir/src/gpu_kernels_stub.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/milestone2.dir/build.make CMakeFiles/milestone2.dir/src/gpu_kernels_stub.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/milestone3.dir/build.make CMakeFiles/milestone3.dir/src/gpu_kernels_stub.cpp.i
+.PHONY : src/gpu_kernels_stub.cpp.i
+
+src/gpu_kernels_stub.s: src/gpu_kernels_stub.cpp.s
+.PHONY : src/gpu_kernels_stub.s
+
+# target to generate assembly for a file
+src/gpu_kernels_stub.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/milestone1.dir/build.make CMakeFiles/milestone1.dir/src/gpu_kernels_stub.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/milestone2.dir/build.make CMakeFiles/milestone2.dir/src/gpu_kernels_stub.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/milestone3.dir/build.make CMakeFiles/milestone3.dir/src/gpu_kernels_stub.cpp.s
+.PHONY : src/gpu_kernels_stub.cpp.s
+
+src/gpu_tile_processor_fixed.o: src/gpu_tile_processor_fixed.cpp.o
+.PHONY : src/gpu_tile_processor_fixed.o
+
+# target to build an object file
+src/gpu_tile_processor_fixed.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/milestone1.dir/build.make CMakeFiles/milestone1.dir/src/gpu_tile_processor_fixed.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/milestone2.dir/build.make CMakeFiles/milestone2.dir/src/gpu_tile_processor_fixed.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/milestone3.dir/build.make CMakeFiles/milestone3.dir/src/gpu_tile_processor_fixed.cpp.o
+.PHONY : src/gpu_tile_processor_fixed.cpp.o
+
+src/gpu_tile_processor_fixed.i: src/gpu_tile_processor_fixed.cpp.i
+.PHONY : src/gpu_tile_processor_fixed.i
+
+# target to preprocess a source file
+src/gpu_tile_processor_fixed.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/milestone1.dir/build.make CMakeFiles/milestone1.dir/src/gpu_tile_processor_fixed.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/milestone2.dir/build.make CMakeFiles/milestone2.dir/src/gpu_tile_processor_fixed.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/milestone3.dir/build.make CMakeFiles/milestone3.dir/src/gpu_tile_processor_fixed.cpp.i
+.PHONY : src/gpu_tile_processor_fixed.cpp.i
+
+src/gpu_tile_processor_fixed.s: src/gpu_tile_processor_fixed.cpp.s
+.PHONY : src/gpu_tile_processor_fixed.s
+
+# target to generate assembly for a file
+src/gpu_tile_processor_fixed.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/milestone1.dir/build.make CMakeFiles/milestone1.dir/src/gpu_tile_processor_fixed.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/milestone2.dir/build.make CMakeFiles/milestone2.dir/src/gpu_tile_processor_fixed.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/milestone3.dir/build.make CMakeFiles/milestone3.dir/src/gpu_tile_processor_fixed.cpp.s
+.PHONY : src/gpu_tile_processor_fixed.cpp.s
+
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
 
 # target to build an object file
 src/main.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/milestone1.dir/build.make CMakeFiles/milestone1.dir/src/main.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/milestone2.dir/build.make CMakeFiles/milestone2.dir/src/main.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/milestone3.dir/build.make CMakeFiles/milestone3.dir/src/main.cpp.o
 .PHONY : src/main.cpp.o
 
 src/main.i: src/main.cpp.i
@@ -143,6 +261,8 @@ src/main.i: src/main.cpp.i
 # target to preprocess a source file
 src/main.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/milestone1.dir/build.make CMakeFiles/milestone1.dir/src/main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/milestone2.dir/build.make CMakeFiles/milestone2.dir/src/main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/milestone3.dir/build.make CMakeFiles/milestone3.dir/src/main.cpp.i
 .PHONY : src/main.cpp.i
 
 src/main.s: src/main.cpp.s
@@ -151,7 +271,39 @@ src/main.s: src/main.cpp.s
 # target to generate assembly for a file
 src/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/milestone1.dir/build.make CMakeFiles/milestone1.dir/src/main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/milestone2.dir/build.make CMakeFiles/milestone2.dir/src/main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/milestone3.dir/build.make CMakeFiles/milestone3.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
+
+src/memory_manager.o: src/memory_manager.cpp.o
+.PHONY : src/memory_manager.o
+
+# target to build an object file
+src/memory_manager.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/milestone1.dir/build.make CMakeFiles/milestone1.dir/src/memory_manager.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/milestone2.dir/build.make CMakeFiles/milestone2.dir/src/memory_manager.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/milestone3.dir/build.make CMakeFiles/milestone3.dir/src/memory_manager.cpp.o
+.PHONY : src/memory_manager.cpp.o
+
+src/memory_manager.i: src/memory_manager.cpp.i
+.PHONY : src/memory_manager.i
+
+# target to preprocess a source file
+src/memory_manager.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/milestone1.dir/build.make CMakeFiles/milestone1.dir/src/memory_manager.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/milestone2.dir/build.make CMakeFiles/milestone2.dir/src/memory_manager.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/milestone3.dir/build.make CMakeFiles/milestone3.dir/src/memory_manager.cpp.i
+.PHONY : src/memory_manager.cpp.i
+
+src/memory_manager.s: src/memory_manager.cpp.s
+.PHONY : src/memory_manager.s
+
+# target to generate assembly for a file
+src/memory_manager.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/milestone1.dir/build.make CMakeFiles/milestone1.dir/src/memory_manager.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/milestone2.dir/build.make CMakeFiles/milestone2.dir/src/memory_manager.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/milestone3.dir/build.make CMakeFiles/milestone3.dir/src/memory_manager.cpp.s
+.PHONY : src/memory_manager.cpp.s
 
 src/overlap.o: src/overlap.cpp.o
 .PHONY : src/overlap.o
@@ -159,6 +311,8 @@ src/overlap.o: src/overlap.cpp.o
 # target to build an object file
 src/overlap.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/milestone1.dir/build.make CMakeFiles/milestone1.dir/src/overlap.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/milestone2.dir/build.make CMakeFiles/milestone2.dir/src/overlap.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/milestone3.dir/build.make CMakeFiles/milestone3.dir/src/overlap.cpp.o
 .PHONY : src/overlap.cpp.o
 
 src/overlap.i: src/overlap.cpp.i
@@ -167,6 +321,8 @@ src/overlap.i: src/overlap.cpp.i
 # target to preprocess a source file
 src/overlap.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/milestone1.dir/build.make CMakeFiles/milestone1.dir/src/overlap.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/milestone2.dir/build.make CMakeFiles/milestone2.dir/src/overlap.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/milestone3.dir/build.make CMakeFiles/milestone3.dir/src/overlap.cpp.i
 .PHONY : src/overlap.cpp.i
 
 src/overlap.s: src/overlap.cpp.s
@@ -175,7 +331,141 @@ src/overlap.s: src/overlap.cpp.s
 # target to generate assembly for a file
 src/overlap.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/milestone1.dir/build.make CMakeFiles/milestone1.dir/src/overlap.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/milestone2.dir/build.make CMakeFiles/milestone2.dir/src/overlap.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/milestone3.dir/build.make CMakeFiles/milestone3.dir/src/overlap.cpp.s
 .PHONY : src/overlap.cpp.s
+
+src/performance_metrics.o: src/performance_metrics.cpp.o
+.PHONY : src/performance_metrics.o
+
+# target to build an object file
+src/performance_metrics.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/milestone3.dir/build.make CMakeFiles/milestone3.dir/src/performance_metrics.cpp.o
+.PHONY : src/performance_metrics.cpp.o
+
+src/performance_metrics.i: src/performance_metrics.cpp.i
+.PHONY : src/performance_metrics.i
+
+# target to preprocess a source file
+src/performance_metrics.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/milestone3.dir/build.make CMakeFiles/milestone3.dir/src/performance_metrics.cpp.i
+.PHONY : src/performance_metrics.cpp.i
+
+src/performance_metrics.s: src/performance_metrics.cpp.s
+.PHONY : src/performance_metrics.s
+
+# target to generate assembly for a file
+src/performance_metrics.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/milestone3.dir/build.make CMakeFiles/milestone3.dir/src/performance_metrics.cpp.s
+.PHONY : src/performance_metrics.cpp.s
+
+src/pipeline_fusion.o: src/pipeline_fusion.cpp.o
+.PHONY : src/pipeline_fusion.o
+
+# target to build an object file
+src/pipeline_fusion.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/milestone1.dir/build.make CMakeFiles/milestone1.dir/src/pipeline_fusion.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/milestone2.dir/build.make CMakeFiles/milestone2.dir/src/pipeline_fusion.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/milestone3.dir/build.make CMakeFiles/milestone3.dir/src/pipeline_fusion.cpp.o
+.PHONY : src/pipeline_fusion.cpp.o
+
+src/pipeline_fusion.i: src/pipeline_fusion.cpp.i
+.PHONY : src/pipeline_fusion.i
+
+# target to preprocess a source file
+src/pipeline_fusion.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/milestone1.dir/build.make CMakeFiles/milestone1.dir/src/pipeline_fusion.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/milestone2.dir/build.make CMakeFiles/milestone2.dir/src/pipeline_fusion.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/milestone3.dir/build.make CMakeFiles/milestone3.dir/src/pipeline_fusion.cpp.i
+.PHONY : src/pipeline_fusion.cpp.i
+
+src/pipeline_fusion.s: src/pipeline_fusion.cpp.s
+.PHONY : src/pipeline_fusion.s
+
+# target to generate assembly for a file
+src/pipeline_fusion.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/milestone1.dir/build.make CMakeFiles/milestone1.dir/src/pipeline_fusion.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/milestone2.dir/build.make CMakeFiles/milestone2.dir/src/pipeline_fusion.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/milestone3.dir/build.make CMakeFiles/milestone3.dir/src/pipeline_fusion.cpp.s
+.PHONY : src/pipeline_fusion.cpp.s
+
+src/pipeline_report.o: src/pipeline_report.cpp.o
+.PHONY : src/pipeline_report.o
+
+# target to build an object file
+src/pipeline_report.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/milestone3.dir/build.make CMakeFiles/milestone3.dir/src/pipeline_report.cpp.o
+.PHONY : src/pipeline_report.cpp.o
+
+src/pipeline_report.i: src/pipeline_report.cpp.i
+.PHONY : src/pipeline_report.i
+
+# target to preprocess a source file
+src/pipeline_report.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/milestone3.dir/build.make CMakeFiles/milestone3.dir/src/pipeline_report.cpp.i
+.PHONY : src/pipeline_report.cpp.i
+
+src/pipeline_report.s: src/pipeline_report.cpp.s
+.PHONY : src/pipeline_report.s
+
+# target to generate assembly for a file
+src/pipeline_report.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/milestone3.dir/build.make CMakeFiles/milestone3.dir/src/pipeline_report.cpp.s
+.PHONY : src/pipeline_report.cpp.s
+
+src/sequential_processor.o: src/sequential_processor.cpp.o
+.PHONY : src/sequential_processor.o
+
+# target to build an object file
+src/sequential_processor.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/milestone1.dir/build.make CMakeFiles/milestone1.dir/src/sequential_processor.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/milestone2.dir/build.make CMakeFiles/milestone2.dir/src/sequential_processor.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/milestone3.dir/build.make CMakeFiles/milestone3.dir/src/sequential_processor.cpp.o
+.PHONY : src/sequential_processor.cpp.o
+
+src/sequential_processor.i: src/sequential_processor.cpp.i
+.PHONY : src/sequential_processor.i
+
+# target to preprocess a source file
+src/sequential_processor.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/milestone1.dir/build.make CMakeFiles/milestone1.dir/src/sequential_processor.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/milestone2.dir/build.make CMakeFiles/milestone2.dir/src/sequential_processor.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/milestone3.dir/build.make CMakeFiles/milestone3.dir/src/sequential_processor.cpp.i
+.PHONY : src/sequential_processor.cpp.i
+
+src/sequential_processor.s: src/sequential_processor.cpp.s
+.PHONY : src/sequential_processor.s
+
+# target to generate assembly for a file
+src/sequential_processor.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/milestone1.dir/build.make CMakeFiles/milestone1.dir/src/sequential_processor.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/milestone2.dir/build.make CMakeFiles/milestone2.dir/src/sequential_processor.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/milestone3.dir/build.make CMakeFiles/milestone3.dir/src/sequential_processor.cpp.s
+.PHONY : src/sequential_processor.cpp.s
+
+src/simd_kernels.o: src/simd_kernels.cpp.o
+.PHONY : src/simd_kernels.o
+
+# target to build an object file
+src/simd_kernels.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/milestone3.dir/build.make CMakeFiles/milestone3.dir/src/simd_kernels.cpp.o
+.PHONY : src/simd_kernels.cpp.o
+
+src/simd_kernels.i: src/simd_kernels.cpp.i
+.PHONY : src/simd_kernels.i
+
+# target to preprocess a source file
+src/simd_kernels.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/milestone3.dir/build.make CMakeFiles/milestone3.dir/src/simd_kernels.cpp.i
+.PHONY : src/simd_kernels.cpp.i
+
+src/simd_kernels.s: src/simd_kernels.cpp.s
+.PHONY : src/simd_kernels.s
+
+# target to generate assembly for a file
+src/simd_kernels.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/milestone3.dir/build.make CMakeFiles/milestone3.dir/src/simd_kernels.cpp.s
+.PHONY : src/simd_kernels.cpp.s
 
 src/tile_processor.o: src/tile_processor.cpp.o
 .PHONY : src/tile_processor.o
@@ -183,6 +473,8 @@ src/tile_processor.o: src/tile_processor.cpp.o
 # target to build an object file
 src/tile_processor.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/milestone1.dir/build.make CMakeFiles/milestone1.dir/src/tile_processor.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/milestone2.dir/build.make CMakeFiles/milestone2.dir/src/tile_processor.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/milestone3.dir/build.make CMakeFiles/milestone3.dir/src/tile_processor.cpp.o
 .PHONY : src/tile_processor.cpp.o
 
 src/tile_processor.i: src/tile_processor.cpp.i
@@ -191,6 +483,8 @@ src/tile_processor.i: src/tile_processor.cpp.i
 # target to preprocess a source file
 src/tile_processor.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/milestone1.dir/build.make CMakeFiles/milestone1.dir/src/tile_processor.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/milestone2.dir/build.make CMakeFiles/milestone2.dir/src/tile_processor.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/milestone3.dir/build.make CMakeFiles/milestone3.dir/src/tile_processor.cpp.i
 .PHONY : src/tile_processor.cpp.i
 
 src/tile_processor.s: src/tile_processor.cpp.s
@@ -199,6 +493,8 @@ src/tile_processor.s: src/tile_processor.cpp.s
 # target to generate assembly for a file
 src/tile_processor.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/milestone1.dir/build.make CMakeFiles/milestone1.dir/src/tile_processor.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/milestone2.dir/build.make CMakeFiles/milestone2.dir/src/tile_processor.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/milestone3.dir/build.make CMakeFiles/milestone3.dir/src/tile_processor.cpp.s
 .PHONY : src/tile_processor.cpp.s
 
 src/tile_reader.o: src/tile_reader.cpp.o
@@ -207,6 +503,8 @@ src/tile_reader.o: src/tile_reader.cpp.o
 # target to build an object file
 src/tile_reader.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/milestone1.dir/build.make CMakeFiles/milestone1.dir/src/tile_reader.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/milestone2.dir/build.make CMakeFiles/milestone2.dir/src/tile_reader.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/milestone3.dir/build.make CMakeFiles/milestone3.dir/src/tile_reader.cpp.o
 .PHONY : src/tile_reader.cpp.o
 
 src/tile_reader.i: src/tile_reader.cpp.i
@@ -215,6 +513,8 @@ src/tile_reader.i: src/tile_reader.cpp.i
 # target to preprocess a source file
 src/tile_reader.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/milestone1.dir/build.make CMakeFiles/milestone1.dir/src/tile_reader.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/milestone2.dir/build.make CMakeFiles/milestone2.dir/src/tile_reader.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/milestone3.dir/build.make CMakeFiles/milestone3.dir/src/tile_reader.cpp.i
 .PHONY : src/tile_reader.cpp.i
 
 src/tile_reader.s: src/tile_reader.cpp.s
@@ -223,6 +523,8 @@ src/tile_reader.s: src/tile_reader.cpp.s
 # target to generate assembly for a file
 src/tile_reader.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/milestone1.dir/build.make CMakeFiles/milestone1.dir/src/tile_reader.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/milestone2.dir/build.make CMakeFiles/milestone2.dir/src/tile_reader.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/milestone3.dir/build.make CMakeFiles/milestone3.dir/src/tile_reader.cpp.s
 .PHONY : src/tile_reader.cpp.s
 
 src/tile_writer.o: src/tile_writer.cpp.o
@@ -231,6 +533,8 @@ src/tile_writer.o: src/tile_writer.cpp.o
 # target to build an object file
 src/tile_writer.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/milestone1.dir/build.make CMakeFiles/milestone1.dir/src/tile_writer.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/milestone2.dir/build.make CMakeFiles/milestone2.dir/src/tile_writer.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/milestone3.dir/build.make CMakeFiles/milestone3.dir/src/tile_writer.cpp.o
 .PHONY : src/tile_writer.cpp.o
 
 src/tile_writer.i: src/tile_writer.cpp.i
@@ -239,6 +543,8 @@ src/tile_writer.i: src/tile_writer.cpp.i
 # target to preprocess a source file
 src/tile_writer.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/milestone1.dir/build.make CMakeFiles/milestone1.dir/src/tile_writer.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/milestone2.dir/build.make CMakeFiles/milestone2.dir/src/tile_writer.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/milestone3.dir/build.make CMakeFiles/milestone3.dir/src/tile_writer.cpp.i
 .PHONY : src/tile_writer.cpp.i
 
 src/tile_writer.s: src/tile_writer.cpp.s
@@ -247,6 +553,8 @@ src/tile_writer.s: src/tile_writer.cpp.s
 # target to generate assembly for a file
 src/tile_writer.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/milestone1.dir/build.make CMakeFiles/milestone1.dir/src/tile_writer.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/milestone2.dir/build.make CMakeFiles/milestone2.dir/src/tile_writer.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/milestone3.dir/build.make CMakeFiles/milestone3.dir/src/tile_writer.cpp.s
 .PHONY : src/tile_writer.cpp.s
 
 src/transforms.o: src/transforms.cpp.o
@@ -255,6 +563,8 @@ src/transforms.o: src/transforms.cpp.o
 # target to build an object file
 src/transforms.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/milestone1.dir/build.make CMakeFiles/milestone1.dir/src/transforms.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/milestone2.dir/build.make CMakeFiles/milestone2.dir/src/transforms.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/milestone3.dir/build.make CMakeFiles/milestone3.dir/src/transforms.cpp.o
 .PHONY : src/transforms.cpp.o
 
 src/transforms.i: src/transforms.cpp.i
@@ -263,6 +573,8 @@ src/transforms.i: src/transforms.cpp.i
 # target to preprocess a source file
 src/transforms.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/milestone1.dir/build.make CMakeFiles/milestone1.dir/src/transforms.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/milestone2.dir/build.make CMakeFiles/milestone2.dir/src/transforms.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/milestone3.dir/build.make CMakeFiles/milestone3.dir/src/transforms.cpp.i
 .PHONY : src/transforms.cpp.i
 
 src/transforms.s: src/transforms.cpp.s
@@ -271,7 +583,39 @@ src/transforms.s: src/transforms.cpp.s
 # target to generate assembly for a file
 src/transforms.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/milestone1.dir/build.make CMakeFiles/milestone1.dir/src/transforms.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/milestone2.dir/build.make CMakeFiles/milestone2.dir/src/transforms.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/milestone3.dir/build.make CMakeFiles/milestone3.dir/src/transforms.cpp.s
 .PHONY : src/transforms.cpp.s
+
+src/work_scheduler.o: src/work_scheduler.cpp.o
+.PHONY : src/work_scheduler.o
+
+# target to build an object file
+src/work_scheduler.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/milestone1.dir/build.make CMakeFiles/milestone1.dir/src/work_scheduler.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/milestone2.dir/build.make CMakeFiles/milestone2.dir/src/work_scheduler.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/milestone3.dir/build.make CMakeFiles/milestone3.dir/src/work_scheduler.cpp.o
+.PHONY : src/work_scheduler.cpp.o
+
+src/work_scheduler.i: src/work_scheduler.cpp.i
+.PHONY : src/work_scheduler.i
+
+# target to preprocess a source file
+src/work_scheduler.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/milestone1.dir/build.make CMakeFiles/milestone1.dir/src/work_scheduler.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/milestone2.dir/build.make CMakeFiles/milestone2.dir/src/work_scheduler.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/milestone3.dir/build.make CMakeFiles/milestone3.dir/src/work_scheduler.cpp.i
+.PHONY : src/work_scheduler.cpp.i
+
+src/work_scheduler.s: src/work_scheduler.cpp.s
+.PHONY : src/work_scheduler.s
+
+# target to generate assembly for a file
+src/work_scheduler.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/milestone1.dir/build.make CMakeFiles/milestone1.dir/src/work_scheduler.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/milestone2.dir/build.make CMakeFiles/milestone2.dir/src/work_scheduler.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/milestone3.dir/build.make CMakeFiles/milestone3.dir/src/work_scheduler.cpp.s
+.PHONY : src/work_scheduler.cpp.s
 
 # Help Target
 help:
@@ -282,12 +626,41 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... milestone1"
+	@echo "... milestone2"
+	@echo "... milestone3"
+	@echo "... src/benchmark_sweep.o"
+	@echo "... src/benchmark_sweep.i"
+	@echo "... src/benchmark_sweep.s"
+	@echo "... src/gpu_kernels_stub.o"
+	@echo "... src/gpu_kernels_stub.i"
+	@echo "... src/gpu_kernels_stub.s"
+	@echo "... src/gpu_tile_processor_fixed.o"
+	@echo "... src/gpu_tile_processor_fixed.i"
+	@echo "... src/gpu_tile_processor_fixed.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... src/memory_manager.o"
+	@echo "... src/memory_manager.i"
+	@echo "... src/memory_manager.s"
 	@echo "... src/overlap.o"
 	@echo "... src/overlap.i"
 	@echo "... src/overlap.s"
+	@echo "... src/performance_metrics.o"
+	@echo "... src/performance_metrics.i"
+	@echo "... src/performance_metrics.s"
+	@echo "... src/pipeline_fusion.o"
+	@echo "... src/pipeline_fusion.i"
+	@echo "... src/pipeline_fusion.s"
+	@echo "... src/pipeline_report.o"
+	@echo "... src/pipeline_report.i"
+	@echo "... src/pipeline_report.s"
+	@echo "... src/sequential_processor.o"
+	@echo "... src/sequential_processor.i"
+	@echo "... src/sequential_processor.s"
+	@echo "... src/simd_kernels.o"
+	@echo "... src/simd_kernels.i"
+	@echo "... src/simd_kernels.s"
 	@echo "... src/tile_processor.o"
 	@echo "... src/tile_processor.i"
 	@echo "... src/tile_processor.s"
@@ -300,6 +673,9 @@ help:
 	@echo "... src/transforms.o"
 	@echo "... src/transforms.i"
 	@echo "... src/transforms.s"
+	@echo "... src/work_scheduler.o"
+	@echo "... src/work_scheduler.i"
+	@echo "... src/work_scheduler.s"
 .PHONY : help
 
 

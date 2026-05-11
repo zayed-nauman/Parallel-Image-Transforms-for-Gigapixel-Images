@@ -1,7 +1,7 @@
 {
 	"InstallScripts" : 
 	[
-		"/Users/muhammadzayednauman/Documents/CSE461 - Parallel & Distributed Computing/Project/build/cmake_install.cmake"
+		"/Users/muhammadzayednauman/Documents/PDC Project Final/Parallel-Image-Transforms-for-Gigapixel-Images/build/cmake_install.cmake"
 	],
 	"Parallel" : false
 }
